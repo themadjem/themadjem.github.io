@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 11</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 11: The Threat to Red</b></u></p><p>The hover-car breaked to a stop. Red was still holding his hair in place over the sword strap. The hover-car had stopped infront of a cave. It had a small entrance and looked dark inside. Chibi Ganon turned to Red.</p><p>"Follow me." Chibi Ganon grinned.</p><p>Chibi Ganon got out of the car and Red followed behind him. They entered a short, dark tunnel which led to the large main part of the cave which was lit brightly by candles. It had some some rugs on the floor and a couple of sofas. On the walls there were many shelfs with various gold treasures on them. Chibi Ganon lead Red to the middle of the room.</p><p>"Wait here. I need to get something." Chibi Ganon said to him.</p><p>"OK." Red replied.</p><p>Chibi Ganon walked to a cupboard at the back of the room and opened it to look for something.</p><p>Red slowly crept up behind him, drew his sword slowly, then quickly slashed his sword at Chibi Ganon. In the blink of an eye, two long swords appeared in Chibi Ganons' hands, he turned round and blocked Reds' attack with his swords. Chibi Ganon knocked Reds' sword out of position and slashed his other sword at him. Red kept dodging and blocking his attacks, he couldn't find a chance to attack him. Red was at a disadvantage as Chibi Ganon was backing him away. Red managed to knock both of Chibi Ganons' swords away from him. Red slashed his sword at Chibi Ganon, but he suddenly brought his swords up, with one hand, to under Reds' chin, touching the top of his neck. Red stopped his sword and his neck bled a bit.</p><p>"Drop your sword." Chibi Ganon said to him.</p><p>Red let go of his sword and it dropped to the ground. Chibi Ganon grinned and slashed his swords quickly upwards, scratching the top of Reds' neck, chin and face with two deep scratches. Red dropped to the ground and buried his wounds in his hands. He watched the blood and tears drip into his hands.</p><p>Chibi Ganon grinned menacenly at Red then turned round. He reached into his shirt and pulled out the other half of the charm. He took it off round his neck and held it out in his hand. It floated above his palm and glowed a bright, blue light. Red lifted his head up to look at the charm.</p><p>At Kumalon Castle, the charm in Tetras' hand floated above her palm. Vio opened his eyes and saw the floating charm. It glowed a bright, blue light and Vio quickly reached for Shadow's hand on his shoulder and clutched onto it.</p><p>Tetra, Green, Vio, Shadow and Blue could see Chibi Ganon and Red, who could also see them, through the charm. Vio sat up, clutching Shadows' hand with both of his.</p><p>"You fools!" Chibi Ganon said to them, "You really thought you could trick me? How pathetic!"</p><p>Chibi Ganon smirked. He waved his hand at Red and then at Tetra, who he could see, and then he clicked his fingers. Just then, Red and Tetras' clothes, hair and atire switched back to normal.</p><p>"Now!" Chibi Ganon yelled, "Tetra must come here alone! You disagree..."</p><p>Chibi Ganon pointed his swords at Red, touching his wounds on his face slightly.</p><p>"...And your little friend here won't see the light of day again!"</p><p>As Chibi Ganon was speaking, Shadow was staring at Red. Shadow mouthed "Get the charm away from him" at Red. Red nodded at Shadow and slowly got up to his feet. He picked up his sword and withdrew it back in its' case. Red pounced and grabbed the charm from Chibi Ganons' hand. The glowing stopped from both charms. Red stamped on Chibi Ganons' feet and poked his eyes. Red then ran for it out of the cave.</p>
-<a href="Chapter 10.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 12.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 10.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 12.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

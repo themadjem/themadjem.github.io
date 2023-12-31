@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 18</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 18: The Fall into the Dark Mirror</b></u></p><p>Shadow lifted his head and saw two castle gaurds holding the swords. Links' Father stepped infront of him.</p><p>"What do we have here?" he asked.</p><p>Two other gaurds forced Shadow up to his feet by his shoulders.</p><p>"It's one of Ganondorfs' minions!" he pointed his sword at him, "You can't fool me again!"</p><p>The four Links slowly opened their eyes and they looked up.</p><p>"What's going on?" Green asked.</p><p>They got up to their feet.</p><p>"Huh! Hey! Dad! Stop!" Green said to him, "What are you doing! He helped us beat Gufuu! Remember!"</p><p>Green reached forward but two other gaurds blocked them with their swords.</p><p>"We can't take any chances! He could've helped destroy Gufuu just to take Hyrule for his own!" he said to Green."Take him to the basement." he said to the gaurds. He turned to the other four Links, "You four stay up here."</p><p>Several gaurds lead Shadow down a spiral of stairs and into the room below. Links' Father went down behind them.</p><p>"We have to follow them." Green said to the others.</p><p>They followed them down but got stopped at the entrance by two more gaurds with their swords.</p><p>There were several gaurds stood round the room. A gaurd was holding Shadow by his shoulders infront of the big, black tile on the floor. Links' Father was standing at the side of it.</p><p>He held his hand out at it and a dark wave came out of it. It went down and the dark mirror rose up from the darkness.</p><p>Shadow leaned back and his eyes shrank, "N-no! You can't!"</p><p>"Quiet you!" the gaurd behind him said, "You have no say in this!"</p><p>Links' Father raised his arm slightly, "Now! Go back to where you belong!"</p><p>A dark spiral appeared in the mirror and edged out of it slightly.</p><p>"No! Dad! Why won't you listen to me!" Green yelled.</p><p>"Now! Push him in!" Links' Father yelled.</p><p>"Noooo!" Vio yelled out.</p><p>He ran under the sword and ran to Shadow. He pushed Shadow away just as the gaurd pushed him, which caused Vio to be pushed into the mirror. Shadow fell to the floor and reached for Vio.</p><p>"Vio! No!" he yelled.</p><p>Vio reached for Shadow and got sucked into the mirror. When he disappeared into the mirror, it lowered back into the darkness, which then disappeared.</p><p>"Vio..." Shadow quickly stood up and drew his sword, "Where is he?"</p><p>All the gaurds then pointed their swords at Shadow. Shadow stepped back from all the swords pointing at him.</p><p>Green, Red and Blue then drew their weapons.</p><p>"Where is he?" Green asked.</p><p>Links' Father turned to him and pointed at Shadow, "He's gone to wherever Shadow Link came here from in the first place."</p><p>"OK.." Green said.</p><p>He brought his boomerang back and Red set it alight with his Fire Rod. Green threw his boomerang and all the gaurds ducked as the firery boomerang flew around the room.</p><p>"Come on!" Green said to Shadow.</p><p>Shadow withdrew his sword and ran to the others. Blue and Red withdrew their weapons and ran up the stairs, Shadow ran behind them. Green caught his boomerang, which the fire had blown off of, and he withdrew his boomerang and sword. He ran up the stairs behind the others.</p><p>They all ran out the castle and Shadow lead them north. They were running under a small forest of trees.</p><p>"He's in the Tower of Fire, up Death Mountain. That's where I came from." Shadow said to the others.</p><p>They ran out of the shade and into the sunlight.</p><p>Shadow suddenly stopped, "...I didn't...disappear?"</p><p>"Wow! Check it out!" Red pointed at the ground, "Look!"</p><p>Shadow turned round, "A...a shadow?" he smiled, "Of course! I beat my demon, my darkness! He was the one who did all that destruction to the castle. I am part of the light now!"</p><p>The others all smiled.</p><p>Green stepped forward, "Come on! We can't waste time! We gotta save Vio!"</p><p>They all ran north, to Death Mountain.</p>
-<a href="Chapter 17.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 19.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 17.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 19.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

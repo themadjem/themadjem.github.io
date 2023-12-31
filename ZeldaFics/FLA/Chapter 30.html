@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 30</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 30: Spec and Talin</b></u></p><p>"What?" Shadow was confused, "..Vio?"</p><p>"Yeah, I open my eyes and I just see nothing.."</p><p>"Don't worry, Vio. I'm here for you.."</p><p>Shadow took off his and Vios' belts and fastened them together.</p><p>"Shadow, what are you doing?" Vio asked.</p><p>"I'm putting our belts together." Shadow said, "I'll strap you to my back so I can carry you. You need my help."</p><p>"Shadow.."</p><p>Vio was strapped onto Shadows' back and he had his arms over Shadows' shoulders to hold himself on. Shadow held Vio on and ran out the cave.</p><p>He looked around, "Come on! There's gotta be an end to this place!"</p><p>He looked to his left and saw some pine trees, not far in the distance. Behind them was a high cliff, which Shadow could see some grass and the tips of some pine trees at the top.</p><p>Shadow ran to and through the trees and got to the cliff.</p><p>He looked up, "Hold on, Vio. I'm gonna climb up this cliff-side."</p><p>"OK." Vio held on tighter to Shadow.</p><p>Shadow started climbing up the cliff-side, one move at a time. He kept on looking up, concentrating on his target. The blizzard wind kept getting stronger, but Shadow gripped on tightly so he didn't slip off.</p><p>Shadow eventually got to the top and climbed over. He lay on his front and panted.</p><p>"Are we at the top?" Vio asked.</p><p>"Yeah.." Shadow panted.</p><p>"What's it like?"</p><p>Shadow looked up, "There's some trees, but not too many. There's snow on the ground and some grass shows through. It's only snowing really lightly." Shadow sat up slightly, "There's a small village through the trees! There's gotta be somebody who can help!"</p><p>Shadow stood up, still holding Vio on his back. He walked through the trees and into the village. The ground was covered in snow, with some grass poking through. Shadow went down a road with small, wooden houses on both sides. Some of them had a supply of fire wood infront of them.</p><p>There were a few villagers walking around, all with thick coats and hats on. They were watching Shadow walk by, in worry.</p><p>Shadow was looking at all the houses he passed by. He stopped and turned to one.</p><p>"Aah! This is perfect, Vio! It says it's for eye care!" Shadow said.</p><p>He walked up to the door and then noticed the sign.</p><p>"What! 'Closed on Sundays'?" Shadow then kept knocking on the door, "Hello? Is anyone in? Please! This is an emergency!"</p><p>The door opened, Shadow stopped knocking and looked up.</p><p>An old-ish man in his sixties, with thick, grey hair, moustache and beard, was standing at the door. He was wearing a dark blue shirt with a brown jacket, brown trousers and black shoes.</p><p>"Hmm..? Who's there?" the man then looked down, "Huh!"</p><p>Shadow panted, "Please..can you help Vio...sir?"</p><p>"My goodness! This looks desperate!" the man lead them in, "Please, come in!"</p><p>"Thankyou." Shadow walked in with Vio on his back.</p><p>The man closed the door behind them.</p><p>Shadow was sitting on a seat, in the warm, clean waiting room and his stomach wound was bandaged up.</p><p>He heard the door open and his head perked up.</p><p>The man came out from the operating room and was leading Vio out. Vio had a bandage wrapped round his head, over his eyes, and he also had a bandage on his chest. Shadow stood up and put his arms round Vio when he came to him.</p><p>"Sir! Do you know why Vio became blind?" Shadow asked the man.</p><p>He smiled, "Heheh, you don't need to call me 'sir' all the time. Call me Spec."</p><p>Shadow nodded, "OK, Spec."</p><p>Spec held up an x-ray of the side of a skull with the brain.</p><p>"I looked at Vios' x-ray. It seems that something went through his skull and greatly damaged the occipital lobe of the brain, that enables him to see and read."</p><p>"I remember." Vio said, "About half an hour ago, when I got shot, my head must've hit a really pointy rock which went in the back of my head. After that, I opened my eyes and it was like my eyes were still closed."</p><p>Spec nodded, "Yes, and you became blind. Which is why your eyes looked grey."</p><p>"Spec! Will Vio be OK?" Shadow panicked.</p><p>"Heheh, don't worry, Shadow." Spec said, "I did an operation on his brain. I'm specially skilled at things like that, so don't worry. I've fixed his occipital lobe and his skull, and I also had to do some things to his eyes, so they'll return to how they normally looked. Just leave that bandage on him and you can remove it at 9 am tomorrow morning." Spec smiled, "I fixed his chest wound too."</p><p>"Aah, what a relief.." Shadow then looked down to the ground.</p><p>"Hmm? Something wrong?" Spec asked him.</p><p>Shadow looked up, "Well, it's just..we got seperated from our friends in a tornado. We have no idea where they are or how they're doing. We can't think of any way to reach them.."</p><p>"Hmm, what do they look like?" Spec asked.</p><p>"They all have blonde hair in the style of mine and Vios'. They're wearing the same clothes as us except in green, blue and red. Their names are also Green, Blue and Red, heheh."</p><p>"Hmm, I see." Spec then whistled, "Oh, Talin!"</p><p>A young voice came from another room, "Coming Spec!"</p><p>A dark blue fairy came flying in from another room.</p><p>"You called?" the fairy asked.</p><p>"Ah! You came!" Spec smiled, "Guys, this is my fairy, Talin."</p><p>"Wow.." Shadow said.</p><p>"Talin, could you do a very important job for me, please?" Spec asked.</p><p>"Of course! What is it?" Talin replied.</p><p>"You need to find three kids that look like Shadow and Vio, here. They have blonde hair and there are three of them. One is wearing green, one in red and one in blue. They could be pretty far away from here though."</p><p>"Don't worry! I'll find them in no time! Just leave it to me! I'll be right back!"</p><p>Talin twirled around in a circle and then disappeared.</p><p>"Will Talin really bring our friends to us?" Shadow asked.</p><p>"Yep." Spec smiled, "Talin will transport them somewhere outside. Probably outside this house. Your friends will be here very soon."</p><p>"Aah! Thankyou very much, Spec!" Shadow said.</p><p>Greens' head perked up as Talin appeared infront of him.</p><p>"Wha?"</p><p>Talin flew around Green and transported him.</p><p>Talin then appeared infront of Red.</p><p>"Blue, look! A fairy!" Red said.</p><p>"Huh?" Blue turned his head.</p><p>Talin flew around Blue and Red and transported them both.</p><p>Talin, Green, Blue and Red all appeared outside, near the eye care house.</p><p>"Blue! Red!" Green was delighted.</p><p>"Green!" Blue and Red said.</p><p>Red hugged Green, "Yay! You're alright!"</p><p>"So are you." Green smiled.</p><p>"But, where are Shadow and Vio?" Blue asked.</p><p>"Thankyou! Thankyou so much, Spec!" Shadow said.</p><p>"You were a big help. We're really grateful." Vio said.</p><p>"Heheh, it was no problem. Come back any time!" Spec said.</p><p>Shadow opened the door and led Vio out. Talin flew in and Shadow closed the door behind him.</p><p>Shadow turned round, "..guys!"</p><p>The others turned their heads, "Shadow! Vio!"</p><p>They ran to Shadow and Vio.</p><p>Red gasped, "What happened to you, Vio?"</p><p>"I lost my sight." Vio said, "But I'll be able to see again tomorrow morning."</p><p>Red sighed, "That's a relief."</p><p>"I guess it's a good idea to stay here 'till tomorrow morning. This place looks a good place to rest." Green said.</p><p>Vio perked up, "Guys! Are all your wounds OK?"</p><p>"Don't worry, Vio. We're fine." Green said.</p><p>"Blue! Are you-?" Vio panicked.</p><p>"It's completely healed, no need to worry, Vio." Blue replied.</p><p>"You sure?" Vio then sighed in relief.</p><p>"Come on." Green stepped forward, "Let's look around!"</p>
-<a href="Chapter 29.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 31.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 29.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 31.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

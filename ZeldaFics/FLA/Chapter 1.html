@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 1</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
-<body><div><b>Five Links' Adventures</b></u> <i>(Part 1 of 3)</i></p><p><u><b>Chapter 1: Back to the Shrine</b></u></p><p>Hyrule, a peaceful place where the Princess Zelda lives. This place has had no harm to it since Gufuu was defeated by the five Links. The Four Sword is once again resting in its shrine, pulled out, it unseals the great darkness of evil. If taken out again, who knows how strong it will be, and if the legendary, left-handed hero, Link, can stop it again.</p><p>Although peaceful, Hyrule occasionally gets attacked by pirates and monsters, but they're nothing the hero, Link, can't handle. As he does on a normal day, he was patrolling outside Hyrule for any monsters ready to invade. It was as green as it was in the castle gardens. There were lots of low trees, but they were much higher than Link, so he was mostly in the shade. Link was just strolling around, relaxed with his hands resting behind his head.</p><p>He was singing a small song to himself, "Patrolling! Patrolling! Patrolling outside Hyrule! Patrolling! Patrolling! Searching for monsters to slice! Patrolling! Patrolling! Just singing to myself! Patrolling! Patrolling! Singing to myself alone..."</p><p>Link paused. He faced down to the ground and his hands dropped to his sides.</p><p>"I miss those guys. It's much better being four, plus we're stronger like that."</p><p>Link perked his head up.</p><p>"We didn't have to put the sword back in the shrine. I mean, we defeated Gufuu, so there would be no evil to seal, right?"</p><p>Link looked around for anyone.</p><p>"Well, I guess I should look around for any monsters attacking the Four Sword! Eheheheh..."</p><p>He then ran off, to the shrine.</p><p>No one saw Link run to the shrine. He had the resting sword in sight and walked toward it. He reached his hand out for the sword, and then halted his hand.</p><p>"Wait a minute, this might unleash some sort of stronger evil...but we can just defeat it right? Although, Dad might be put in danger again, and that was really scary."</p><p>Link dropped his hand down, stepped back and sighed.</p><p>"Maybe it's a bad idea.."</p><p>He turned around and started to walk away.</p><p>Suddenly, there was a rumble coming from the ground. Link almost lost his balance.</p><p>"Wha...What's going on!"</p><p>A giant rock snake burst out of the ground, right infront of Link. It was blocking Links' only route out of the shrine. The snake was made out of large rocks, it had three heads and three tails, all connected to one huge rocky body at either end. Its' tails and heads were also covered in a rocky layer. Link stumbled back in fright. He got up and drew his sword.</p><p>He tried to search for a weak point but couldn't see anything effective. All of a sudden, one of the tails wrapped around him from behind in an instant. It squeezed Link and brought him up to the snakes' heads. Links' sword dropped out of his hand, and then got crushed by a single slam of one of the rocky tails. Link turned his head and looked at the crushed sword.</p><p>"The Four Sword.."</p><p>He looked at it resting in the shrine.</p><p>"It's my only choice!" Link thought.</p><p>The snake threw Link at the wall, and he fell to the ground. He got to his feet and reached for the sword. He gripped it, pulled it out and was split into four.</p>
-<span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 2.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
+<body><div><b>Five Links' Adventures</b></u> <i>(Part 1 of 3)</i></p><p><sub> By: LittlePidgey</sub></p><p><u><b>Chapter 1: Back to the Shrine</b></u></p><p>Hyrule, a peaceful place where the Princess Zelda lives. This place has had no harm to it since Gufuu was defeated by the five Links. The Four Sword is once again resting in its shrine, pulled out, it unseals the great darkness of evil. If taken out again, who knows how strong it will be, and if the legendary, left-handed hero, Link, can stop it again.</p><p>Although peaceful, Hyrule occasionally gets attacked by pirates and monsters, but they're nothing the hero, Link, can't handle. As he does on a normal day, he was patrolling outside Hyrule for any monsters ready to invade. It was as green as it was in the castle gardens. There were lots of low trees, but they were much higher than Link, so he was mostly in the shade. Link was just strolling around, relaxed with his hands resting behind his head.</p><p>He was singing a small song to himself, "Patrolling! Patrolling! Patrolling outside Hyrule! Patrolling! Patrolling! Searching for monsters to slice! Patrolling! Patrolling! Just singing to myself! Patrolling! Patrolling! Singing to myself alone..."</p><p>Link paused. He faced down to the ground and his hands dropped to his sides.</p><p>"I miss those guys. It's much better being four, plus we're stronger like that."</p><p>Link perked his head up.</p><p>"We didn't have to put the sword back in the shrine. I mean, we defeated Gufuu, so there would be no evil to seal, right?"</p><p>Link looked around for anyone.</p><p>"Well, I guess I should look around for any monsters attacking the Four Sword! Eheheheh..."</p><p>He then ran off, to the shrine.</p><p>No one saw Link run to the shrine. He had the resting sword in sight and walked toward it. He reached his hand out for the sword, and then halted his hand.</p><p>"Wait a minute, this might unleash some sort of stronger evil...but we can just defeat it right? Although, Dad might be put in danger again, and that was really scary."</p><p>Link dropped his hand down, stepped back and sighed.</p><p>"Maybe it's a bad idea.."</p><p>He turned around and started to walk away.</p><p>Suddenly, there was a rumble coming from the ground. Link almost lost his balance.</p><p>"Wha...What's going on!"</p><p>A giant rock snake burst out of the ground, right infront of Link. It was blocking Links' only route out of the shrine. The snake was made out of large rocks, it had three heads and three tails, all connected to one huge rocky body at either end. Its' tails and heads were also covered in a rocky layer. Link stumbled back in fright. He got up and drew his sword.</p><p>He tried to search for a weak point but couldn't see anything effective. All of a sudden, one of the tails wrapped around him from behind in an instant. It squeezed Link and brought him up to the snakes' heads. Links' sword dropped out of his hand, and then got crushed by a single slam of one of the rocky tails. Link turned his head and looked at the crushed sword.</p><p>"The Four Sword.."</p><p>He looked at it resting in the shrine.</p><p>"It's my only choice!" Link thought.</p><p>The snake threw Link at the wall, and he fell to the ground. He got to his feet and reached for the sword. He gripped it, pulled it out and was split into four.</p>
+<span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 2.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

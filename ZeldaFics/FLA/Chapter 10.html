@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 10</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 10: Telling the Story to Tetra</b></u></p><p>"Hurry up!" Chibi Ganon yelled, "Or I'll destroy this village with you in it!"</p><p>Red walked out of the castle.</p><p>"Don't worry, you can do this." Red said to himself, "Just act like Tetra would."</p><p>Red walked to Chibi Ganon.</p><p>"OK, I'm here." Red said to him.</p><p>"Good." Chibi Ganon smirked, "Get in, we'll go to my place."</p><p>Chibi Ganon jumped into his hovercar.</p><p>"OK." Red walked round to the other side and got in.</p><p>The car drove off and Red held the part of his hair over the sword strap to hide it from Chibi Ganon.</p><p>Back at Kumalon Castle, Tetra and the other four Links were in the large Living Room. They were sitting on two red sofas, either side of a long, brown coffee table. Tetra and Blue were sitting on one side, Green, Shadow and Vio on the other. They all had cups of tea infront of them on the table. Shadow was sitting inbetween Green and Vio, who was reading his book.</p><p>"So, why do all five of you look so alike?" Tetra asked, "Are you brothers or something?"</p><p>"Not really brothers.." Green said, "I was originally just the one hero, Link. Then I pulled out the Four Sword and I was split into four; Blue, Red, Vio and me. But pulling out the Four Sword also broke the seal which released Gufuu the Sorcerer and Shadow Link here."</p><p>Green put his hand on Shadows' shoulder.</p><p>"He helped us beat Gufuu but his wish to become a hero made him disappear. I had to return the Four Sword to its' resting place but I pulled it back out again a couple of days later because...I had to. Vio revived Shadow, and we're gonna help him fulfill his wish to become a hero."</p><p>Shadows' head perked up and he looked at Green.</p><p>"Wow." Tetra said, "You guys sure have been through a lot."</p><p>"Yeah." Green said, "Thing is, the shrine got smashed when the sword was pulled out the second time so I guess we're like this for good."</p><p>"That's great! It's nice to have friends around you." Tetra smiled, "But pulling it out again and getting smashed, did that break another kind of seal?"</p><p>"We...don't know yet." Green replied.</p><p>Vio put his hand over his mouth and yawned. He dropped his book on his lap, his head fell into Shadows' lap and he fell asleep. Shadow was a bit shocked but then he rested his hands on Vios' shoulder and head, and he stroked his hair gently.</p><p>"Huh? Is he alright?" Tetra asked.</p><p>"Uuuuh...I guess he didn't get much sleep last night, eheheheheheh..." Shadow nervously said, blushing.</p><p>Tetra picked up the charm in her hand and looked at it.</p><p>"Hm? What's wrong?" Green asked her.</p><p>"Oh, it's nothing. It's just that...this seems familiar to me." Tetra replied.</p>
-<a href="Chapter 9.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 11.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 9.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 11.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

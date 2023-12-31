@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 21</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 21: The Evil Vio</b></u></p><p>They walked through the cave which gradually got darker and darker, and then pitch-black. They heard a growl and stopped.</p><p>"Anyone hear that?" Green asked.</p><p>Shadow clicked and a flame of light appeared on his finger. A whole bunch of cyclops were right infront of them.</p><p>"Waaaaahh!" they all yelled.</p><p>"I'm not scared!" Blue stepped forward and drew his sword, "Hyaaah!", He swung his sword at the cyclops but it just bounced off it like rubber, "The hell?" Blue asked.</p><p>"There's no force, Blue! The cyclops are too high a level!" Green said to him.</p><p>"Oh crap.." Blue withdrew his sword.</p><p>The cyclops roared and became ready to attack.</p><p>"WAAAAAHH!" the four Links legged it through the cyclops' legs and through the cave.</p><p>They came out the other side to the Tower of Fire infront of them. They stopped and panted to catch their breath.</p><p>"That was a close one.." Green said.</p><p>"Thank goodness they're idiots, or they would've followed us." Shadow said.</p><p>The Tower of Fire was very tall, with several windows on the walls and a moat of lava around it. Including the basement, it had eight floors. There was a staircase going around it which lead from the front, where they were. The main entrance to the tower was round the back.</p><p>"So, you finally made it." Vio was sitting on the balcony ledge, one floor below the top. He was leaning his hands on the ledge he was on, with the Wind Waker under one hand.</p><p>"Vio!" Shadow said.</p><p>"What the hell are you doing, Vio?" Green asked him.</p><p>"Hm Hm Hm...Why, I'm back to my real self. I'm much better on the dark side now." Vio said to them.</p><p>"Heheheh! No way! He's just trying to trick someone he's with up there! He's not on the dark side, right?" Red uncomfortably said.</p><p>"Who's there to trick? It's just me up here. I don't need any allies. Especially not you low-leveled idiots."</p><p>"Why, you.." Blue pointed to Vio, "Hang on! Remember when you said you couldn't throw away the hero in yourself! Remember that!"</p><p>"Hmmm.." Vio shrugged, "I guess that was a lie.."</p><p>"No!" Shadow said, "You'd never do something like this!" he yelled out.</p><p>"Fine, I'll proove it to you.." Vio brought one leg back to balance himself and left the Wind Waker on the ledge. He drew and aimed his bow and arrow at them, "If I miss, then I'm obviously not part of darkness.." he aimed at Shadows' neck, "Hm Hm.."</p><p>He fired the arrow which shot straight down at lightning speed. Shadow tried to dodge it to the left but it scratched the right side of his neck. Shadow fell to his knees on the ground and covered his wound with his hands.</p><p>"Shadow!" Green held onto his shoulders.</p><p>"I'm OK.." Shadow said, "It didn't go through too deep."</p><p>"I'm sorry my aim was a little off.." Vio withdrew his bow and picked up the Wind Waker, "It's not so good at a long distance."</p><p>Blue looked up to Vio, "You bastard!" he yelled to him.</p><p>"Hm Hm Hm.." Vio turned round to go in, but then stopped and pulled out his book, "Hmm? 'World Legends'?" he smirked, "Won't be needing this anymore.." he threw it over his shoulder and walked in.</p><p>"No!" the four Links watched it fall.</p><p>Red got out his rod, "Ice Rod!" he dived to the ground and shot ice out of his rod.</p><p>The ice made a bridge which went from infront of Red to the wall of the tower. The book fell onto it and slid down to Red.</p><p>Red withdrew his rod, picked up the book and smiled, "Got it!"</p><p>Shadow uncovered his wound and it bled slightly. He stood up and walked to Red.</p><p>He took the book from him and flicked through it, "That rod Vio had, I think I know of it.." he flicked through and then got to the right page, "Ah, the 'Wind Waker.' It says 'This tool was created by the darkness to possess whoever comes across it. When possessed they become one of the darkness.' So Vio's..."</p><p>Green put his hand on Shadows' shoulder, "Come on Shadow! We can't loose hope!"</p><p>"How do we know he's possessed?" Red asked.</p><p>"His face and eyes looked different, and his voice sounded darker." Shadow replied.</p><p>"There's gotta be a way to snap him out of it!" Blue said, "What are we doing just standing here!"</p><p>"We should split up." Green said, he pointed at Blue, "You and Red can go up those stairs round the outside and see if he's at the top. Me and Shadow will go up from the inside. That way, we can sneak up at him from two sides. Agreed?"</p><p>"Agreed." they all said.</p><p>Red and Blue started running up the stairs at the front. Shadow and Green ran round the tower to the back. Shadow was clutching onto Vios' book.</p>
-<a href="Chapter 20.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 22.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 20.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 22.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

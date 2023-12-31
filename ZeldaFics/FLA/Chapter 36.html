@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 36</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 36: Cat Trouble</b></u></p><p>It was the next morning. Green was facing Vio outside. He was unravelling the bandages off of Vios' head.</p><p>Green smiled, "OK. It's all off."</p><p>Vio slowly opened his eyes and his face lightened up, "Ah, Green! I can see you! Uh, are Shadow, Red and Blue not back yet?"</p><p>"No, not yet. I bet they're probably sleeping though. I heard the Helmaroc King cry out last night so maybe they were fighting that thing all night."</p><p>"Hmm, I hope they're OK.."</p><p>"I'm sure they are." Green smiled, "We're part of Link the hero after all."</p><p>Vio nodded, "Yeah.."</p><p>They paused and then both drew out their swords in the blink of an eye.</p><p>"Swords only fight! Agreed?" Green said.</p><p>"Fine with me!" Vio swung his sword at Green first.</p><p>Green blocked Vios' attack, "1 force!"</p><p>They kept swinging and blocking their swords at each other with fast play. The villagers could hear the sounds of the swords chinging against each other. They walked past Vio and Green and watched in amazement. Several children gathered round them and cheered for their favourite colour.</p><p>"Go green!"</p><p>"Purple! Purple!"</p><p>"No, stupid! It's violet!"</p><p>"No way! He's wearing indigo!"</p><p>"Yay! Green's the best!"</p><p>Green and Vio swung their swords at each other and both blocked each others' attacks. They both stared at each other, smirking.</p><p>"We've gathered quite a crowd." Green said.</p><p>"You wouldn't want to slip up now, would you?" Vio edged Green back slightly.</p><p>"Yeah, you better be careful, Vio!" Green then stamped on Vios' foot.</p><p>"Yeeooow!" Vio held onto his foot and hopped back. He looked up at Green, "Dirty trick! You know that's my weak point!"</p><p>"Wahaha! Third time's the charm!" Green laughed.</p><p>"Hang on! You said swords only!"</p><p>Green shook his finger at Vio, "Nah, all's fair in love and war."</p><p>"Grrr...you!" Vio ran at Green and swung his sword at him.</p><p>Green blocked Vios' attack, "72 force!"</p><p>They carried on their sword play and the crowd of kids kept cheering.</p><p>"Well, we gotta get back to our friends." Shadow said.</p><p>"Alright, thankyou guys again." Andréa smiled.</p><p>Red, Blue and Shadow walked up, through the trees. Red stopped and turned to Andréa.</p><p>He waved, "Bye, Andréa! Good luck on your new farm!"</p><p>Andréa smiled, "Good luck on your journey. Stay safe, OK?"</p><p>Red nodded, "We will. Bye, Azul! I hope we see you guys again!"</p><p>Azul waved his wings at Red and Andréa smiled.</p><p>"Red, come on!" Blue yelled out.</p><p>Him and Shadow were at the entrance of the icey cave.</p><p>"We gotta get back to Green and Vio! They're waiting!" Shadow yelled out.</p><p>"OK." Red waved to Andréa, then turned round and ran to Shadow and Blue.</p><p>Blue and Shadow were walking through the icey cave. Red was walking a ways behind them.</p><p>Red suddenly heard a meow and stopped. He looked down to the left of him and saw a small, black cat, cleaning its' face. Red knelt down behind it and the cat turned its' head at him. It had big, cute eyes and had a diamond shape of its' forehead.</p><p>"Aaaw, what a cute kitty!" Red stroked its' head.</p><p>The cat meowed and the diamond on its' head glowed slightly. A faint aroma came from its' tail and drifted up to Reds' nose. Red smelled the scent without notice.</p><p>The cat then ran away from Red.</p><p>"Uh, wait! Come back!" Red reached for it.</p><p>Red got up to his feet and ran after the cat. The cat ran up on ledges on the wall and went through a small tunnel, only big enough for itself.</p><p>Red ran up to it and gracefully jumped up and hung onto the ledge of the tunnel.</p><p>"Aw, man. It went away." Red jumped back down.</p><p>"Red! Hurry up!" Blue shouted.</p><p>"Coming!" Red ran out of the cave.</p><p>Red ran past Shadow and Blue who were walking. Red then slowed down to a walk five metres infront of them.</p><p>"Red, what were you up to back there?" Blue asked.</p><p>"Oh, nothing. Just playing with a cat." Red said.</p><p>"Fine, fine." Blue said.</p><p>Just then, a long, brown cats' tail grew from under Reds' tunic.</p><p>"Huh!" Blue and Shadow looked at it in confusion.</p><p>Brown cat ears then popped up on Reds' head.</p><p>"Uuh, Blue. Did Red just grow a tail and ears?" Shadow asked.</p><p>"Either that or we're both going crazy." Blue replied.</p><p>Red then turned his head round at Blue and Shadow and smiled. Red had grown cats' whiskers, nose and teeth.</p><p>"Waaah!" Blue and Shadow were shocked.</p><p>"Huh? Guys, what's wrong?" Red asked.</p><p>"Um, Red. Are you OK?" Shadow asked.</p><p>"I'm completely fine, why'd you ask?" Red replied.</p><p>"Uh, no reason.." Shadow said.</p><p>"That cat, Red." Blue said, "There wasn't anything strange about it, was there?"</p><p>"Nah, except it had a diamond shape on its' head." Red explained, "And it was really cute!"</p><p>"Oh, great.." Blue commented.</p><p>Red, still looking back at Blue and Shadow, suddenly fell down the cliff which slid down to the snowy wasteland.</p><p>"Red!" Blue and Shadow then ran to the cliff.</p><p>"Don't worry, maybe he'll land on his feet." Shadow suggested.</p><p>"Shut up!" Blue replied.</p><p>They ran to the edge of the cliff and slid down it to Red.</p><p>"Red, you OK?" Blue asked.</p><p>Red smiled, "Yeah."</p><p>"Uh, Red.." Shadow grabbed Reds' wrist and lead him to a nearby icey lake, "You should take a look at yourself."</p><p>"Why?" Red looked down at his reflection, "Waah! What the-?" He felt his face and ears, "I have a..."</p><p>"Don't forget this." Blue grabbed onto Reds' tail.</p><p>"Yeowch!" Red snatched his tail from Blue, "Don't grab my...tail!"</p><p>Red started panicking, "Uwaah! What's happening to me! I'm scared guys! Waah!"</p><p>"Calm down, Red. We'll find a way through this!" Shadow tried to calm him down.</p><p>"This must've been the work of that cat you mentioned earlier." Blue said.</p><p>"What are we gonna do?" Shadow asked.</p><p>Reds' head perked up, "I know! Vios' book! That always has all the answers about stuff!"</p><p>"Guess we'll have to give it a shot." Blue said.</p><p>"Come on! Let's hurry!" Shadow stood up.</p><p>"Yeah!" Red stood up.</p><p>Red ran to Snow Peak and Blue and Shadow ran behind him.</p><p>"Red? You're turning into a cat!" Green and Vio were shocked and confused.</p><p>"Yeah! I know! But maybe your book knows how to fix me!" Red panicked.</p><p>"OK, OK.." Vio opened his book and flicked through it.</p><p>"We think this was the work of this small, black, cute cat I saw." Red explained.</p><p>"Ah, this should be it.." Vio turned to a page with a picture of two small, black cats with a diamond shape on their heads, "They're called 'Koori Neko' and they live in icey climates. 'When appoached by strangers, the diamond on their head glows which emits a faint aroma from their tail. When a human smells this scent they will then gradually turn into a Koori Neko within one hour.'"</p><p>"Oh no! I don't wanna be a Koori Neko for the rest of my life!" Red panicked, "Is there any way to stop it?"</p><p>"Well, it says there's only one way." Vio read, "It says that not too far east of Snow Peak is a lake that is the only way to cure the transformation."</p><p>"Alright-nya!" Red cheered, "Let's head nya!"</p><p>"Huh!" The others looked at Red in confusion.</p><p>"Nya?" Red perked up, "Nya, nya, nya, nya. Nya, nya, nyaaaa!" he started crying.</p><p>"Uwaah! Red!" Blue tried comforting him.</p><p>"Oh, crap. He can only speak cat now!" Vio said.</p><p>"Come on! We better get going to that lake!" Green said.</p><p>"Right!" They all nodded.</p><p>They started running east from Snow Peak.</p><p>As they ran out the village, they ran past Spec and Talin.</p><p>"Shadow! Vio! You leaving so soon?" Spec asked them.</p><p>Vio and Shadow stopped and turned round.</p><p>Shadow waved, "Yeah, we're kinda in an emergency. Vio, this is Spec and his fairy, Talin."</p><p>Vio smiled, "Ah! Thankyou so much Spec. I can see just fine now."</p><p>Spec smiled, "That's great to hear. Be sure to visit us again."</p><p>Vio waved, "I hope we do! Bye!"</p><p>Vio and Shadow then turned round and ran behind the others.</p><p>Green, Red and Blue were running down the side of a tall hill. Vio and Shadow were still running on the top.</p><p>Vio stopped and looked at the ground.</p><p>He thought back to when him and Spec where in the operating room, after the operation.</p><p>"Tell me, Vio. How on earth did you get shot?" Spec asked.</p><p>"Shadow and me were trapped by a huge shadow ghost in a cave. It shot a bullet at Shadow and I pushed him out the way to sacrifice myself for him. Shadow...means everything to me." Vio explained, "...but..I'm not entirely sure if he knows how I feel.."</p><p>Spec smiled, "You should tell him. It'll only become harder if you keep waiting. Tell him how you feel tomorrow morning when you can see again."</p><p>Vio lifted his head and looked at Shadow, "..Shadow?"</p><p>Shadow stopped on the hill-top edge and turned his head to Vio, "Huh?"</p><p>"I...need to tell you something.."</p><p>"What is it?"</p><p>Vio started walking toward Shadow, still looking into his eyes.</p><p>Shadow turned to Vio, "Is something wrong, Vio?"</p><p>Vio stopped infront of Shadow. He placed his hands on Shadows' cheeks and pulled his head forward slightly. Vio then kissed Shadow on the lips. Shadows' eyes widened and he blushed.</p><p>Green turned his head round and stopped, "Guys, where are Vio and Shadow?"</p><p>Blue and Red stopped and turned round.</p><p>Red pointed up to Vio and Shadow, "Nya!"</p><p>Blue and Green looked up to them.</p><p>Green smiled, "Heheh. I knew there was something between those two."</p><p>Vio stopped kissing Shadow and stepped back. He kept his eyes closed and blushed slightly.</p><p>"Shadow, I..." he opened his eyes and was shaking slightly, "..love you.."</p><p>Shadow paused, "I love you too, Vio!"</p><p>Shadow put his arms around Vio and hugged him tight. Vio then put his arms around Shadow and they both laughed.</p><p>Blue looked at Red and blushed faintly. He then looked back up at Vio and Shadow.</p><p>"Vio! Shadow! Come on! We gotta go before Red gets worse!" Blue yelled to them.</p><p>Vio and Shadow took their arms off each other and Shadow turned to the others.</p><p>Vio held onto Shadows' hand and smiled, "Let's go!"</p><p>They both ran down the hill to the others together, holding each others' hand, laughing in delight.</p>
-<a href="Chapter 35.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 37.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 35.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 37.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

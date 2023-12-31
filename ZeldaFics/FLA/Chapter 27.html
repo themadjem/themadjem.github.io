@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 27</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 27: A Heros' Reason</b></u></p><p>Soapy water got splashed onto a small, square window. On one side of the upper-floor of the mansion was a large section of small, square windows, which were facing into Windfall Island.</p><p>Green was on a plank of wood infront of the windows, which was attached to the roof edge by two ropes, which Green could raise and lower.</p><p>Green was cleaning the windows with a bucket of soapy water and a sponge. He was wearing yellow rubber gloves and a small apron over his clothes. He also had a bandage over his stomach which could be seen through the rip in his clothes.</p><p>Green sighed, "Great, stuck to clean windows. Atleast he bandaged up my stomach wound. 'This doesn't mean I like you..' he said, 'But I don't want any blood stains on my precious windows!'" Green was cleaning the soapy water off with the sponge, "Just make a good job of this and you'll be let go to catch those kids."</p><p>Green wiped all the soapy water off the window and saw a snooty-looking girl, with brown hair and a posh-looking purple dress, looking at him.</p><p>"Aah!" Green edged back slightly.</p><p>The girl gave him an evil stare and then walked off.</p><p>Green carried on cleaning the windows, "Weird.."</p><p>"Hey, look! Here he is!" the four boys came from round a corner, to a ledge behind Green.</p><p>Green looked at their reflection in the window, "It's them again! The kids with my stuff!" he thought to himself.</p><p>"Ha ha ha! He's stuck cleaning windows!" Jan said, "Good one Jun!" he high-fived him.</p><p>Green carried on cleaning windows, "Soon Green, soon.." he said to himself.</p><p>Suddenly, his boomerang went flying into a window on his right, smashing it.</p><p>"Wah! What the-!"</p><p>The boomerang then flew out a window on his left, also smashing it.</p><p>"Daddy! That boy smashed the windows!" the girl yelled.</p><p>The man turned his head, "Hmm? What!" he stormed across to the windows, "What's the meaning of this!"</p><p>"It wasn't me!" Green pointed to the ledge behind him, "It was them!"</p><p>"What are you talking about? They're just having a picnic!"</p><p>Green turned his head and saw the boys had quickly changed themselves to sitting on a rug, drinking japanese tea.</p><p>"Wha? But.." Green turned his head back round and saw the man enraged at him, "Eep.."</p><p>The broken windows were covered with white sheets on the inside. Green was busy dusting the curtains, vacuuming the floor, polishing the banisters and tidying the whole place to perfection.</p><p>Green was eventually done, and was standing infront of the man, near the upstairs door.</p><p>"I'm done, sir." he panted, "Is it to your liking?"</p><p>The man looked around, "Hmm, you did a very good job. OK. You're let go."</p><p>Green threw the rubber gloves and apron into the mans' hands.</p><p>"Thankyou!" Green ran out the door.</p><p>Green ran across the bridge, which lead to the centre of town.</p><p>Green saw the Killer Bees there, "You!" he ran to them, "Give me my stuff!"</p><p>The boys turned their heads.</p><p>"Run!" Jan said.</p><p>They all legged it to the front of the island.</p><p>Green ran after them and lost sight of them, "Damn, lost them."</p><p>He ran up to the top of a cliff, which over-looked the sea.</p><p>He heard the boys laughing underneath him.</p><p>"Huh?" Green walked to the side and jumped off.</p><p>The boys were under the cliff, which had sand at the edge and shallow water leading to the sea.</p><p>Green walked in to corner them against the wall.</p><p>"Hey, can I have my stuff back?" he asked, "Please?"</p><p>"No way!" Jan said.</p><p>"If it's yours, proove it!" Jun said.</p><p>"Uh...Hmm...you know that hero in the legends, Link?"</p><p>"Yeah.."</p><p>"Well I'm him! I'm Link!"</p><p>"...I don't believe you." Ivan said.</p><p>Green sighed, "Look, hand me my sword, shield and hat and I'll proove it to you. I'll give them back if you still don't believe me."</p><p>"Fine.." Jan, Ivan and Jun handed him the sword, shield and hat.</p><p>Green strapped the sword on his back and put on his hat. He drew his sword and made a pose with his sword and shield.</p><p>"Waah! It is him!" Jun said.</p><p>"We're sorry, Mr. Link! Here!" Jin handed him back his boomerang.</p><p>Green re-equiped his things but Jan quickly snatched the sword from him.</p><p>He pointed the sword at Green, "No way! I wanna be the hero!"</p><p>"Kid, you don't understand.." Green said.</p><p>"Jan, just give it back." Jin said.</p><p>Green reached for the sword.</p><p>"Noo!" Jan slashed the sword at Green and it went through the bandage, over his wound.</p><p>Some blood spurted out into the water and onto the sword.</p><p>"Jan! No!" Jun said.</p><p>"Yaah!" Jan swung the sword at Green again and Green caught the blade with his hands.</p><p>"Kid, listen. You don't want to be the hero. The sword's not a toy. The whole thing's not a game. It's real life. It's sacrificing your own life for others."</p><p>Greens' stomach dripped out some blood. Jan loosened his grip on the sword and Green pulled it out of his hands. Green withdrew his sword and held his hand out at Jan.</p><p>He smiled, "Can I have my rupees back?"</p><p>Jan placed the sack of rupees in his hand.</p><p>The man heard a knock from his upstairs door.</p><p>"Hmm?" he walked to it and opened the door, "Huh? It's you.."</p><p>Green was at the door, looking up to the man. He was covering his stomach with his arms.</p><p>"Hey, mister. Can you bandage up my stomach again..please?"</p><p>Greens' stomach was bandaged up and he walked to the door.</p><p>"Oh yeah.." he stopped and turned round.</p><p>Green reached into the sack and pulled out some rupees.</p><p>He handed them to the man, "Here. 500 rupees. That should pay for the vase and the windows..I broke." he smiled, "See ya round!" Green ran out the door.</p><p>"Uuh. Thanks kid." the man said.</p><p>Green was sitting on the cliff, with the wind blowing through his hair and clothes.</p><p>He was looking up to the sky, "Now I just wait 'till the Four Sword resonates and tells me everyone's OK. I hope everyone's doing alright...and that they're alive..."</p>
-<a href="Chapter 26.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 28.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 26.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 28.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

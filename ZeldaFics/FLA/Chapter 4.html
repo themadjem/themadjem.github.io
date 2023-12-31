@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 4</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 4: The Re-Awakening of Shadow Link</b></u></p><p>Green, Red and Blue blinked in confusion at Vio.</p><p>"Nani?" Red asked.</p><p>"I don't understand. What do you mean?" asked Green.</p><p>"Well, remember when he helped us beat Gufuu, and when he stood up, he wanted to become a hero, right?" Vio explained, "Well, when he disappeared, his tears turned into stars of light..."</p><p>Vio reached into his top pocket, under his tunic. He pulled out his hand and there were some small stars of light floating in his hand.</p><p>"Well, I saved some."</p><p>"What!" The other three gasped.</p><p>"I think we should bring him back here, in this shade."</p><p>"Hang on." Green said, "Won't he just disappear again when he goes into the light?"</p><p>"He'll be alright this time." Vio said, "We'll help him."</p><p>"Huh?" Blue said, "How?"</p><p>"Well, for there to be a shadow, there has to be someone to make that shadow. The reason he disappeared is because we weren't supporting him, a shadow can't be in the light on its' own. So, we'll help Shadow become a hero, so he can walk on his own in the light."</p><p>"You're right." said Green, "Plus we can use Shadows' help. We'll be even stronger as five!"</p><p>"OK." Vio said.</p><p>Vio held his hand out with the small stars of light floating in it. Vio smiled and closed his eyes. The stars moved infront of him, out of his hand, and turned into a bright light. Vio opened his eyes and the bright light turned darker and darker until it was dark smoke. The smoke gradually formed Shadow Link. He was unconscious and fell to the ground. Vio knelt beside him and the others stepped closer.</p><p>Shadow slowly opened his eyes.</p><p>"Huh? Where am I?" Shadow asked. He lifted his head and looked at Vio, "Vio?"</p><p>Shadow slowly knelt up and looked around.</p><p>Vio smiled, "We brought you back."</p><p>"Wha?" Shadow was confused, "But why?"</p><p>"We're stronger as five, plus, you're one of us. You're part of Link, the hero."</p><p>"But, I can't." Shadow sighed, "I'll disappear when I step into the light."</p><p>Vio helped Shadow to his feet.</p><p>"Reach out to the light." Vio said.</p><p>"Hmmm?" Shadow was confused.</p><p>He reached his hand out of the shade. When it touched the light, his hand disappeared. Shadow quickly brought his hand back to the shade and it appeared again.</p><p>"See?" Shadow asked.</p><p>Vio held Shadows' hand and smiled.</p><p>"Now try."</p><p>Shadow reached out to the light again. His hand went into the light and was unharmed.</p><p>"Huh?" Shadow was confused.</p><p>He slowly stepped out of the shade and came into the light. Vio was behind him, and smiled.</p><p>"See?" Vio said, "As long as you're holding onto one of us, you'll be alright in the light. Until you're a hero, I think."</p><p>Shadow smiled back. "When that happens, I'll get my own shadow."</p><p>"Huh?" the others were confused.</p><p>They looked on the ground behind Shadow. Red pointed at the ground.</p><p>"He's right! He's got no shadow! Wow!" Red said in astonishment.</p><p>Green walked ahead of them and turned his head to the others.</p><p>"Come on! Let's go." said Green, "To Kumalon Village!"</p><p>"Yeah!" Red ran ahead.</p><p>Green ran after, then Blue. Vio and Shadow ran after them, still holding hands.</p>
-<a href="Chapter 3.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 5.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 3.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 5.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

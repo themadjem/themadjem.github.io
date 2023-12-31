@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 16</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 16: The Fight against the Demon</b></u></p><p>Shadow brought his sword up and swung it at the demons' chest. The demon held onto the sword infront of him when it came down with one hand. He pushed it back at Shadow and the sword hit him on his forehead, between his eyes. The wound bled but Shadow kept on fighting. He swung his sword at the demon left and right but he dodged the attacks easily. He reached for Shadow and he brought his shield infront of him. The demon grabbed his shield and lifted Shadow off the ground, who was hanging onto his sheild.</p><p>"You really think you can defeat me with that mere sword?" the demon asked.</p><p>Without giving Shadow a chance, he punched the right side of Shadows' face. He then quickly, deeply, scratched the left of Shadows' neck and chest. He then grabbed onto Shadows' left shoulder and looked into his eyes.</p><p>"You have no chance." the demon said, "You're just a mere shadow!"</p><p>He dug his sharp, claw-like nails into his shoulder. He ripped his skin and blood came spurting out. Shadow yelled in pain as he felt his hand dig in deeper. He pulled his bloody hand out and Shadow stopped screaming. He dropped his sword and became in the state of almost fainting.</p><p>The demon grinned and he quickly brought the shield up. Shadow let go of it which flung him into the air. He came back down and the demon kicked him in the stomach. As he did, he stuck his sharp, claw-like, toe-nails into his stomach and Shadow coughed out some blood. The kick propelled him away and the back of his head was the first to hit the ground. He slided back slightly which left a trail of blood from the back of his head, through his hat.</p><p>Shadow slowly sat up and held onto his stomach. The demon threw his shield at him. It bounced off Shadows' head which caused him to cough out some blood.</p><p>The demon flew up into the air, "Just give up now, it'll make your death much more quicker!"</p><p>Shadow looked up at him, "N...never..!"</p><p>The demon grinned, "Very well."</p><p>He shot strong darkness out of his hands at Shadow. It entirely covered him and he screamed in pain. The demon lifted him up from the ground with the darkness high into the air, just below his level. He then flung him to the ground behind him. Shadow landed on his front as he crashed into the ground.</p><p>He slowly opened his eyes and saw his Four Sword next to him. He got himself up on his knees and reached for the sword with his left hand. He clutched onto it and used it as an aid to get up to his feet. He held onto the sword with his other hand to keep hold of it. He looked up to the demon and turned to him.</p><p>"I won't let Hyrule be overtaken by the likes of you!" Shadow yelled to him.</p>
-<a href="Chapter 15.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 17.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 15.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 17.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

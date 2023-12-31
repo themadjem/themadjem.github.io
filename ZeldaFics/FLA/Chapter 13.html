@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 13</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 13: Time to Fight</b></u></p><p>Shadows' eyes widened as he watched the light come towards him. Just before the light came into his reach, Shadow quickly put his arms in a cross infront of him and a shield of darkness formed around him.</p><p>"Shadow!" Vio yelled.</p><p>Chibi Ganon grinned and forced out a stronger light and Shadows' shield faded slightly.</p><p>"No! Shadow!" Vio reached for him.</p><p>"Guys...hit him...now!" Shadow said.</p><p>"Right!" Green withdrew his sword, "Hyaah!"</p><p>Green threw his boomerang at Chibi Ganons' head. Red shot three pebbles that hit between his eyes. Vio shot three arrows at his chest.</p><p>Chibi Ganon got hit various times and backed away. He covered his head in his hands and the light stopped. The shield around Shadow disappeared and he dropped to the ground.</p><p>"Red! Freeze him!" Blue yelled.</p><p>"Right!" Red replied.</p><p>Red pointed his rod at Chibi Ganon.</p><p>"Ice Rod!" Red yelled as a wave of ice froze Chibi Ganon entirely.</p><p>Blue ran up to Chibi Ganon, brought his hammer up and jumped into the air.</p><p>"Yaaaah! Time for the end of you!" Blue yelled as he swung his hammer down on Chibi Ganon and shattered him to pieces.</p><p>All the small pieces of ice turned into dark smoke which then faded away.</p><p>"Yeah! Alright!" Blue grinned, "Won't be seeing you again!"</p><p>"Yay! We did it!" Red cheered, then bent down and coughed out some blood.</p><p>Blue turned round, "Woah! Red!" Blue equiped his hammer to his belt then ran to Red and put his hands on his back, "Red, you're really beat up. We'll get you back to the castle. Here.."</p><p>Blue walked infront of Red and knelt down.</p><p>"Get on my back. I'll carry you." Blue smiled.</p><p>Red climbed onto his back and held his arms round Blues' neck. Blue stood up and held him on.</p><p>"Remember to concentrate on breathing, ok? Don't worry about me." Blue said.</p><p>"OK." Red replied.</p><p>Vio walked to Shadow who was kneeling on the ground, panting. Vio held his left hand down at him and Shadow looked up.</p><p>"You alright?" Vio smiled.</p><p>"Yeah." Shadow held onto his hand and Vio pulled him up.</p><p>"Come on! Let's get back to the castle!" Blue started running back.</p><p>"Hey! Stop stealing my role!" Green ran after Blue, "I'm the main character here!"</p><p>Vio stepped closer to Shadow, "You were really brave."</p><p>Vio just then kissed Shadow on the cheek. Shadows' eyes widened and he blushed.</p><p>Vio laughed, "Come on!"</p><p>Vio ran after the others and Shadow was being pulled behind him. Shadow just kept staring at Vio, mezmorised.</p>
-<a href="Chapter 12.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 14.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 12.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 14.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

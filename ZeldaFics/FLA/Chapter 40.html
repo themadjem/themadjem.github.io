@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 40</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 40: Blue vs Ralph</b></u></p><p>Blue slowly opened his eyes and found himself lying on his front on the floor.</p><p>He looked up, "Huh? What the?"</p><p>Blue stood up and looked around. The whole place was black but he could clearly see himself and the other Links. They were queued up infront of Blue with Blue at the back.</p><p>"Uh..hey, guys. What's going on?" Blue asked.</p><p>Red turned his head to him, "Hi, Blue! We gotta defeat the mini Gufuu on our own and if we do then we win a doughnut!"</p><p>"Doughnut?" Blue asked.</p><p>Green, at the front, stepped forward. A small Gufuu flew out from the darkness and flew on the spot, high in the air. Green threw his boomarang at it. When it hit, the small Gufuu poofed away in a cloud of smoke. A doughnut fell down from the smoke as it cleared. Green caught his boomerang and then ran forward and caught the doughnut.</p><p>"Alright!" Green smiled.</p><p>Green ran forward and disappeared into the darkness.</p><p>Another small Gufuu appeared and Shadow stepped forward. He formed a bomb in his hand, lit it with a flame of light and threw it at the mini Gufuu. It got destroyed and Shadow ran forward. He caught the doughnut and disappeared into the darkness.</p><p>Vio stepped forward and a small Gufuu appeared in the air. He shot an arrow at it with his bow and hit the small Gufuu. It disappeared, Vio ran forward and caught the doughnut then disappeared into the darkness.</p><p>Red stepped forward and aimed a stone with his catapult. The small Gufuu appeared and he fired the stone at it. It hit and destroyed the small Gufuu. Red ran forward and caught the doughnut.</p><p>"Yay! Haha!" Red ran into the darkness.</p><p>"OK, my turn!" Blue stepped forward.</p><p>The small Gufuu appeared high in the air and Blue got out his hammer.</p><p>He perked up, "Huh? Crap! I can't hit it from here!" he started panicking, "This isn't fair! They stole all the long-projectile weapons from that toybox before me!"</p><p>The small Gufuu got angry and then zapped Blue with darkness.</p><p>"Wah!" Blue suddenly sat up on his bed.</p><p>"Blue, you OK?" Red asked.</p><p>"Huh? Oh, it's OK. I was having a dream."</p><p>Just then, all their stomachs rumbled.</p><p>Green rubbed his stomach, "Heheh! It'll be lunchtime soon!"</p><p>Shadow looked through the cupboards in the kitchen area, "Hmm..All there is is cutlery and some milk in the fridge!"</p><p>Blue stood up and put on his shoes, "I'll go out and get some food for us."</p><p>"Shall I come too?" Red asked.</p><p>"Nah, you stay here and rest. I need to stretch my legs."</p><p>"OK." Red replied.</p><p>Blue strapped his sword to his shoulder and tied a sack of rupees to his belt.</p><p>"See ya guys later!" Blue walked out the door and closed it behind him.</p><p>Blue walked through City Ishidukuri. He was looking at the ground as he walked along.</p><p>"No DNA matches.." Blue sighed, "Does that mean..." he stopped, "No! It just means they can't be found! It doesn't mean I didn't have parents!"</p><p>Blue carried on walking along and he heard the sound of a swordfight. Blue followed the sounds and ran round the corner.</p><p>In the middle of the street was a raised platform with rubber ropes around it. There were people and children crowded around it.</p><p>A man on the fighting platform had dropped his sword and fallen to the ground.</p><p>"Heheh. I win again." a boy said, standing before the fallen man.</p><p>The boy was one year older than the Links and he had red hair and green eyes. His hair went up slightly and then went down and quiffed up. His right eye was usually hidden by his hair and he had thick, red eyebrows. He wore a big, blue cloak which hid his neck and chin. It was connected at his neck with a red sphere and there was a yellow stripe at the bottom and a pattern going round the cloak of yellow triangles round the shoulders. He wore a long, light blue shirt with a green belt going round his waist. He wore light blue trousers which expanded out at the bottoms. There were light red stripes at the ends of the sleeves, trousers and the bottom of the shirt. He wore brown shoes which pointed up at the toes. He also wore a pointed, blue hat which had a yellow rim and was wobbly at the top.</p><p>Blue walked through the crowd to the front. The beaten man went out of the ring under the ropes.</p><p>"Anyone else want to fight me?" the boy asked, "If you do, you win this wonderful hookshot!"</p><p>A blue hookshot was sitting on a column behind the fighting ring.</p><p>Blue looked at the hookshot, "A hookshot? With that I can get enemies from far away.." he thought.</p><p>Blue imagined himself spearing a keese with the hookshot and then cheering as the keese got destroyed and rained force.</p><p>Blue smirked, put his sword and rupees sack by the edge of the ring and climbed up onto it.</p><p>"I'll fight you!" Blue said, "My name's Blue. What are the rules?"</p><p>The boy smirked, "My name's Ralph. All you have to do is win a sword-only fight."</p><p>"Fine with me." Blue reached back and drew his sword then held it in his left hand, "Ready."</p><p>Ralph smirked and then drew out a rapier, a long, very thin sword, from his belt with his right hand.</p><p>"That's his sword?" Blue thought and then smirked, "Man, everyone who faught him must've been crap! That hookshot's mine!"</p><p>"Ding!" the fighting bell rang.</p><p>Ralph darted at Blue and swung his sword. Blue had to use both his hands to hold his sword and block Ralphs' attack.</p><p>Blues' eyes widened and he looked shocked, "What strength! And he's just using one hand to hold his sword with!" he thought.</p><p>Ralph smirked, "That look on your face, just like all the others. You underestimated me, didn't you? You'll be an easy 100th win!"</p><p>"More like your first loss!" Blue repelled Ralph away with his sword.</p><p>Blue and Ralph kept attacking and blocking each other with their swords in the middle of the ring. Blue swung at Ralph and he blocked Blues' attack.</p><p>"I gotta admit, you've survived longer than all the others." Ralph said.</p><p>Blue thought back to when Ralph said, "You'll be an easy 100th win!"</p><p>Blue thought to himself, "I'm his 100th match? But he doesn't have a bruise or stratch on him!" he then perked up, "That's it!"</p><p>Blue repelled Ralph back and then quickly slashed his sword at Ralphs' face. Ralph leaned back and got stratched on his left cheek. Some blood spilled out, Ralph dropped his sword and covered his wound with both hands.</p><p>Ralph fell to his knees, "Aah! You scratched me!"</p><p>"Haha!" Blue pointed his sword at Ralphs' face.</p><p>"Ding ding!" the fighting bell rang.</p><p>Ralph looked up at Blue.</p><p>Blue smirked, "I win."</p><p>Blue and Ralph were sitting on chairs, either side of a small table on a third floor balcony. Blues' sword, rupees sack, hookshot and two brown bags of purchased food were on the floor behind him. Ralph had a plaster over the scratch on his cheek. They both had cups of hot chocolate infront of them.</p><p>"Thanks for showing me where the supermarket was. Without you, I'd still be wondering around the city getting more lost." Blue said.</p><p>"Heheh, it's no problem!" Ralph replied.</p><p>"I'm guessing you live in this city then."</p><p>"Yeah, I live here, in this apartment."</p><p>"All by yourself?"</p><p>"Yeah. It's not too big but it's alright for me since I'm usually out all the time hunting for..." Ralph noticed a girl in the corner of his eye then shouted down to her, "Hey, Sera!"</p><p>The girl, Sera, stopped and looked up to Ralph. She had shoulder-length, orange hair and blue eyes. She wore a pink shirt and a blue skirt and she had a small bag round her shoulder.</p><p>"You sure you still don't want me? I'm still free, y'know!" Ralph shouted down to her.</p><p>"No way! I dumped you, you blockhead!" Sera shouted to him.</p><p>"Aw, c'mon. You know you still want me!"</p><p>Sera turned her head away in disgust and carried on walking along.</p><p>Ralph sighed and took a sip of his drink.</p><p>"I see you go for the pretty girls all the time, huh?" Blue asked.</p><p>"Yeah, I take them as they come." Ralph said, "So, is there anyone you like?"</p><p>Blue perked up and then looked down and blushed slightly, "Uh..well...there's some..one.."</p><p>"So what's this persons' name?"</p><p>"I don't need to tell you!"</p><p>"Heheh, OK, OK. I understand...Is it Sera?"</p><p>"NO!"</p><p>"OK! OK! Just asking! Heheheh!"</p><p>Blue took a sip from his drink.</p><p>"I'm guessing you're not from around here since I've never seen you here before." Ralph said, "Where are you from anyway?"</p><p>"Well, I gotta get back to Hyrule."</p><p>"Hyrule! That's so far away!"</p><p>"Yeah, got here by tornado." Blue smirked.</p><p>"Wow, you must've been through a lot."</p><p>"Yeah."</p><p>"So, where you staying?"</p><p>"At the hospital with my friends." Blue then perked up, "That's right! I gotta get back!"</p><p>Blue finished his hot chocolate and equiped his things. He held the two shopping bags in his arms.</p><p>"Well, I gotta get going now. Maybe I'll see ya later." Blue said.</p><p>"See ya. I hope I get to see your friends too." Ralph winked.</p><p>Blue had to kick the door softly to knock on it, "Hello, guys? I'm back!"</p><p>Green opened the door and Blue stepped in.</p><p>"The hell!" Blue asked.</p>
-<a href="Chapter 39.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 41.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 39.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 41.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

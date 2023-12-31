@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 49</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 49: Vios' Song</b></u></p><p>The five Links walked through the streets of Dock Town. They walked down a street between two buildings and got to the coast. There were many small piers all along the coast with large ships docked at them.</p><p>The Links looked at all the ships in amazement, "Wow!"</p><p>"Woah! Look at all the ships!" Red said.</p><p>"They're all huge!" Shadow said.</p><p>"Eh?" Greens' head perked up.</p><p>A large ship was heading into an empty space. A flag with the skull and cross-bones mark was raised on the mast.</p><p>Green pointed to it, "Look! Pirates are docking in!"</p><p>The pirate ship stopped in the empty space, and the flag went down. An old man, with squinted eyes, grey hair and a thick moustache, walked to the pier next to the ship. A rope was tossed down and the man tied the rope around a thick stump.</p><p>"Huh?" the five Links blinked in confusion.</p><p>Several pirates climbed down and jumped off their ship. They talked amongst themselves, some looked tired and some were laughing. They walked down the street and into the nearby restaurant.</p><p>"Huh? They're not..raiding the town?" Green was confused.</p><p>"Heheheh! You're new round here aren't you?" the man laughed.</p><p>The five Links turned their heads round to him.</p><p>"My name's Mr. Sen. I'm in charge of keeping all the ships here kept at the piers. Dock Town is a place where pirates from all over come and have a break. Even if rival crews come here, they're so tired and relaxed that they've forgotten they're rivals."</p><p>"So..pirates come here to relax and not attack it?" Green asked.</p><p>"That's right!" Mr. Sen nodded, "So, what are you kids doing round here?"</p><p>"Well, we need a ship of our own to sail back to Hyrule." Green explained, "Do you know if we can get one round here?"</p><p>"Heheh! Of course! I sell them! Follow me!" Mr. Sen started leading the Links down along the coast.</p><p>Mr. Sen lead the Links to several ships, slightly smaller than the pirates' ships, with large price labels on them. There was also a large shed-like hut with a lighthouse behind it.</p><p>"Here they are! Which one would you like?" Mr. Sen asked.</p><p>"Look how huge those prices are!" Red said.</p><p>"Ships don't come easy." Blue commented.</p><p>"I think we should go for the cheapest one.." Green suggested.</p><p>The Links laid all their rupees out in rows of how much they were worth. They crouched down and circled themselves around their rupees.</p><p>"2500, 600, 700, 800.." Green counted, "Aw, man! Just 200 rupees short!"</p><p>"Damn..where are we supposed to get 200 rupees from?" Shadow asked.</p><p>Vio turned his head round to the town centre nearby, and then looked through the open hut door.</p><p>"Hmm?" Vio stood up and walked to it.</p><p>Mr. Sen was sitting on a chair, relaxing outside his hut.</p><p>Vio peered inside, "Hey, is that an acoustic guitar you have there?"</p><p>"Hmm? Oh, yes! Although it hasn't been played in a while.."</p><p>Vio carefully pulled it out and blew the excess dust off it, "Can I borrow this?"</p><p>"Sure!"</p><p>"Thanks."</p><p>Vio carried the guitar into the town centre and sat on the side of a fountain. He took his hat off and layed it on the ground infront of him, with the hole facing up.</p><p>Vio set and tested the different cords. The others walked closer to Vio, being careful not to stray too far from their rupees.</p><p>Vio brushed the strings with his fingers to make the base of his gentle tune. He sang,</p><p>"Even in the pitch-black darkness</p><p>There is a shining ray of light</p><p>In that ray shining down to the earth</p><p>I saw you standing there alone</p><p>I'll come to you and hold my arms around you tight</p><p>So you can feel the warmth of my love</p><p>Do not let the darkness bring out your fear</p><p>The light in our hearts will send it away from us</p><p>Every kiss like a poetic dream</p><p>Softly touching every star in the night sky</p><p>I love, I love, I love you</p><p>I feel..</p><p>From the very start I saw the light in you</p><p>Darkness had never taken your full control</p><p>You say I helped you realise</p><p>And that I encouraged that light within your soul.."</p><p>Many townsfolk walked past Vio and chucked a rupee or two into his hat. Some people and pirates had gathered round Vio to listen to his song.</p><p>The other Links looked at Vio in amazement.</p><p>"I didn't know Vio could do that!" Red said.</p><p>"Where'd he get this talent from?" Green asked.</p><p>"Such an astounding voice!" Blue said.</p><p>Shadow looked at Vio admirably, "Oh..Vio-kun.."</p><p>Vio looked into Shadows' eyes as he played the instrumental part. He then closed his eyes as he sang again,</p><p>"Please stay sleeping in my arms</p><p>I don't ever want a moment away</p><p>I love, I love, I love you</p><p>I feel..</p><p>Nothing can ever tear us apart</p><p>Happiness and love nestled safely in our hearts</p><p>Staying with you is all that I need</p><p>Because all my love belongs to you</p><p>Because all my love belongs to you</p><p>Because all my love belongs to you.."</p><p>The people standing near Vio all applauded him.</p><p>Vio stood up, "Thank you all very much!" he held his hat out, "All donations are welcome!"</p><p>More rupees were dropped into Vios' hat from the crowd.</p><p>Vio bowed a 'thankyou' and then carried his hat and the guitar back to the others. He placed the guitar back into Mr. Sens' hut and then walked to the other Links, circled around their rupees.</p><p>Vio started picking each rupee out his hat and laying them down with the others, "I wonder how much I got.."</p><p>"Wait! Stop!" Green stopped Vio with his arm, "That's it! 3000 rupees!"</p><p>All their faces lightened up.</p><p>"Wow! Really!" Vio looked into his hat, "But there's still a good...1000 rupees in here!"</p><p>Shadow blushed and looked at Vio, "Well, your singing is really good, Vio-kun.."</p><p>Vio nodded and smiled sweetly back at Shadow.</p><p>The Links paid their rupees to Mr. Sen for the ship and they shared the excess 1000 rupees between themselves.</p><p>They had bought the smallest ship but it was the right size for the five of them. The ship had tall masts and a room in the middle with various supplies already in it, including a kitchen, bedroom and bathroom.</p><p>"Oh, yeah!" Blue ran up the ramp onto the ship, "We can finally cross the great sea, with Blue, the legendary blue hero, leading the others as their captain!"</p><p>"What!" Green ran up to Blue, "You can't just decide that!"</p><p>"Yes I can! I was the first on the ship, so I'm the captain!"</p><p>"No you're not! As the leader, I'm the captain!"</p><p>"So typical! Always assuming you're the main character!"</p><p>"What about you! Always trying to interfere and butt into problems making them even worse!"</p><p>"Look at you! Not thinking about the others, only thinking for yourself!"</p><p>"Lie!"</p><p>Green pounced at Blue and pinned him down. Green tried to push Blues' head back while Blue was trying to push him off with his hands and feet.</p><p>"No, don't fight!" Red ran up the ramp to Blue and Green, Vio and Shadow followed.</p><p>Vio and Shadow pulled Green off Blue and Red pulled Blue apart from him.</p><p>"I'm the captain!" Blue argued.</p><p>"No, I am!" Green argued back.</p><p>"Me!"</p><p>"Me!"</p><p>Green and Blue stared into each others' eyes in conflict.</p><p>Blue perked up, "I know! Shadow will decide for us!"</p><p>"What!" Shadow perked up.</p><p>"You get to pick which one of us will be the captain." Blue instructed.</p><p>"Wha? Eh? Oh, fine.." Shadow stood up and stood in-between Green and Blue.</p><p>The others stood up and Vio and Red let go of Green and Blue.</p><p>Shadow looked at them both, "Hmm..Well...I pick Green."</p><p>"Wha?" Blue asked.</p><p>"Yes!" Green cheered.</p><p>"Well, without him, we all wouldn't have met." Shadow explained.</p><p>"He's got a point." Vio agreed.</p><p>"Hmph.." Blue pouted.</p><p>"Hmm..As the captain.." Green held his hand out at Blue, "I'd like Blue to be my first mate!"</p><p>Blues' head perked up, "Huh?"</p><p>"Don't worry, Blue." Red whispered to him, "The first mate is always the most popular one."</p><p>"Hmm.." Blue smiled and held onto Greens' hand, "OK!"</p>
-<a href="Chapter 48.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 50.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 48.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 50.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

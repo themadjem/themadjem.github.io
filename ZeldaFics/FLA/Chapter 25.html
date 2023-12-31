@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 25</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 25: The Killer Bees</b></u></p><p>Far in the north-west, in the middle of the great seas, was a peaceful island named Windfall Island. It consisted of a small town, full of people without a care in the world. This island never suffered any attacks from monsters or huge tides. Only a couple of theiveries from pirates have ever been recorded but they were very minor and didn't cause much damage. The town consisted of a few shops, a small mansion, a school and a huge windmill in the middle.</p><p>Green was sleeping, upside-down. The bottom of his tunic was caught on a high branch of a tree. His sword, shield, boomerang, hat and a small sack of rupees of his were on the ground, below him, where they had fallen off.</p><p>A small boy walked up to the stuff, "Hey, guys. Check this out!"</p><p>Three other boys circled round the stuff, next to the other boy.</p><p>The first boy was called Jan, he was the leader of the group. He wore a red cap and he had ginger hair, with two spikes of it hanging out the front. He wore a blue shirt, a dark blue jacket, a belt and brown, knee-length trousers.</p><p>The second boy was Jin. He had light brown hair, which spiked up like two horns. He had squinted eyes and a biggish, pink nose. He wore a pink shirt and black shorts with dungees.</p><p>The next boy was called Jun. He had blue hair which went right around his head and a pink nose. He wore a dark pink, long-sleeved shirt, a brown jacket and blue shorts.</p><p>The last boy was called Ivan. He had short, brown hair with two spiked up bits in the middle. He had squinted eyes, a big pink nose and a fattish face. He wore a green shirt, grey trousers with white dungees and stripey socks.</p><p>These four boys were known in Windfall as the Killer Bees.</p><p>Jan picked up the sword, "Check it out.." he extracted the sword from its' case a little, "Wow! A sword!"</p><p>Jin picked up the boomarang and Ivan picked up the shield.</p><p>Jun picked up the hat and put it on, "Hehe, who would leave this stuff lying out here?"</p><p>Ivan looked up and pointed at Green, "Hey, look! Do you think this stuff is his?"</p><p>Jan picked up the sack, "You mean was his." he opened the sack and looked in, "Wow! Check out all the rupees!"</p><p>"We could buy way loads with that!" Jin commented.</p><p>Jan closed the sack and grinned, "Hehe, you snooze, you loose! Come on!"</p><p>The Killer Bees then ran into the town, with all of Greens' stuff.</p>
-<a href="Chapter 24.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 26.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 24.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 26.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 23</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 23: Surviving the Fall</b></u></p><p>Green and Shadow were falling down to the lava. Green was falling just below Shadow.</p><p>"Green! Throw your boomerang at the wall then grab onto me!" Shadow yelled.</p><p>"Uh, right!" Green threw his boomarang at the wall then put his arms round Shadows' waist.</p><p>Shadow grabbed onto the boomarang which pulled him forwards. Before it hit, he drew out his sword and stuck it into the wall. Shadow was hanging onto his sword with Green hanging onto his waist. He passed the boomarang back to Green who re-equiped it. They were about half way up the tower.</p><p>"Shadow! You...!" Green said.</p><p>"Don't worry, just hang on!" Shadow replied.</p><p>Shadow lifted his free hand above him and gripped onto the wall. His hand felt like it was burning on the wall but he kept on holding on.</p><p>"Shadow!" Green yelled.</p><p>"Don't worry about me, I'm fine." Shadow said.</p><p>He pulled his sword out the wall and quickly withdrew it in its' case. He gribbed the wall with his other hand and slowly pulled him and Green up the tower.</p><p>Green looked up,"...Shadow! Aim for that window! Up, to your right!"</p><p>Shadow looked up to it and headed in its' direction. He eventually got up there and pulled him and Green over the balcony ledge. Green moved himself off Shadow and rolled over to the inside. Shadow collapsed onto the floor.</p><p>"Shadow!" Green knelt up and helped Shadow to sit up against the balcony ledge.</p><p>Shadow looked at his hands. They were a dark red and they were bleeding in some areas. Most of the skin was burnt off where the areas were black.</p><p>"Wow, you sure do know how to push yourself." Green looked at his hands.</p><p>Shadow closed his fists, "Don't worry, it's fine. I can fight around the pain. I'll just concentrate on bringing Vio back to his real self. If there is a way.."</p><p>Green looked at the stairs on the opposite side of the room, "Come on, we gotta get back up to Vio. But we gotta go up really quietly so he doesn't hear us coming."</p><p>Shadow nodded, they both got up to their feet and ran to the stairs. They walked up quickly to avoid any noise from running.</p><p>Blue was falling to the ground with the Red statue falling underneath him. Blue turned himself round and held onto the Red statue. He put his arms around it and clutched it to his body. He turned himself round so he was underneath. He closed his eyes and hit the ground, protecting the Red statue.</p><p>Blue opened his eyes, "Don't worry, Red. I won't let you die.."</p><p>He lifted the Red statue and stood it next to him, away from the tower.</p><p>Blue got up to his feet, "Unless.." he turned himself to the Red statue, "..he's already dead..."</p><p>Blue looked down to the ground, "I knew he was going to get frozen. I could've jumped in the way. That way, Red would've un-frozen me and we would've probably have beaten Vio by now. But no..." Tears began to appear in his eyes, "...I was just thinking of myself." he buried his face in his hands and cried, "I'm so sorry Red...What a horrible way to die...and at such a young age.."</p><p>He heard a crusty-like growl and his head perked up.</p><p>A rocky, dragon-like lizard came out of a cave nearby infront of them. It came up to Blues' knees in size.</p><p>"A...a dodongo?" Blue asked, "Those things breath fire.."</p><p>Blue then thought to himself, "Fire! That's the only thing that works! That's what Red used to un-freeze me!"</p><p>Blue grinned, "That's it!"</p><p>Blue moved the Red statue forward and make him face the dodongo. Blue ran infront of the statue.</p><p>Blue picked up a small stone, "Hey, you!"</p><p>He threw the stone at the dodongo and it perked up and faced Blue.</p><p>Blue winked and stuck his tongue out at it, "Nyah ha! Can't get me! You stupid newt!"</p><p>The dodongo got pissed off, and then breathed fire at Blue.</p><p>Blue reached for the Red statue and held it out infront of him. The fire melted the ice off Red and also burned off his bandages from his chin and neck, in which the wounds had completely healed.</p><p>The dodongo yawned and returned back to its' cave.</p><p>Red blinked and then perked up, "Huh? Where am I? What happened?"</p><p>Blue smiled, "Red!"</p><p>Red turned round, "Blue! What happened? The last thing I remember is freezing Vio and the ice coming toward me. Then my memory stopped."</p><p>"Vio froze you entirely. Then he blew us off the tower and I un-froze you." Blue put his hands on Reds' shoulders, "You alright, Red? Are you hurt anywhere?"</p><p>"No, I'm fine."</p><p>Blue put his arms around Red and hugged him tight and close to him, "I'm so glad you're alright. I thought you were gone for good. I had lost all hope.."</p><p>"Blue..." Red looked up, "Wah! Blue! Your chin! It's got a deep scratch in it!"</p><p>"Hm?" Blue let go of Red, "Oh, Vio was threatening me to smash you, and he scratched me. And he stabbed me here in the chest when I tried to attack him."</p><p>"Blue...! Are you sure you're OK?"</p><p>Blue smirked, "Don't worry, it's nothing!" he looked up, behind him, to the tower, "Come on. We better get back up there."</p><p>"Right!" Red equiped his rod.</p><p>They both ran to the staircase around the tower and ran up it.</p>
-<a href="Chapter 22.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 24.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 22.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 24.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

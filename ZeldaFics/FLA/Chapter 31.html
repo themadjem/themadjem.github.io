@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 31</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 31: Blue gets kidnapped</b></u></p><p>The five Links were walking through the town. Shadow was telling the others about what happened to him and Vio and about Spec. Shadow was supporting and leading Vio.</p><p>"Spec said this place is called 'Snow Peak.'" Shadow told the others, "This place has a warm atmosphere about it since all the people here are so friendly."</p><p>Vio sniffed, "Hey, that smells good.."</p><p>They stopped and all their stomachs rumbled loudly.</p><p>Green rubbed his stomach, "Heheh! I haven't eaten since yesterday!"</p><p>"Let's find some food!" Blue said.</p><p>The five Links were in a small food restaurant. They were sitting round a table with various dishes of food infront of them.</p><p>Red, Shadow and Vio were eating nicely and quietly. Green and Blue were sitting at either side of the table, scoffing down their food as fast as they could. They were staring at each other in competition.</p><p>"Let me guess from the noise.." Vio said, "Green and Blue are having an eating competition?"</p><p>"That's right." Shadow said.</p><p>"I hope they don't eat all the food in the restaurant.." Red said.</p><p>Green moved onto his next dish, "You can't beat me at eating, Blue!"</p><p>Blue also moved onto his next dish, "Wanna bet?"</p><p>"Hey guys! Don't eat too fast!" Red said.</p><p>As Green reached for his next dish, he knocked some pepper onto Blues' food. Blue put the fork-full of noodles with pepper on them in his mouth. He swallowed them down and then suddenly stopped.</p><p>He put the fork down on the table and paused.</p><p>He quickly held onto his crutch, "Nnngghh! Aaah! Gotta go!"</p><p>Blue quickly got out his seat and ran into the mens' toilets.</p><p>Red looked angry at Green, "Hey! What'd you do to Blues' food!"</p><p>"Uh, I didn't do anything!" Green said.</p><p>"I think it was the pepper." Shadow said, "That stuff must be like a laxative to him or something."</p><p>"Eew.." Vio commented.</p><p>"Hmmm.." Green thought.</p><p>"It's not nice to mess with food!" Red said to Green.</p><p>"OK! OK!"</p><p>Green and Red were at the counter, giving their plates in and paying the rupees. A young, cute woman, with long, blue hair, in a blue apron was behind the counter.</p><p>"Thanks for the meal, miss. It was really delicious!" Green said.</p><p>"You still have enough food left, don't you?" Red asked the woman.</p><p>She smiled, "Oh, don't worry! It's quite alright." she took the rupees, "Thankyou! Feel free to come again!"</p><p>"Thanks, miss!"</p><p>Green and Red walked out the restaurant to Shadow, Vio and Blue.</p><p>Blue was holding onto his stomach, "..I hate pepper..!"</p><p>"Well, atleast we learned something about you, Blue! Heheh!" Green said.</p><p>"It's not funny..egh.." Blue said.</p><p>"Blue? You OK?" Red asked him.</p><p>"Don't worry..I'll be fine.."</p><p>It was a dark evening. The five Links were on the upstairs floor of a small hotel. The window in their room was over-looking a street of Snow Peak. Their room had five beds with red duvet covers.</p><p>Vio, Shadow and Greens' clothes had been stitched up where needed. Red was sitting on the edge of his bed. Vio was sitting on his bed, leaning against the wall, with Shadow sitting next to him.</p><p>Green came out of the bathroom, wiping his hair dry with a towel.</p><p>"Aah, that was a good shower." Green said, "Hey, where'd Blue go?"</p><p>"He went outside." Red said, "He said he wanted to look around somemore."</p><p>There was a small forest of pine trees down the street of Snow Peak, where the villagers got their fire-wood from.</p><p>Blue was walking through the forest and then got to a clearing. He stopped and looked up.</p><p>"I can't believe I didn't notice this mountain here before."</p><p>The mountain was as tall as a three-storey house. There was a trail going around it to the top.</p><p>Blue started running up it. Half way up there was a sign that read 'Beware of the Helmaroc King', but Blue past it without notice.</p><p>Blue got up to the top, which was flat ground.</p><p>Behind the mountain was an endless forest of trees and high mountains.</p><p>Blue was over-looking Snow Peak, "Hmm, so that way's south, which is where Hyrule castle is..?"</p><p>Blue could see the whole of Snow Peak and the snowy wasteland. Then there were some icey mountains and the sea. To the right there was more snow and mountains. To his left he could see more snow and trees. Behind them, Blue could see a huge building with windows all around it.</p><p>"Man, we must be really far away from Hyrule. It must be really far over the horizon.."</p><p>Just then, Blue heard a loud, eagle call from behind him.</p><p>Blue turned round and saw a huge bird, almost as big as Valoo. He was dark blue, with the tips of his feathers on his wings red and white. He had a red neck with a collar of white-tipped feathers under his neck and on his chest. He had five very long tails which consisted of yellow feathers with green feathers striped down the middle. His beak and talons were huge and he wore a mask over his eyes. This was the Helmaroc King.</p><p>"Yaaaah!" Blue yelled.</p><p>He tried to run but the Helmaroc King snatched him in his beak and rendered Blue unconscious.</p><p>The bird cried again and flew over Snow Peak.</p><p>Green, Red and Shadow were leaning out the window, watching the Helmaroc King fly over them.</p><p>"That's a huge bird!" Green said.</p><p>"He's called the Helmaroc King." Shadow said.</p><p>"Oh no! He's got Blue!" Red turned to the others, "We have to go save him!"</p><p>Red ran to his weapons, equiped them and then ran out.</p><p>"Red!" Green reached for him.</p><p>"I'll go too." Shadow said.</p><p>"What!" Green said, "What about me?"</p><p>Shadow walked to his weapons and equiped them, "I have some knowledge on the Helmaroc King, and maybe some enemies in the place he's headed. Besides, Red's already gone and someone's gotta stay here with Vio."</p><p>"But.." Green said.</p><p>Shadow walked to the door, "We'll be back as soon as we can."</p><p>Shadow walked out and closed the door.</p><p>Green leaned out the window and saw Shadow run out.</p><p>Shadow ran to Red, "Hey, Red! I'm coming too!"</p><p>"Alright!" Red pointed forward, "I saw the Helmaroc King fly in that direction."</p><p>"Let's go!"</p><p>Shadow and Red ran out the village, through the pine trees and then jumped off the cliff, onto the snow below.</p><p>"Aw, man.." Green walked to Vios' bed and sat next to him, "How are we supposed to collect force now?"</p><p>"We could have a sword fight tomorrow morning." Vio said, "It might build up really slowly, but atleast it's something."</p><p>"Hmmm, yeah.." Green leaned back against the wall.</p>
-<a href="Chapter 30.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 32.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 30.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 32.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

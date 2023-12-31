@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 29</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 29: Found then Lost</b></u></p><p>There was a large, snowy wasteland which always had a continous blizzard. It was like a desert but with snow wherever you looked. In the middle of it was a single, naked tree.</p><p>Shadow was asleep in the top of the tree.</p><p>He opened his eyes and sat up, "Huh? Where am-Aaah!"</p><p>The branches under him suddenly snapped. Shadow fell down and landed on his face.</p><p>Shadow knelt up and rubbed the snow off his face.</p><p>He looked around him, "Where is this place? It's just...snow.." Shadow perked up, "Oh no! Vio! Where'd he go?" Shadow looked down at the snow, "No...I can't have lost him.."</p><p>He saw a purple material poke out the snow, "Huh?...purple?...Vio!"</p><p>He started digging into the snow. He eventually dug up Vios' head, "Vio!" he dug deeper in the snow to loosen his body out.</p><p>Shadow pulled Vio up onto his knees and put his arms round him. Vio was unconscious and was showing no sign of movement.</p><p>Shadow shook Vio slightly, "Vio! Vio! Please wake up, Vio!" Shadow felt Vios' cheek with his hand. "He's freezing!" Vio felt ice-cold.</p><p>Vios' face twitched slightly.</p><p>"He's alive..! But barely.."</p><p>Shadow took off his belt and pulled off his tunic. He slipped it over Vio like a cloak. He took off his hat and wrapped it round Vios' neck like a scarf. Shadow put his belt back on and lifted Vio in his arms. Shadow stood up and looked around.</p><p>"Come on..need shelter somewhere.." Shadow saw a cave, far in the distance, "Alright!"</p><p>Shadow started jogging toward it, holding Vio close to him, in his arms.</p><p>Shadow eventually got to the cave and went in. He went about a quarter in and he lay Vio gently against the wall of the cave. Shadow sat next to Vio and panted.</p><p>He felt Vios' cheek, "Hmm, only warmed up slightly, still cold.."</p><p>Shadow looked around the cave, "Damn.." he looked back outside at the tree in the distance.</p><p>Shadow looked at Vio and adjusted the hat round his neck over his nose and mouth.</p><p>"I'll be right back, Vio.." Shadow hugged Vio and then ran to the tree.</p><p>When Shadow got to the tree, he climbed up onto it and snapped some twigs off the branches. When he had gathered some, he jumped down from the tree and ran back to the cave.</p><p>Shadow got back and layed the twigs in a pile on the floor, near Vio. He picked up two stones and rubbed them rapidly together. Some sparks flew out and lit the twigs to make a fire.</p><p>"Ah, alright!" Shadow said.</p><p>Shadow sat next to Vio and held his hands out at the fire to warm them up. Shadow rubbed his hands together and then rubbed them on Vios' cheeks.</p><p>"This'll warm you up.." Shadow did the procedure several more times until Vio felt warm.</p><p>Vio slowly opened his eyes and looked up at Shadow.</p><p>Shadow looked down at him, "Vio!"</p><p>"S..Shadow?..What happened to your tunic?" Vio asked.</p><p>Shadow smiled, "You're wearing it."</p><p>Vio looked down at his clothes, "H-Huh?" he looked out at the snow then back at Shadow, "But aren't you cold?"</p><p>"Don't worry 'bout me. You were the one who was freezing. You had to be warmed up quickly. It was the least I could do."</p><p>Vio smiled, "Thankyou." he paused, "...I'm sorry, Shadow.."</p><p>"Huh? What for?"</p><p>"..For what I did to you guys back at the Tower of Fire. I'd never do anything like that." Tears started forming in his eyes, "It's just so horrible to have thoughts like those in my mind!"</p><p>"Vio! It's alright! We're all OK, I'm sure of it! You don't need to worry anymore."</p><p>Vio smiled, "..You're right."</p><p>Vio sat up and pulled Shadows' hat and tunic off him. He gave them back to Shadow and he put them back on.</p><p>Shadows' head perked up. He pulled out Vios' book and gave it back to him, "Here. We saved it for you."</p><p>Vios' face lightened up and he re-equiped it, "Aah! Thankyou so much!"</p><p>Shadow and Vio stood up.</p><p>"We need to find a safer place." Vio said.</p><p>Shadow nodded.</p><p>Just then, the swords on their backs vibrated. They drew them out.</p><p>"Huh?" Shadow said.</p><p>"It's resonating.." Vio said.</p><p>Greens' head perked up and he drew his sword, "The Four Sword..!"</p><p>Blue and Red had drawn theirs' out.</p><p>"Blue! It's.." Red said.</p><p>"This means.." Blue said.</p><p>They all smiled, "Everyone's OK!"</p><p>Vio and Shadow withdrew their swords.</p><p>Vio stepped forward, "Come on. We better find a way to get to the others."</p><p>"Right." Shadow said.</p><p>Just then, the fire blew itself out. A dark smoke rose up and covered the entrance of the cave. Vio and Shadow took a few steps back. The smoke formed a large, shadow-like ghost. Vio and Shadow ran back about three quarters in as the ghost took up half the cave. It was fully clogging up the entrance and most of the cave with its' body. A large, white mask, with red patterns and an evil facial expression of eyes and mouth, went over the shadow ghosts' head.</p><p>The ghost laughed a low-pitched cackle, "I've made this place lovely and dark for you! Oh, what delicious mortals I have here! I haven't eaten any in such a long time! I must kill you first though so you slip easily down my throat! Now, stay still so you can just get your puny lifes over with! Mweh heh heh!"</p><p>"Don't think that'll happen!" Shadow yelled.</p><p>"Hmph. You're too noisy. I'll take you out first!" the shadow ghost said.</p><p>"No!" Vio said.</p><p>The ghost shot a small, round ball out of its' mouth, like a bullet, at Shadows' heart.</p><p>Vio quickly pushed Shadow out the way by his shoulder. Vio got shot in the chest and coughed out blood as he was propelled back to the back of the cave. The back of his head hit a pointy rock which inserted itself into his head. Vio coughed out somemore blood as his head went up and he slid down slightly.</p><p>Shadow quickly turned his head and tears went into his eyes, "Vio!"</p><p>Shadow ran to Vio and knelt down beside him. Vio was lying down on the ground, with his eyes closed, looking lifeless.</p><p>Shadow took the ball out of his chest and threw it behind him. Shadow lifted Vios' head and he shook him.</p><p>"Vio! Vio! No, Vio! Please wake up! Please! Vio!"</p><p>He stopped shaking him and tears fell onto Vios' face. Vio showed no movement or life.</p><p>The shadow ghost shot another ball out of its' mouth at Shadow. Shadow leaned to one side to dodge it and he caught it in his hand. He dropped it and stood up. He turned round and walked toward the shadow ghost, looking at the ground.</p><p>"You think it's fun just to mindlessly kill whoever you please.." Shadow lifted his head up and his face was enraged, "Well this was your last!"</p><p>Shadow drew his sword and slashed it in several directions. Dark slices came out of his sword and hit the shadow ghosts' mask. They cracked and broke the mask off the ghost. All that could be seen of the ghosts' face was two, glowing red eyes.</p><p>"Huh? Shouldn't he.." Shadow then perked up, "Of course! There's no light to make him disappear!"</p><p>"Mweh heh heh! You fool! What a waste of attack!"</p><p>Shadow brought his sword up and pointed it at the shadow ghost.</p><p>"Four Sword! Lend me light to defeat the darkness!" Shadow yelled.</p><p>Bright light shot out of Shadows' sword at the shadow ghost. The light made its' way through the shadow ghost and obliterated it.</p><p>"Yaaaarghh!... ... .. .. . .. !" the shadow ghost yelled as it disappeared.</p><p>Shadow paused, then sighed and withdrew his sword.</p><p>"...Shadow...Shadow?" Shadow heard Vios' voice behind him.</p><p>"Huh? Vio? Vio!" Shadow turned round and quickly ran to him.</p><p>He knelt down beside him, "Vio! Are you alright!" he then gasped.</p><p>Vios' eyes were open, but his eyes had no pupils or shining in them and were just a faded, dark grey.</p><p>"Shadow..are you there?" Vio asked.</p><p>"Yes, Vio! I'm right here!" Shadow replied.</p><p>"Shadow...I can't see.."</p>
-<a href="Chapter 28.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 30.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 28.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 30.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

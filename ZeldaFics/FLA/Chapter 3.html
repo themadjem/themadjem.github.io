@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 3</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 3: The Speaking Treasure</b></u></p><p>Red ran up to the treasure chest.</p><p>"So, what's in this anyway?" Red asked.</p><p>The others walked up to it.</p><p>"Well, there's only one way to find out!" Blue said.</p><p>Blue grabbed the edge of the lid and tried to lift it, but it wouldn't budge.</p><p>"Aw, man! It's way heavy!"</p><p>The lid lifted a bit.</p><p>"Come on! Let's help!" Green said.</p><p>They all grabbed the lid and tried to lift it. It took all their strength to eventually open the chest. Red reached in and pulled out a shiny, light blue stone. It had some black string attached to it, like a necklace.</p><p>"Hey, what is it?" Red asked.</p><p>"Who knows." Blue said.</p><p>"It looks kinda broken." Vio said, "Maybe there's another piece to it."</p><p>"If you want to find the other piece, head to Kumalon Village in the west." a mysterious voice said.</p><p>Everyone was looking around.</p><p>"Where did that come from!" Green asked.</p><p>"It came from this stone!" Red said, "It was glowing when there was that speaking."</p><p>"Well? Why should we go there! It could be a trap!" Blue argued.</p><p>"I'm watching your every move." the voice said again, "If you don't go there, I'll appear and destroy you!"</p><p>"What's the harm in going?" Vio asked, "We can easily beat anything that's waiting for us."</p><p>"Yeah." Green agreed, "We'll help anyone who's there by defeating the bad guy!"</p><p>"To the West!" Blue pointed.</p><p>"Uh, that's east." Vio said.</p><p>"Uh..." Blue pointed the right way, "To the West! Haha!"</p><p>Red tied the string of the stone round his neck.</p><p>"OK! Let's go!" Red ran happily ahead.</p><p>Blue and Green ran after him and Vio walked behind them. They went out of the shrine area and headed west, the opposite way to Hyrule.</p><p>They got to an area with lots of large trees with dark shade under them. Vio stopped under one of the trees, in the dark shade.</p><p>"Hey, guys." Vio said.</p><p>The others turned their heads to him.</p><p>"I think we should bring Shadow back here."</p>
-<a href="Chapter 2.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 4.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 2.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 4.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 14</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 14: The Real Tetra</b></u></p><p>At Kumalon Castle, everyone was in the Living Room. Tetra was dabbing Reds' wounds with wet cotten wool to help them heal and to stop the excessing bleeding. Tetra bandaged Reds' neck and stratches on his face and rubbed them gently on.</p><p>"There. All done." Tetra smiled, "You feeling better?"</p><p>Red nodded and smiled, "Yeah, thanks a lot."</p><p>"So, is Chibi Ganon really gone?" Tetra asked.</p><p>"Yeah." Blue said, "I defeated him."</p><p>"Hey! We defeated him as a team!" Green then pointed at Shadow, "Besides! Shadow's the one who helped us out the most! Without him, we would probably still be in battle by now!"</p><p>Shadows' head perked up and Vio put his arm around him.</p><p>"Heheh, yeah!" Vio laughed, "Real brave our Shadow!"</p><p>Shadow blushed slightly, "Well, uuuuh...heheheh..."</p><p>Tetra laughed, "Well, I'm just glad he's gone. This town can now stop worrying all the time. The children can now grow up happy. Thankyou all so much."</p><p>"Well that's what we, the hero Link, does best!" Red smiled.</p><p>"Oh! Almost forgot." Green untied the charm from his belt and put it on the table next to the other charm, "Here, it looks like the other half."</p><p>Tetra picked them both up in her hands, "Hmmm...Oh!"</p><p>The two charms glowed a bright light, Vio clutched onto Shadows' hand. The two charms raised into the air and small beads of light spun around Tetra. They went around her faster and faster until she was covered with light. The light then gradually faded away. Tetras' hair had gone up into a spiral. Her clothes had changed to a red bandana round her neck, a blue, sleeveless jacket, a purple, sleeveless shirt, a thick, red belt, long, white shorts and sandals. She opened her eyes and the charm had formed into one skull-shaped charm.</p><p>Tetra looked up and smiled, "This is the real me!", her voice was tomboy-ish.</p><p>"Of course! Tetra the pirate!" Green said, "I knew I had heard that name before."</p><p>"Huh? How come you're now a pirate? Did I miss something?" Red asked.</p><p>"Oh yeah." Vio got out his book and flicked to the page about the pirate charm, "You guys should read this." He held the book out and everybody came in closer to read it.</p><p>Later on, the five Links were standing outside, facing Tetra who was standing inside the door.</p><p>"So, what you gonna do now?" Green asked, "You gonna go out and be a pirate again?"</p><p>"Well, not straight away." Tetra replied, "I can't just leave this village. I was the princess of it, these people look up to me. I guess I have to find someone else to lead this village instead of me."</p><p>The five Links all smiled.</p><p>"I hope you find someone new soon." Green said.</p><p>Tetra laughed, "Well, see ya around!"</p><p>"Bye!" they all said as they walked away and waved.</p><p>"Stay safe on your journey!" Tetra winked, "Maybe I'll see you at sea sometime!"</p><p>The five Links walked out the entrance of Kumalon Village.</p><p>"Now, let's get back to Hyrule!" Green said.</p><p>He looked forward and saw a dark, swirling cloud entirely covering where Hyrule Castle would be.</p><p>Green started running to Hyrule and the others ran behind.</p><p>"What...what's happening to the castle?" Green asked.</p><p>Shadow was looking worried, "Dammit, I was afraid of this."</p>
-<a href="Chapter 13.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 15.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 13.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 15.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 45</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 45: The Desert Tree</b></u></p><p>The five Links were walking through a sandy desert. The sun was shining brightly, there were no clouds in the sky and there were no cool breezes blowing through.</p><p>They were dragging their feet through the sand and were panting and sweating in the heat.</p><p>"It's so hot..." Green panted.</p><p>"I got an idea!" Red said.</p><p>The others stopped and turned to him.</p><p>Red got out his rod, "Ice Rod!" the rod only let out a couple of drops of water, "Huh!"</p><p>"It must be all dried out from the heat." Green said.</p><p>"Aw, man.." Red withdrew his rod and they carried on walking.</p><p>"Oh..man! We've been walking for ages!" Blue turned to Shadow, "How long is this stupid desert!"</p><p>Shadow got out the map and unravelled it, "Well..it says it's 200 miles long.."</p><p>"What! There's no way we can walk that far through this heat!" Blue looked at Vio, "How far have we walked through this desert so far!"</p><p>Vios' head perked up, "What! How am I supposed to know!"</p><p>"'Cause you're the smart one! Can't you calculate it or something!"</p><p>"Well, I can't tell. It's so hot out here, it feels like we've been walking for days.."</p><p>"The heat's getting to your head!"</p><p>"What'd you say!"</p><p>Green held Blues' arms back and Shadow held onto Vios' shoulders.</p><p>"Blue, you shouldn't waste your energy on pointless fighting." Green said to him.</p><p>Blue paused then sighed, "Fine.."</p><p>Blue and Green turned round and they all carried on walking.</p><p>A few minutes passed as it got hotter and hotter. Green and Blue stared at the distance infront of them, watching the heat in the air come off the ground.</p><p>"So..hot..." muttered Green.</p><p>"Need...water..." muttered Blue.</p><p>As they stared into the distance, they saw a small lake of water. Their heads raised as their faces lightened up.</p><p>"Water!" they both then ran to the lake.</p><p>"Water?" Shadow looked around, "I don't see any water."</p><p>"Aw, man! Stop saying it! You're making me thirsty!" Red covered his ears with his hat.</p><p>Green and Blue ran and jumped, face first, into the lake. Vio, Shadow and Red walked up to them.</p><p>"Uh, guys..That's not a lake.." Vio said.</p><p>"Huh?" Green and Blue's heads perked up.</p><p>"That's a bed of cacti."</p><p>Green and Blue felt the needles pierce into them, "YEEAAAAAAOOOOW!"</p><p>"Ow."</p><p>"Ow."</p><p>"Ow."</p><p>"Ow."</p><p>"Ow."</p><p>"Ow."</p><p>"Ow."</p><p>"Ow."</p><p>The five Links carried on walking. Green and Blue were picking the needles off each other.</p><p>Red's head perked up as he saw a forest of trees in the distance.</p><p>"Shade!" Red ran to it.</p><p>"No, Red! It's a mirage!" Vio said, "Even though I can see it too.."</p><p>"Hmmm?" Shadow opened his map and his face lightened up, "That's because it's not a mirage! It's on the map! A small forest in the middle of the desert, let's go!"</p><p>Shadow put his map away and they ran after Red.</p><p>They all dived onto the ground, into the shade.</p><p>"At last.." Green said, "Wonderful shade.."</p><p>Red lifted his head up, "Look!" he pointed at a river, "It's-"</p><p>"Water!" Blue's head perked up.</p><p>Blue was the first to run to the river and dunk his head in. The others followed Blue and took a long, refreshing drink from the river, aswell as splashing each others' faces with it.</p><p>They walked through the forest into a large clearing. The entire forest was in the shade, apart from some small rays of sunlight poking through. The trees were tall and thick; they had many branches and it seemed impossible to tell the different trees apart from each other. Noises of different birds and insects could be heard from high in the trees.</p><p>The five Links looked around the forest in amazement.</p><p>"Wow! This forest's so tall!" Red said.</p><p>"More of a jungle than a forest I'd say." Green suggested.</p><p>Vio turned his head to Shadow, "Hey, Shadow-Chan. Does the map label this place as anything?"</p><p>Shadow opened the map, "Well, it says this is the 'Desert Tree'."</p><p>Vios' head perked up, "I've heard of that before!" Vio opened his book and flicked to a page with a picture of the jungle they were in surronded by a desert, "'Desert Trees can be found in the middle of deserts and act as a rest stop for travellers aswell as homes to small animals and large insects. Seen as a jungle but it is actually a giant tree. The 'branches' are infact the roots of the tree that hold it in place. The desert trees' roots reach far down under the ground where water lies. More of a shrub or bush than a tree as it has no trunk.'"</p><p>The others looked up at the thick roots above them, "Wow.."</p><p>Just then, a red pig, about knee-high in height, with squinted eyes, a long, very thin, springy tail and a white snout, tugged onto the bottom of Reds' tunic.</p><p>Red looked down at it, "Huh? What the?" he knelt down and stroked its' head, "It's a pig?"</p><p>The others looked down at it.</p><p>"What's a pig doing in a jungle?" Blue asked.</p><p>Vio turned to another page in his book, with a picture of two pigs. They looked like the one that was with Red but one in yellow and one in pink.</p><p>"These creatures are called 'Oinees'." Vio explained, "'These pig-like creatures live in desert trees and come in a wide variety of colours, but their snouts are always white. They have a spring-like tail which sheds off at night and act as seeds to grow new flowers in replace of those which died. When the tails get shed or picked off, a new one will grow within one hour.'"</p><p>"Wow, what interesting creatures." Shadow commented.</p><p>The red Oinee perked up and then ran back into some bushes.</p><p>"Bye, little guy." Red waved.</p><p>"I guess we gotta start getting across the other side of the desert." Shadow said.</p><p>"But we just got here! Can't we have a rest first?" Red asked.</p><p>"I like that idea." Blue said.</p><p>Vio nodded, "Yeah, we need to build up our strength."</p><p>"Hey, guys! Check this out!" Green yelled.</p><p>The others ran to Green who was inside a huge, hollow root.</p><p>"It's huge! And it's just a root!" Vio said.</p><p>"Look.." Green walked up to the wall, which had several thin veins running down it, and he stroked his hand against them, "The veins of the root, they're all around the inside of it and are heading into the ground."</p><p>"Incredible!" Shadow commented.</p><p>Vio walked up to the wall of the root and sat down against it, "This'll be a good place to rest."</p><p>"Heheh, yeah." Green sat down next to Vio.</p><p>Shadow sat against Vio infront of him and rested his head on Vios' chest. Vio secured his arms around Shadows' chest. Blue sat the other side of Vio and Red sat infront of Blue, leaning his head against him.</p><p>Red yawned and closed his eyes, "Walking through the desert sure is tiring.."</p><p>Blue leaned his head on Vios' shoulder, "Some sleep would be good.." he closed his eyes.</p><p>Vio held Shadow tighter against him and they both closed their eyes.</p><p>Green looked at his four sleeping friends beside him.</p><p>He leaned his head on Vios' other shoulder, "..I don't ever want to be apart from you guys.." he whispered.</p><p>Green then closed his eyes and fell asleep with his friends.</p>
-<a href="Chapter 44.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 46.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 44.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 46.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

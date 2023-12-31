@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 22</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 22: The Power of the Wind Waker</b></u></p><p>Blue and Red ran up the stairs to the tower. They touched the outside wall with their hands then quickly removed them.</p><p>"Yeowch! That's hot!" Blue shook his hand.</p><p>"Not called the Tower of Fire for nothing, I guess." Red said.</p><p>"We gotta try our best not to touch the outside wall 'till we get to the top." Blue looked up.</p><p>"Hey! Why don't I just freeze the whole tower? That'll cool it down!"</p><p>"Idiot! You'll freeze Green, Shadow and Vio inside too!"</p><p>"Oh yeah, didn't think of that.."</p><p>"..Come on, let's hurry to the top."</p><p>Blue and Red ran up the stairs, trying their best not to touch the burning outside wall.</p><p>Meanwhile, Green and Shadow had got to the back and were walking to the entrance.</p><p>"So, does the book say anything else about the Wind Waker?" Green asked.</p><p>Shadow opened the book, "Well, it says that the Wind Waker can enable the user to control the wind, the weather, and even some aspects of time. The Wind Waker can also enable the user to control someone's actions."</p><p>"Wow, Vio could be invincible with that."</p><p>"Which is why we must hurry."</p><p>They started running up through the rooms in the tower.</p><p>Blue and Red eventually got to the top floor, where Vio was. They both hid behind either side of the entrance to the room. Vio was facing away from them, looking at the Wind Waker in his hand.</p><p>"He's not aware of us." Blue smirked, "My chance to attack!"</p><p>"No, Blue!" Red whispered.</p><p>Blue came out to the entrance. He drew his sword and ran to Vio with it ready to attack. Vio quickly turned round and blocked Blues' attack with his sword in one hand. They both kept blocking eath others' attacks with fast sword-play. Blue was slowly backing Vio away. Vio blocked Blues' attack and then repelled him away.</p><p>Vio smirked and withdrew his sword.</p><p>"Huh? What are you doing?" Blue was confused.</p><p>Vio waved the Wind Waker up, then to his left, then to his right, "Winds' Requiem!" he then pointed it at Blue and a strong wind blew him back to the wall. He dropped his sword, crashed into the wall and fell to the ground.</p><p>"Blue!" Red ran out from his place and stood infront of Blue. He pointed his rod at Vio, "I won't let you harm Blue."</p><p>"Hmm? And what can you do to stop me?" Vio asked.</p><p>"Ice Rod!" A wave of ice shot out of the rod at Vio.</p><p>Vio smirked and pointed the Wind Waker at Red, "Winds' Requiem!"</p><p>A strong wind blew back the ice wave just before it hit Vio. The ice wave went back at Red and entirely froze him in place.</p><p>"Red!" Blue shouted.</p><p>"Hm Hm Hm...you're all idiots. Always thinking too quickly.." Vio walked to the Red statue and put his finger on his frozen cheek, "Oh, what a shame. That Fire Rod of his is frozen with him. How will you get him out now? Hm Hm Hm."</p><p>"Why, you..." before Blue could even twitch, Vio came down to Blue, right infront of his face.</p><p>"Now.." Vio brought his Wind Waker up, so it touched the top of Blue's neck slightly, "Smash him."</p><p>His neck bled slightly. Blue paused and then yelled at the top of his lungs, "Green! Shadow!"</p><p>"D'you hear that!" Green asked.</p><p>"Vio must be at the top!" Shadow said.</p><p>They both started running up the stairs.</p><p>"Fool!" Vio deeply scratched Blues' chin with the Wind Waker.</p><p>Blue kicked Vio away in the stomach with his knee. Blue knelt up, grabbed his sword then ran at Vio with it, ready to attack. Vio brought out his sword and blocked Blue with it.</p><p>"You never know when to give up, do you?" Vio said to Blue.</p><p>"I never give up." Blues' chin was bleeding.</p><p>"Hm Hm, you never learn."</p><p>Green and Shadow got up to the top floor, behind Vio. They both drew their swords and ran to Vio, ready to attack. Vio repelled Blue away by stabbing him in the chest with the Wind Waker, which caused Blue to cough out some blood.</p><p>"Winds' Requiem!" Vio quickly turned round and pointed the Wind Waker.</p><p>Green and Shadow got blown back to the wall before they could reach Vio. Vio pointed his sword at them to threaten them to not step forward. Blue's chest was bleeding and he was covering his wound with his hands.</p><p>Vio turned to Blue and pointed the Wind Waker at him, "Now, smash Red or I'll make that wound of yours go right through you!"</p><p>Blue looked up to Vio, "..N..never.."</p><p>"Hmmm, fine. You're just making his death slower. Right now he's melting away with the ice. There's nothing you can do to save him. He's pretty much dead no matter what you do."</p><p>"N...no..You bastard!" Blue started running to Vio with his sword.</p><p>Vio smirked and waved the Wind Waker down, to his left, to his right and then up.</p><p>"Ballad of Gales!" He spun the Wind Waker round him and a strong spiral of wind came out from him.</p><p>The wind was so strong it blew the walls off the top floor. Green and Shadow flew out one way. Blue flew into the Red statue which broke him off the ground and they both flew out the other way.</p>
-<a href="Chapter 21.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 23.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 21.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 23.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

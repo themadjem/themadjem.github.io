@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 7</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 7: What is the plan?</b></u></p><p>The princess and the five Links were in the castle, sitting round a table.</p><p>"Let me introduce myself." the princess said, "My name is Tetra. I'm princess Zeldas' younger sister."</p><p>"Ooooh, so that's why you two look so alike." Red commented.</p><p>Tetra smiled, "I remember back when we were little, we used to argue over who would get the bigger castle. Looks like she won, but I think I'm much happier here. It's much more peaceful and the village is so nice."</p><p>"But one thing's not right." Blue said, "Why does Chibi Ganon want to marry you? If I were him I would've gone for Zelda. She seems to have much more wealth."</p><p>Green looked at Blue, "That's very suspicious coming from you."</p><p>"This village isn't protected as much as Hyrule is. He's just gone for me, probably to use me as bait to capture Zelda for his father." Tetra said.</p><p>"Ganondorf, huh?" Green asked.</p><p>"Yeah." Tetra sighed, "Uh, enough about me, please tell me your names!"</p><p>"My name's Green."</p><p>"I'm Blue."</p><p>"I'm Red!"</p><p>"My name's Vio."</p><p>Shadow paused, "Uh, my name's Shadow."</p><p>Tetra looked at him.</p><p>"Uh.." Vio put his hand on Shadows' head and ruffled his hair, "Don't worry about him, he's just a little shy! Eheheheh.."</p><p>Vio put his hand down and Shadow tried to stroke his hair back into place.</p><p>Red was staring at Tetra, fantasizing.</p><p>"Wow, that's such a cute dress, I wish I could wear it." he thought.</p><p>"Hey! I got a plan!" Green said, "You can't beat Chibi Ganon on your own, right?"</p><p>"Yeah.." Tetra said.</p><p>"Well, why doesn't one of us disguise as you tomorrow and then that person can beat Chibi Ganon without him knowing a thing!"</p><p>"That's just crazy enough to work." Blue said.</p><p>"Alright!" Tetra said, "Let's decide who it's gonna be."</p><p>They all got up from their seats and the five Links stood in a row.</p><p>"Now, let's see." Tetra said, "Which one of you looks most like me."</p><p>"Well, I'm definitely counted out." Shadow looked up to his hair, "My hair colour doesn't match yours."</p><p>Shadow thought to himself, "Plus I can't survive on my own out there in the light."</p><p>"Hmmmm..There is one problem though.." Tetra said, "You're all too tall."</p><p>She looked along the row then stopped at Red at the end. She rushed over to him.</p><p>"Except you! You're exactly the right height! Plus you have my eyes! You're perfect!" she excitedly said.</p><p>"W-w-what!" Red was stunned.</p><p>"Makes sense." Blue said, "The dress will only fit on you, Red."</p><p>Reds' face went bright red, he then fainted.</p><p>"Uh, is he alright?" Tetra asked.</p><p>"He loves your dress." Blue said, "His dream is about to come true."</p>
-<a href="Chapter 6.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 8.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 6.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 8.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

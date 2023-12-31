@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 48</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 48: Sweet Dreams</b></u></p><p>It came to midnight as the five Links entered Dock Town. There were many small buildings on either side of the main street they were walking through. The street had stone paving and was lit up by many lanterns. Several men were standing by the street sides, talking amongst themselves, some of them drunk with bottles of sake in their hands.</p><p>The Links all had a tired look apon their faces.</p><p>"We need to find a place to sleep.." Red said.</p><p>"Good idea." Green agreed.</p><p>They were standing at a reception desk in a small hotel.</p><p>"One room for five, please!" Green said to the man behind the desk.</p><p>"Hmmm..We've only got a room with three beds left.."</p><p>Vio, Shadow and Reds' faces lightened up, "That's fine!"</p><p>An angry look came across Blues' face.</p><p>"For you five..that'll be 250 rupees." the man said.</p><p>"Hold it!" Blue went up to the desk, "We've faught a giant rock-snake, been sent to the dark world, been swept away by a tornado, nearly drowned, faught a giant bird, journeyed across freezing snow, scourching deserts, nearly died getting here, and you expect us to pay 250 rupees for one night!"</p><p>Green pushed Blues' head back, "Don't worry about him, he just needs his sleep."</p><p>The five Links were standing in their hotel room. There was one bed against each of the three walls with thick, red blankets on them. There was a door on the right wall leading to a small bathroom. There was a set of drawers and a window on the far wall.</p><p>The Links had changed into their pyjamas. Vio and Shadow were sitting together on the far bed. Green was sitting on the bed on the left. Blue was standing in the middle of the room and Red was in the bathroom.</p><p>"OK, Blue. Me or Red." Green said to him, "Or you can sleep alone and I'll sleep with Red."</p><p>"Hmmm..?" Blue thought to himself.</p><p>Shadow started nodding off and leaning his head on Vios' arm.</p><p>Vio yawned, "Hurry up and choose, Blue. We're tired.."</p><p>"It's just one night..just this once.." Blue thought.</p><p>"So..?" Green began to ask.</p><p>Blues' head perked up as he heard the bathroom door unlock.</p><p>"Who's it gonna be?"</p><p>Red happily skipped out the bathroom, but then got stopped as Blue grabbed his wrist.</p><p>Blue pulled him to the bed, "Come on, Red! You're sleeping with me tonight!"</p><p>Red had a shocked and confused look apon his face.</p><p>It was early in the next morning. Vio and Shadow were sound asleep in each others' arms. Blue had his arms wrapped around Red, who was facing away from him and Red was holding onto Blues' arms.</p><p>Blue slowly opened his eyes from his sleep and perked up as he noticed his arms around Red.</p><p>Blue blushed slightly, "W-wha? How did this happen?"</p><p>Red rubbed his head against Blue in his sleep, "Oh, Blue. You're such a gentleman.."</p><p>Blue blushed a bit more, "..Atleast this isn't so bad as to what happened in City Ishidukuri.."</p><p>"Oh, my.." Green commented.</p><p>Blues' head perked up and turned to Green, who was sitting up in his bed, looking at Blue and Red, smirking suspiciously.</p><p>"What happened in City Ishidukuri?" Green asked.</p><p>Blue started to blush more, "Never you mind! It's none of your business!"</p><p>"You're blushing, Blue. A little personal, eh?" Green asked.</p><p>"I don't have to tell you!"</p><p>"Ah, so it is personal." Green got out his bed and started to get his clothes out the drawers, "So, what happened to you and Red in Ishidukuri?"</p><p>"...Nothing...happened..."</p><p>Green closed the drawer as he got all his clothes out and his smirk windened, "Heheh..You sure can't keep your arms off Red, can ya?"</p><p>Blues' head perked up as he blushed more.</p><p>Green started to walk to Blues' bed, "You're always the first to come to Reds' needs, and he seems obsessed with you.." Green leaned in at Blues' face, "I think...I'm glad you didn't sleep with me last night!"</p><p>Blues' face turned angry and bright red, "Grrrrr! You!"</p><p>"Hahahaha!" Green laughed as he ran into the bathroom and locked the door.</p><p>Blue paused, then took a deep breath in and sighed.</p><p>He looked down to Red, "..Thank goodness he's still asleep.."</p><p>Blue slowly pulled his arms out of Reds' clutches and climbed out of bed. Red rolled onto his back and Blue pulled the covers over his chest.</p><p>Blue looked down at Red, "..I wonder what he's dreaming about.."</p><p>Blue held onto both of Reds' hands with his. He moved himself closer to Red and closed his eyes as he kissed him on the lips.</p><p>After a few seconds, Blue pulled his face away from Red. He opened his eyes and let go of Reds' hands.</p><p>He looked down at Red then sighed and walked to the drawers. He opened them and started to get his clothes out.</p><p>"Blue, you idiot.." he closed the drawer and looked out the window, at the sun rising, "..I'll find the right time...to tell him...everything.."</p><p>He walked to the bathroom door, "It's weird..it feels like I've had this growing feeling..right from the very start.."</p><p>Blue leaned on the bathroom door and looked at Red. The sun was shining on Red, who was sleeping on his back, with his lips still slightly apart.</p><p>Blue perked up and blushed slightly.</p><p>He turned round and knocked hard on the door, "Hurry up, Green! You've been in there for ages!"</p><p>The loud noise caused everyone to wake up.</p><p>Shadow yawned and dug his face in Vios' chest.</p><p>Vio smiled and stroked Shadows' hair, "Time to wake up, Shadow-Chan."</p><p>"Come on, Green!" Blue yelled through the door.</p><p>"Two minutes, Blue! That's all I ask!" Green yelled back.</p><p>Red sat up in his bed and stretched his arms out. Blue leaned on the door and looked at Red. Red looked over to him and Blue quickly turned his head away.</p><p>Red smiled at Blue and then jumped out of bed, "Good morning, everybody!"</p><p>It was 7am and the sun was shining brightly on Dock Town. There were already several townsfolk out and about.</p><p>Red was the first to run out the hotel into the street. Vio and Shadow followed behind him, holding hands, with Green and Blue walking further behind.</p><p>Red stopped and twirled around on the spot, "Ah! I had the most wonderful dream last night!"</p><p>"Yeah? What was it about?" Vio asked.</p><p>"Well, it started with a huge, magnificent castle." Red explained, "Blue was in a handsome suit and I was in a beautiful, pink dress. We were dancing, hand-in-hand, on the huge balcony. The stars and full moon lit up the night sky. Blue was such a graceful dancer as he lead me in our dance.."</p><p><i>Blue lead Red to a stop and held both his hands as they faced each other.</i></p><p><i>Red looked up to him, "Blue.."</i></p><p><i>Blue looked down to Red, "Red.."</i></p><p><i>As they gazed into each others eyes, they edged their heads towards each other and closed their eyes as they kissed each other on the lips.</i></p><p>"And then we shared the ever-fateful kiss! Oh, that part seemed the most real out of all of it.."</p><p>Blues' head perked up as he blushed and sweated.</p><p><i>Blue and Red pulled their faces away as they stopped kissing. They then gazed into each others' eyes.</i></p><p><i>"Oh, Blue.." Red said.</i></p><p><i>"Red..you're everything I could ever want..You're so adorable and loving..You're my shining star in the darkest of nights.." Blue said, "Red..I.."</i></p><p>"And then everything around me burst like a balloon and I woke up from this loud knocking!"</p><p>"Aaw, that's a shame." Shadow said, "But that dream was so romantic!"</p><p>"Yeah!" Red giggled to himself.</p><p>Blue was staring at Red, blushing slightly, "Shining..star..."</p><p>Green suddenly nudged Blues' arm with his elbow, "You're blushing again, Blue! I think you're in l-"</p><p>Blue perked up and quickly covered Greens' mouth with his hand.</p><p>He pushed Green back and ran to the others, "So, how're we gonna get back to Hyrule?"</p><p>Green looked at Blue and a wide grin spread across his face. He then walked to the others.</p><p>"We gotta cross the sea, right?" Blue asked.</p><p>"Yep." Shadow nodded, "We need to cross the great sea, but for that we need a boat."</p><p>"Do you think we can get one here?" Red asked.</p><p>"Well, we won't find out unless we look around!" Green said.</p>
-<a href="Chapter 47.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 49.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 47.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 49.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

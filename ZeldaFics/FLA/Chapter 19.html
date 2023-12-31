@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 19</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 19: Possessed by the Wind Waker</b></u></p><p>In the basement of the Tower of Fire, Vio was lying, unconscious, face down on the floor. The dark mirror was behind him. Vio slowly opened his eyes and knelt up.</p><p>He rubbed his head and looked behind him, "Huh? Oh, that's right. I fell through the dark mirror."</p><p>Vio looked around the room, "I'm back in...the Tower of Fire..?"</p><p>Vio stood up and started walking to the stairs. He heard something being stepped on and stopped. He looked down and saw something under his foot. Vio bent down and picked it up. It was a small, white rod with three spirals on the handle.</p><p>Vio held it in his hands, "What is this?"</p><p>Vio watched the rod floating up into the air. It pointed at Vio and then pierced itself right into his forehead. Vio was in pain and his eyes shrank.</p><p>He heard a dark voice in his head, which came from the rod, "Fall into the darkness. With this Wind Waker, you can rule all. No-one will be able to stand in your way. You can control the climate and the wind. You cannot resist.."</p><p>Just then, Vios' eyes turned a very light blue, almost white and he lost the shining in his eyes. The Wind Waker came out of his forehead and Vios' head fell forward. The Wind Waker fell and Vio quickly caught it with one hand. He brought his head up and he had a possessed, evil-looking face.</p><p>Vio smiled evilly, "Now the fun begins..Hm hm hm..." his voice was more menacing.</p><p>Green, Shadow, Red and Blue were climbing up a rocky side of the mountain.</p><p>"Man, what was up with everybody back there?" Green asked, "It wasn't like them at all."</p><p>"Oh, they were possessed by the darkness." Shadow said.</p><p>"What!"</p><p>"Heheh, don't worry. They'll snap out of it soon enough."</p><p>"Really?"</p><p>Shadow smiled, "Yeah. The Great Light Fairy of Hyrule told me."</p><p>"Oh. Well that's OK then."</p><p>"Wow! You met a fairy?" Red asked Shadow.</p><p>Shadow nodded, "Yeah, she was really beautiful."</p><p>"Wow!" Red was fascinated.</p><p>Green looked up, "At last! Flat ground to rest on!"</p><p>They climbed up and helped each other up to the ledge. They all sat on the ground trying to catch their breath.</p><p>Shadow looked up, "Look!" he pointed forward, "I can see it! The Tower of Fire! We're nearly there!"</p><p>"Alright." Green said.</p><p>The Tower of Fire could be seen in the distance, behind a few small rocky hills.</p><p>"Can we rest first?" Red asked, "I'm totally beat.." he collapsed on the floor.</p><p>"Hey! Help me! I'm stuck under this rock!" a voice said.</p><p>"That voice seems familiar.." Green thought.</p><p>He then realised who it was and quickly hid behind a nearby boulder.</p>
-<a href="Chapter 18.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 20.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 18.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 20.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

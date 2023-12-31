@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 50</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 50: Let's be Pirates!</b></u></p><p>The five Links were sitting round a table in their ship. Shadow had laid out the map in the middle of the table.</p><p>"If we just sail in a straight line and avoid all the islands, then at this pace it should only take a few days to get back to Hyrule." Shadow explained.</p><p>"And we'll have to use the wind at our full advantage." Green said.</p><p>The Links laughed in agreement. They suddenly felt the ship jolt as they heard a loud bang.</p><p>"What's going on!" Green asked.</p><p>"We're being attacked!" Red panicked.</p><p>The five Links ran out to the decks. They looked at the pirate ship slowly coming closer at them from the side. The pirate ship was twice the size of the Links' ship.</p><p>"How're we supposed to attack them? This ship didn't come with a cannon!" Green stated.</p><p>Another cannon ball was shot at the Links. It broke through the banisters and nearly hit the Links as they quickly stepped away to dodge it. The cannon ball shot through, closely missing the Links, and broke through the banisters on the other side.</p><p>"How're we gonna stop them?" Red panicked again.</p><p>A young girl, standing ontop of the pirate ships' mast, was looking through a red telescope at the five Links. She gasped as she zoomed in at the Link in green.</p><p>"Stop the attack!" she yelled down to the crew below her, "It's them!"</p><p>"It's those five, eh?" spoke a tomboy-ish voice, "Let's go say 'hello' to them."</p><p>The pirates retreated their cannons back into their ship and sailed to the side of the Links' ship.</p><p>"Huh? A truce?" Green blinked in confusion.</p><p>A girl, the same age as the Links and with light brown skin, stepped out to the banisters.</p><p>She looked down at the Links, "It's nice to see you again."</p><p>The Links looked up to her, "Tetra!"</p><p>"Heheheh, so you still remember me. That's good to hear!" Tetra said, "Say, how come you're sailing down this way? Weren't you going back to Hyrule?"</p><p>"Heheh..Well, you see.."</p><p>Green explained to Tetra what had happened to them since they left Kumalon Village.</p><p>"Wow, you guys sure have been through a lot." Tetra commented.</p><p>"What about you? Who's in charge of Kumalon Village now?" Green asked.</p><p>"Uh...well..they kind of chased me out 'cause I'm a pirate and all. So...no-one. Eheheheh.." Tetra sweatdropped.</p><p>The young girl ran up to the banisters and waved, "Hoy! Big brother!"</p><p>Green looked up to her and his eyes widened, "Aryll!"</p><p>Aryll was about 10 years old. She had blonde hair tied in two pigtails with blue hairbands and she had blue eyes. She wore a dark pink dress with white skull prints, brown wristbands and sandals. There were always a couple of seagulls flying around or perched near her.</p><p>"Heheheh! It's been a long time, hasn't it?" Aryll giggled.</p><p>Green smiled, "It's so nice to see you. But what about Grandma? Does she know you're here?"</p><p>"Don't worry, she's alright. She said for me to follow my dreams as a pirate instead of being cooped up on Windfall all the time." Aryll explained, "She's happy I'm doing what I want. Besides, there's the other people on Windfall to look after her too."</p><p>Green sighed in relief, "As long as she's safe.."</p><p>"Tetra told me what happened to you." Aryll giggled, "So, do I have 5 big brothers now?"</p><p>Green sweatdropped, "No, just me."</p><p>"Hey!" Tetra carried two full sacks over her shoulders to the banisters, "You boys are gonna get hot in those clothes. Here." she threw the sacks down onto the Links' ship, "Think of it as a gift from me." she then winked.</p><p>"Miss Tetra! We diciphered it! We need to go east!" a pirate called out.</p><p>"Alright! Let's go! You know what to do!" Tetra then turned to the Links, "See ya!"</p><p>As her ship turned away, Ayrll waved as they sailed away from the Links.</p><p>The Links turned their heads round to the sacks behind them. Red and Vio knelt down to untie them.</p><p>Reds' face lightened up, "Check it out! We got some pirate clothes!"</p><p>The Links had changed and had put their original clothes in the sacks which they put indoors.</p><p>Green wore a short-sleeved olive green shirt, a brown belt, long light brown shorts and brown shoes.</p><p>Blue wore a black eye-patch over his right eye, a short-sleeved blue jacket which revealed his chest and was ripped at the bottom and at the sleeves, a black belt, brown trousers and dark brown shoes.</p><p>Red wore a dark blue bandana round his head, a short-sleeved dark blue shirt, a short orange skirt and brown shoes.</p><p>Vio wore a purple bandana round his neck, purple wristbands and waistband in the same material, a sleeveless dark purple shirt which was slightly tight-fitting over his chest, very light brown trousers and light brown shoes.</p><p>Shadow wore a black and white striped bandana over his head, a short-sleeved black and white striped shirt, black shorts and black shoes with black and white striped socks.</p><p>The Links were looking down at their new clothes.</p><p>"It's nice to wear something different for a change." Shadow said.</p><p>Red giggled to himself, "Yay! I get to wear panties and skirt!"</p><p>"D'you think it's weird Tetra gave us those?" Shadow asked.</p><p>"It's like she knew.." Vio said.</p><p>Blue blushed slightly as he looked down at Reds' skirt.</p><p>Green suddenly nudged Blues' arm with his elbow, "Hey, Blue. You're-" Green perked up, "Why are you wearing an eye-patch?"</p><p>"Because it makes me look cool." Blue stated.</p><p>"Sure.."</p><p>"Oh, Blue!" Red glomped Blue from the front, "You look so great.." Red rubbed his cheek against Blues' chest.</p><p>Blue looked down at Red and he blushed more and more.</p><p>It was nearing the middle of the day. Shadow was helping Vio cook lunch in the kitchen. At time-to-time, Shadow looked at Vio, but quickly looked away and blushed when Vios' eyes caught his.</p><p>Green was taking a nap in a hammock in the bedroom area.</p><p>He talked in his sleep, "N..no..please...please don't eat my jam sandwich.."</p><p>Red was looking out at the sea, leaning on the banisters, at the front of the ship.</p><p>Blue was sitting on the flat roof of the room below. He turned his head round to Red and perked up as he saw Reds' skirt flow slightly in the breeze.</p><p>"Huh?" Blue crawled to the edge of the roof and tilted his head down, "..If he'd just lean forward a little more.." he thought.</p><p>Red then leaned forward slightly. Blue blushed as he saw some of Reds' panties.</p><p>Blues' hand suddenly slipped and he fell off the edge and onto the floor.</p><p>Red turned round to Blue, "Wah! Blue!" Red ran to him and crouched down, "Are you OK?"</p><p>Blue opened his eyes and blushed as he saw up Reds' skirt, "Wah! Uh!" Blue blushed then quickly sat up, "I'm fine! Don't worry about me!"</p><p>Red smiled, "I'm gonna go see if lunch is ready yet."</p><p>Red turned round and walked round the corner.</p><p>"Phew.." Blue sighed in relief as he layed back, "That was a close one!"</p><p>It was late in the evening. Green, Blue and Red were sleeping, in their pyjamas, in the bedroom area in hammocks. Blue was sleeping in a hammock above Greens', which were both tied between two posts. Red was sleeping in another hammock tied to the post and the wall, low to the floor.</p><p>The night sky was lit beautifully with the stars and moon. Shadow was sitting in the top of the tall mast, keeping a look-out for any attacks or monsters.</p><p>He was trying to recite Vios' song to himself, "Each kiss like a...dream. Touching every star in the..sky..?" Shadow looked up to the night sky, "What were those graceful words?"</p><p>Vio quietly climbed up to the top of the mast and sat down next to Shadow.</p><p>Vio gently placed his right hand on Shadows' left cheek. Shadows' head perked up and blushed. Vio pushed his head to face his and he leaned in closer to Shadow.</p><p>Vio looked into Shadows' eyes, "Every kiss like a poetic dream. Softly touching every star in the night sky.."</p><p>Vio brought his face right up to Shadows' and he licked from below up to his lips. They both closed their eyes as Vio kissed Shadow on the lips.</p><p>The kiss lasted a few seconds. Vio pulled his lips slightly away from Shadows' and they gazed into each others' eyes.</p><p>"...Vio-kun...When did you think of such a beautiful song?" Shadow asked.</p><p>"When you were in my arms, I thought of those words." Vio explained, "And when I played, I thought of you, and a beautiful tune came out."</p><p>Vio leaned in and they closed their eyes as Vio passionately kissed Shadow on the lips again.</p><p>As they kissed, Vio stroked down the side of Shadows' cheek, down his neck, down on the side of his chest and down one side of his waist. He set his hand on the side of Shadows' thigh and rubbed it gently.</p><p>Shadow brought his arms up and wrapped them around Vio. Vio brought his hands up and rested them behind Shadows' head and back as he rested Shadow down on his back.</p><p>Vio departed his head away from Shadows' slightly and they panted lightly as they looked into each others' eyes.</p><p>Vio blushed slightly as Shadow licked Vio near his lips. Vio smiled and brought his face down to Shadows' as they licked and kissed each other on the lips.</p><p>The night sky glistened as a couple of shooting stars shot across the sky.</p>
-<a href="Chapter 49.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 51.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 49.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 51.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

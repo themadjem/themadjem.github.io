@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 8</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 8: Shadows' Nightmare</b></u></p><p>It was late in the evening. The five Links were in a large bedroom. It had two beds on one side, and three on the other. There were windows between the beds on the side with three.</p><p>Green was sitting on his bed. Vio was reading his book on the middle bed, and Shadow was relaxing on his bed. Red and Blue were sitting on the edge of their beds, facing each other.</p><p>"Why do I have to do it again?" Red asked Blue.</p><p>"Because, you're the only one who'll fit into her dress." Blue said, "And you have her cute eyes..apparently."</p><p>"I have cute eyes..." Green said as he pointed at his eyes.</p><p>"You're too tall." Blue said to him.</p><p>"OK." Red said, "Tell me what I have to do."</p><p>"OK, here's the plan." Blue said, "Tomorrow morning, when you wake up, Tetra will be taking a shower. She'll leave the clothes you need outside her room, so you take them and change. You then leave your clothes in her room on her bed. After her shower, she'll change into your clothes. She'll then do your hair and make-up and we'll be able to hide your sword under your hair on your back. Then we'll just wait 'till Chibi Ganon comes to take you to his hideout. Then you can kill him while he's off guard. It's your job to decide how."</p><p>"Alright!" Red said, "Got it!"</p><p>"Don't swap underwear." Blue commented.</p><p>Vio put his book down and looked outside the window.</p><p>"Hey, guys. We should get to sleep." Vio looked at Red, "You got a busy day tomorrow!"</p><p>"Right!" said Red.</p><p>The room was dark and everyone was asleep. Their tunics, belts, hats and shoes were neatly arranged at the ends of their beds. Red and Vio were sleeping quietly. Blue was smiling in his sleep with drool coming from his mouth. Green was half out of his blanket, snoring softly. Shadows' eyes were twitching, he was having a dream.</p><p>In his dream, Shadow slowly opened his eyes. He was sitting under a large tree in the shade, similar to the place wherehe was revived by Vio. There was only the one tree he was under there, the rest of the place was white. Green appeared infront of him.</p><p>"Disappear." he chanted.</p><p>"Disappear." Red appeared next to Green.</p><p>"Disappear." Blue appeared the other side of Green.</p><p>Vio appeared infront of them, "Disappear."</p><p>They were all staring at Shadow, with possessed eyes, continuously chanting 'disappear'. Shadow was looking back at them.</p><p>"Huh? What...do you guys mean?"</p><p>The shade from the tree started getting smaller and was closing in on Shadow. He noticed and tried to back away as much as he could. The shade got smaller and smaller. Shadow stared at it in fright.</p><p>"Disappear. Disappear. Disappear. Disappear." they kept chanting.</p><p>The shade was at the tip of Shadows' feet. The tree then suddenly disappeared and Shadow was exposed to the light. He screamed in pain.</p><p>Shadow was twitching in his bed and tears were rolling down his face. Vio rolled over, facing Shadows' bed, and opened his eyes. He noticed Shadow was fading away and becoming blurred, like a hologram. Vio quickly got out of his bed and shook Shadow by his shoulders.</p><p>"Shadow! Wake up! Shadow!" Vio panickly said.</p><p>Shadow became very faded and Vio quickly clutched his hand with both of his. Shadow opened his eyes and the fading stopped. He quickly sat up.</p><p>"Wha...What was happening?" He asked.</p><p>"You nearly disappeared." Vio replied.</p><p>Vio let go of his hand.</p><p>"I can't even survive in my dreams." Shadow said, "How can I survive now?"</p><p>Vio walked away to his bed. He put on his tunic and fastened it with his belt. He stepped into his shoes and put on his hat.</p><p>"What are you doing?" Shadow asked him.</p><p>Vio walked to the windowsill near Shadows' bed and sat up on it.</p><p>"I'll stay awake." Vio smiled at Shadow.</p><p>"Huh?"</p><p>"I'll stay awake so you don't disappear. I can stop you if you start fading away again."</p><p>"But..."</p><p>Vio smiled at him, "Don't worry about me. We'll do all we can to keep you alive."</p><p>Shadow smiled back at him and fell back into his pillow, back to sleep.</p>
-<a href="Chapter 7.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 9.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 7.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 9.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

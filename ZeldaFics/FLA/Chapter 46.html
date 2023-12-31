@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 46</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 46: Reds' Bright Idea</b></u></p><p>Night had dawned apon the desert. The moon and the stars lit up the dark, night sky.</p><p>Shadow slowly opened his eyes from his sleep and found that he had turned round in his sleep as he found himself looking at Vios' purple tunic.</p><p>"Huh?" Shadow looked up at Vio, who was sound asleep, "Vio-kun.."</p><p>Shadow turned his head round to the entrance of the hollow root. Shadow perked up as his face looked stunned. He prevented himself from screaming as he froze in fear.</p><p>Covering the entrance was a spiders' web, with an enormous spider right in the middle. The spider was completely still and made no sounds.</p><p>"A...a...a huge spider!" Shadow whimpered.</p><p>Shadow held his arms tightly around Vio and he dug his face in his tunic.</p><p>"This is a dream. It's all a bad dream. Soon I'll wake up out of this nightmare!" Shadow said to himself.</p><p>Blue slowly opened his eyes from his sleep and found his arm around Red, who was facing away from him. Blue perked up and blushed. He quickly removed his arm and sat up.</p><p>Blue looked down at Red who was sleeping, "..I hope he only felt that in his dreams.."</p><p>Blue then sighed and stood up. He looked up at the spider and started walking toward it.</p><p>"Wow! Check it out!" Blue smirked.</p><p>Shadow turned his head round to Blue, "No, Blue! Don't go near it! It might eat you!"</p><p>Blue stopped and turned round to Shadow, "What! It won't do that, Shadow! It's sleeping!"</p><p>"But, aren't you scared?"</p><p>Blue smirked, "No way! I ain't scared of anything!" he looked smug, "Because I'm Blue Link! The legendary blue hero!"</p><p>"Uh, OK.."</p><p>Green and Red opened their eyes from their sleep.</p><p>Red sat up and looked up at the spider, "Wow!" he stood up, "How cool!"</p><p>Green looked up at the spider, "Woah. When the book said 'large insects', I didn't think that it meant this." he then stood up.</p><p>Shadow looked up at the spider and then quickly dug his face into Vios' chest. This caused Vio to wake up and look down at Shadow.</p><p>"Huh? Shadow-Chan? What's wrong?" Vio asked.</p><p>"Be...behind me.." Shadow said, with his face still in Vios' chest.</p><p>"Huh?" Vio looked up at the spider, "Woah. That's pretty big!"</p><p>"How can everyone be so calm about this thing!" Shadow thought.</p><p>"How're we gonna get out? It's blocking the entire entrance." Green stated.</p><p>"Look! There's a small gap in the bottom of the web." Vio pointed, "We should be able to crawl through there."</p><p>Red smiled, "That'll work!"</p><p>Green, Blue and Vio were standing outside the root, on the other side of the web. Red crawled through and jumped up to the others.</p><p>"Alright, Shadow-Chan! It's your turn!" Vio shouted to him, "Come on!"</p><p>Shadow was standing in the middle of the root. He was staring at the spider, shivering slightly.</p><p>Shadow looked at Vio, "Um..OK.."</p><p>Shadow walked toward the web and went down onto the ground. He started crawling through with his eyes tightly shut. He heard a breathing noise from the spider, he stopped and looked up at it. He saw the fangs of the spider move quickly, like it was chewing something.</p><p>Shadow then quickly crawled back in the root and sat in the middle, shivering rapidly.</p><p>"I-I-I can't do it!" Shadow dug his face in his hands, "I'm too scared!"</p><p>"Shadow, come on! You can do it!" the others cheered.</p><p>"Shadow-Chan! I believe in you!" Vio said.</p><p>Shadows' head perked up.</p><p>"Just crawl through. Don't stop or look back." Vio knelt down, "Just look at me, OK?"</p><p>"Vio-kun..." Shadow started crawling through again and looked at Vio.</p><p>Vio stood up as Shadow got through. Shadow stood up and went straight to Vio. He clutched his arms around him and buried his face in Vios' chest.</p><p>Vio put his arms around Shadow, "You wanna tell us something, Shadow-Chan?"</p><p>Shadow lifted his head, "I..." he then sighed, "Have a fear of spiders.." he then buried his face back into Vios' chest.</p><p>Vio smiled and stroked Shadows' hair gently to comfort him.</p><p>The five Links walked out the Desert Tree onto the sand of the desert. The was a large rock to the left of them.</p><p>Vio ran out with a worried look on his face. He looked up at the moon in the sky and sighed in relief.</p><p>"Thank goodness.." Vio walked up to the rock and carved an arrow with one of his arrows, "This way's south."</p><p>"So, we have to cross the other side of the desert, right?" Green asked.</p><p>Shadow looked at the map, "Yeah, another 100 miles."</p><p>"100 miles! I'm not walked that far again!" Blue said.</p><p>"But, atleast it's not in the heat!" Green argued.</p><p>"It's still far though!"</p><p>Green and Blue kept arguing about their walking distance.</p><p>Red looked out at the desert and then turned round and looked up at the thick roots.</p><p>He thought back to when they made the canoe.</p><p><i>"We made it." Green said.</i></p><p><i>"It's a little canoe!" Red smiled.</i></p><p>Red then thought about the Oinees and their springy tails.</p><p>Red's face lightened up, "I got it!" he turned round to the others, "We need to make that canoe again!"</p><p>The others turned their heads to Red and blinked in confusion, "Huh?"</p><p>Green and Blue were sitting either end of a thick 'branch' which was connected at both ends to thick roots.</p><p>Shadow and Red had layed two vines on the ground, below the 'branch'.</p><p>"OK! Ready!" Red yelled up to them.</p><p>Green and Blue drew out their swords and cut the 'branch' off in one swipe.</p><p>The 'branch' fell onto the vines and Shadow and Red tied them round to make handles.</p><p>Green and Blue jumped down to the ground. Green landed on his feet and Blue landed then tripped onto his face.</p><p>Blue quickly stood up like nothing happened, "I'm OK!"</p><p>"Heheheh!" Green laughed to himself.</p><p>Shadow and Red lifted the 'branch' off the ground by the handles. Red was struggling to keep it lifted.</p><p>"I'll take it." Blue took the handle from Red, who let go, "I don't want you to hurt yourself." Blue smiled at Red.</p><p>Shadow and Blue carried the 'branch' through the Desert Tree, to Vio. Green was holding the back of the 'branch' up. Red looked at Blue, then smiled and ran behind them.</p><p>They set the 'branch' down beside Vio. Vio was looking out at the desert with a confused look apon his face.</p><p>"I don't get it." Vio turned to the others, "How are we supposed to move the canoe through the desert? There's no wind so we can't use a sail, and using oars to paddle through the sand would take more energy than walking!"</p><p>Red winked, "Just start carving the canoe out. I'll be back." Red turned round and ran into the Desert Tree.</p><p>Red made his way through some bushes, deep into the Desert Tree.</p><p>He stopped, "Ah!" his face lightened up.</p><p>Lots of Oinees of different colours were sleeping in a small clearing. Their tails fell off them while they slept and planted themselves into the ground.</p><p>Red walked up to one, "I'm glad we discovered these Oinees." he whispered to himself.</p><p>Red carefully reached his hand out then quickly pulled the springy tail off an Oinee. The Oinee twitched slightly and Red smiled.</p><p>The others had finished carving the canoe out with their swords.</p><p>Blue smirked, "That was easy."</p><p>"Heheh! Yeah!" Shadow laughed.</p><p>"Easy for you guys to say, your swords have loads of force." Vio said.</p><p>"For once, I want there to be monsters around." Green said.</p><p>"Guys, I'm back!" Red yelled out.</p><p>Red ran up to them and they turned their heads to him.</p><p>"So, what were you gone for?" Blue asked.</p><p>"Heheheh.." Red then showed them the springy Oinee tail attached to a couple of sticks, "Daa daa! It's our canoe motor!"</p><p>"Wha?" the others were confused.</p><p>The five Links were sitting in their newly built canoe. Green was at the front, then Shadow, Vio, Blue and Red at the back.</p><p>"We're ready.." Green said.</p><p>"I still don't get how this thing's gonna move." Shadow said.</p><p>"You ready yet, Red?" Vio asked.</p><p>"What the hell are you doing anyway!" Blue asked.</p><p>"You'll see..." Red was tightening the spring around until it was fully compressed, "OK!"</p><p>Red slotted the spring round a stick through a small hole at the back of the canoe.</p><p>"Ready?" Red released his finger from the compressed spring, "Here we go!"</p><p>The spring was released and acted as a continuous propeller, launching the canoe forwards.</p><p>"What?" Vio turned his head round to Red, "How'd you do that!"</p><p>"I used one of the Oinees' springy tails as a propeller that'll always spin, like a motor!" Red replied.</p><p>"Wha?" Vio turned his head back round, "I can't believe you out-smarted me!"</p><p>Red giggled to himself and then pointed forward, "We're on our way to Hyrule!"</p><p>"Yeah!" they all cheered.</p><p>"Heheh! It's fun being the main character!" Red said.</p><p>Green turned his head round, "Wha! I'm the main character here! The one originally wearing green!"</p><p>"What! 'Original'? We're different kids! Remember!" Shadow argued back.</p><p>"But I'm the main one!"</p><p>"When did you decide that?" Vio asked.</p><p>The five Links laughed as they rocketed through the desert.</p>
-<a href="Chapter 45.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 47.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 45.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 47.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 28</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 28: New Feelings</b></u></p><p>"Waaaaaahh!" Blue and Red were flying through the air.</p><p>Red was still holding his arms round Blue.</p><p>They were both flying towards an island called Dragon Roost island. It had a tall mountain with a volcano at the top. It was always dormant since a huge, red dragon, named Valoo, slept on top of it. Dragon Roost was home to a race of people called the Rito tribe. They were a bird people with beaks instead of noses and they could sprout wings from their arms to fly when they were old enough. They all wore cloak-like clothes.</p><p>Valoo was sleeping on top of the volcano, on his back. Blue and Red were flying toward him.</p><p>"W-what's that!" Red asked.</p><p>"A dragon!" Blue said.</p><p>"Aaaaah!" they then landed on his belly.</p><p>They both bounced off the dragons' belly into the air. They went down then bounced back up again.</p><p>Blue turned his head and saw the dragons' tail come at him, "Waaah!"</p><p>The tail whipped Blue in the face and rendered him unconscious.</p><p>It knocked Blue into Red which sent them flying to the sea.</p><p>A rito girl, named Medli, with long, brown hair in a pony-tail, was standing on a balcony, over-looking the sea. She saw Blue and Red fall down from above.</p><p>"Komali! Come quick!" she yelled.</p><p>An older rito boy came out to her. He had longish, white hair and darker skin.</p><p>"What is it?" he asked.</p><p>Blue and Red fell into the sea.</p><p>Medli and Komali ran to the edge of the balcony.</p><p>Medli pointed to the sea, "Look!"</p><p>Red came up to the surface and gasped for air.</p><p>He looked around him, "Blue?"</p><p>He couldn't see Blue anywhere. He saw some bubbles come up to the surface.</p><p>"Oh no! Blue!" Red dived back under.</p><p>Red swam down as fast as he could to Blue, who was sinking down into the depths. Red put one arm around Blue and grabbed his hat which had drifted off Blues' chest. Red swam back up as fast as he could. He got to the surface and pulled Blue up so his head was above the surface.</p><p>Red looked up and saw Komali, flying in the air, infront of him.</p><p>"Grap ahold!" he said.</p><p>Blue was lying on a bed, still unconscious. His chin, chest and back were bandaged up where his wounds were.</p><p>Red and Komali were standing at the bedside. Reds' arm was also bandaged up.</p><p>"Come on, Blue. Please wake up!" Red said.</p><p>"Hmmm..try pressing down on his chest to get the water out of him" Komali said, "I'll see if Medli can stitch up your clothes for you." Komali left the room.</p><p>"OK." Red looked down at Blue.</p><p>He walked closer to Blues' side and he placed his hands on Blues' chest. He pressed down three times and water squirted out of Blues' mouth. Blue coughed out somemore water but didn't wake up.</p><p>"Aw, man. Still not awake.." Red perked up, "I know! The kiss of life! Maybe that'll work!"</p><p>Red closed his eyes and moved his head closer to Blues'.</p><p>Blue opened his eyes and saw Reds' face right infront of him.</p><p>Before Blue could say anything, Red was kissing him on the lips. Blues' eyes widened and he blushed. Blue then closed his eyes to pretend he wasn't awake.</p><p>Red stopped kissing Blue and he stepped away a bit.</p><p>Blue re-opened his eyes to look like he just woken up.</p><p>"Huh? W..what happened?" Blue asked.</p><p>"Ah! You're awake!" Red smiled, "We fell into the sea and I saved you from drowning. I was really scared."</p><p>Blue sat up and then clutched hs chest.</p><p>"Don't make too many sharp movements! The healing cream in the wounds hasn't set in yet!"</p><p>"Huh? Oh, right." Blue then turned his head away from Red so he didn't see him blushing.</p><p>Red smiled, "I'm so glad you're alright! We gotta wait a while 'till the healing cream fixes our wounds. And our clothes are gonna be fixed too! ..." Red continued to tell Blue about Komali and the rito tribe.</p><p>Blue was sitting on the edge of a ledge, at the front of the island, near the small beach and grassy area.</p><p>Blue was looking down, trying to think to himself. He slowly brought his hand up and felt his lips with his fingers. His eyes windened and he blushed slightly. He then leaned his forehead on his hands and tried to think to himself.</p><p>"Blue! Where'd ya go?" Blue heard Red coming.</p><p>He turned his head and then quickly brought himself back to the wall. He put his hands behind his head and leaned against the wall. He looked up into the sky so he looked like he was just relaxing.</p><p>Red came out from the corner and ran to Blue, "Blue! Here you are! Komali told me to prepare yourself for when the healing cream sets in, 'cause he said it might sting a little."</p><p>Blue turned his head to him, "Heh, it'll be fine. How bad can it be?"</p><p>Just then, the cream set in. Blue and Reds' eyes windened.</p><p>They yelled in pain, "YAAAAAAAHH!"</p><p>Red was shaking his arm, "Ow! Ow! Ow!"</p><p>Blue was trying to reach onto his back, "Aw, man! This isn't fair! I've got three places!"</p><p>Blue, Red and Medli were in her room. Blue and Red removed their bandages and the wounds underneath had completely cleaned and healed.</p><p>Red took off Blues' back bandage, "Wow! That healing cream is really good!"</p><p>Medli smiled, "We make it from certain flowers that only grow here once a year. We only use it in emergencies."</p><p>"Are you sure it's alright to use it on us?" Blue asked.</p><p>Medli started stitching up Blues' clothes, "Of course! That wound of yours went right through you! We couldn't just ignore it!"</p><p>Blue and Red were standing on a small shrine island, very close to the back of Dragon Roost. Their clothes were stitched up and cleaned of blood.</p><p>Blue turned his head to Red, who turned his head to Blue. Blue quickly turned his head away to avoid Red from seeing him blushing. They both then looked up to the sky.</p><p>Blue thought to himself, "Damn. I can't even look at Red the same anymore.."</p>
-<a href="Chapter 27.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 29.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 27.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 29.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 17</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 17: The Great Light Fairy</b></u></p><p>Shadow brought his sword up above his head and pointed it up to the sky.</p><p>He looked up at it, "Oh, Four Sword! Give me light!"</p><p>He then pointed it at the demon, "Give me light to rid of the darkness!"</p><p>His sword glowed brightly and a strong light then shot out of it at the demon.</p><p>"What! How can you...Noooo!" the demon yelled as he got disintegrated by the light.</p><p>The light stopped when he had completely disappeared. Shadow brought his sword down and clutched onto his stomach with his right hand. He withdrew his sword and clutched his stomach with his other hand. He panted and then held onto his shoulder with his right hand.</p><p>"D...damn..I used up all my energy. I can't even stand up straight.." he said to himself, "But there was light..How come I didn't die?"</p><p>Just then, a small fairy flew down from the sky. It flew to Shadow, who looked up to it.</p><p>"Huh? A fairy?"</p><p>The fairy flew around Shadow several times really quickly. It then stopped and flew back up to the sky. Shadow felt his stomach, shoulder, neck, forehead and the back of his head with his hands.</p><p>"Wow. It healed all my wounds and my clothes!"</p><p>Shadow looked up to the sky. Large beams of light came through the dark cloud and destroyed it. The whole sky was white and Shadow shaded his eyes. A large, beautiful, white fairy came down from the sky. She had long, very light blue hair and white eyes. She wore a long, white dress and a long, light blue scarf which flowed gently at the bottom. She had four delicate fairy wings on her back.</p><p>"I am the Great Light Fairy of Hyrule." She had a soft, gentle voice, "There is no need to be afraid. Uncover your eyes."</p><p>Shadow brought his arm down, "Were you the one who gave me the light?" he asked.</p><p>"No, you did that on your own. Because you have a pure heart like the other Links. Now you have defeated your demon, you are free from Ganondorfs' control. You are no longer just a shadow, you are part of the light."</p><p>"My wish..." Shadow then perked up, "My friends! All the people! What's happened to them?"</p><p>"Don't worry about your friends, they're all alright. All the people here have been possessed by the darkness but they will return to their normal selfs after a while of coming back up to here. I will now return the damage done back to its' normal state and bring everyone back up from the dark world."</p><p>She then brought herself down to Shadow and put her hand on his cheek.</p><p>"Remember to use your powers of darkness and light wisely."</p><p>She then brushed Shadows' hair from his forehead with her other hand. She gently kissed him on his forehead and Shadows' eyes widened slightly.</p><p>She flew back up to the sky, "Remember to believe in yourself!"</p><p>She disappeared into the sky and the light covered the castle. There was a flash and the castle returned to normal. All the people and the four Links returned to where they originally were, on the ground, unconscious.</p><p>Shadow turned round and saw his shield on the ground, and the other Links away behind the shield. He smiled and ran to his sheild. He knelt down on the floor and equiped his shield to his back. He looked up and saw two swords crossed infront of him.</p>
-<a href="Chapter 16.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 18.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 16.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 18.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 43</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 43: Early Morning</b></u></p><p>The five Links carried on searching all around the city for a map to Hyrule, but none led to anywhere even close to their destination.</p><p>They had a late dinner that night, of Vios' salmon with lemon sauce dish, all of which was eaten, leaving no leftovers.</p><p>They went to bed that night in their coloured pyjamas, which they had bought in Snow Peak.</p><p>Blue was having a dream, in which a pretty, cute woman, wearing cat ears and a furry bikini, was licking Blues' ear from behind him.</p><p>Blue was lying in his bed, smirking and laughing greedily to himself. Red was knelt behind Blue, by his bedside, licking his ear.</p><p>"Eheheheheheh...Is that how you wanna play, eh?" Blue said in his sleep.</p><p>Blue then rolled over to Red, placed his hands on Reds' cheeks and kissed him on the lips. Red's eyes widened and he blushed. He then closed his eyes in delight.</p><p>After a few seconds, Blue opened his eyes and noticed he was kissing Red.</p><p>He quickly pushed his face away from Red, "Wha! What the!" Blue sat up in his bed, "Red! What the hell!"</p><p>Red giggled and blushed, "I don't believe it! Blue kissed me! Oh, what could this mean for us?"</p><p>"Shh! Red! No! It was my dream! I didn't-" Blue then quickly turned his head away to avoid Red seeing him blushing a lot.</p><p>"Damn. It happened again.." Blue thought.</p><p>Blue looked up at the clock, "Red, it's 6:45 am!" Blue layed back down in his bed, "Go back to sleep."</p><p>"But, I'm not tired!"</p><p>"Then..go do something!"</p><p>"OK!" Red started putting his arms around Blue.</p><p>"Not with me!" Blue then sighed, "Uh..why don't you go do something constructive? Eh, Red?"</p><p>"Hmmm..." Reds' head then perked up, "OK!"</p><p>Red smiled and stood up. He got changed from his pyjamas to his clothes and collected his sack of rupees and the city map. He ran out the door and closed it behind him. Blue pulled his blanket over his head to hide himself blushing.</p><p>Red ran through the streets of City Ishidukuri. It was fairly quiet; the early morning birds could be heard in the trees, chirping, and there were a few people out, most of them walking to their early starting work.</p><p>Red was jogging on the spot, outside a crafts shop. A young man, with brown hair and wearing a workers' apron, walked up to the door and unlocked it from the inside. As he opened the door, Red ran in and browsed around the materials section.</p><p>"Wow, we never get a customer dead on 7 o'clock." the man commented.</p><p>He walked over to behind the counter to his mug of coffee. Red was comparing two different red materials.</p><p>"Hey, you need any help over there?" the man asked.</p><p>Red turned his head round, "No, thanks. I'm fine!" he smiled.</p><p>"Alright.." the man closed his eyes and took a long, refreshing sip from his coffee.</p><p>He opened his eyes and Red placed a pile of different coloured materials, a packet of cotten wool, different coloured threads, buttons and a small sewing kit on the counter.</p><p>Red smiled, "Can I buy these, please?"</p><p>"Uh, yeah. Of course." the man began scanning and packing the things, "So, are you gonna make something with all this?"</p><p>Red nodded, "Yeah! I'm gonna make dolls of my four friends and me!"</p><p>"Aw, wow. Good luck with all that. I hope it goes well."</p><p>"Heheh, thanks!"</p><p>Shadow was standing in a completely black place, but he could clearly see himself.</p><p>He looked around, "Huh? W-where is everyone?"</p><p>Vio appeared in the distance behind Shadow, with his back to him.</p><p>Shadow turned to Vio, "..Vio-kun!" Shadow started running to him.</p><p>Vio turned his head round slightly so his eyes still couldn't be seen.</p><p>"Vio-kun! Vio-kun!" Shadow reached his arms out for him.</p><p>Vio smirked evilly, then turned round to Shadow and changed into Ganondorf. Shadow tried to skid to a stop and fell on the ground infront of Ganondorf.</p><p>Shadow looked up to Ganondorf, shivering in fear, "G-G-Ganondorf!"</p><p>Ganondorf pressed his foot down on Shadows' stomach, "You disobeyed me, Shadow. Thinking you're part of the light..foolish. You're just killing your own self." Ganondorf then formed a long sword in his hand and pointed it close at Shadows' neck, "You have no use in this world!"</p><p>Ganondorf brought his sword back and then quickly back down at Shadow.</p><p>Shadow opened his eyes and quickly sat up in his bed.</p><p>"H-huh?" he looked at Vio, sleeping in his bed, "It was..just a dream.." Shadow sighed in relief and put his hand on his chest, "That dream..seemed so real.."</p><p>Shadow wiped the tears from his eyes and he got out his bed, on Vios' side. He stretched his arms and legs out and then walked over to Vios' bedside.</p><p>Shadow looked down at Vio and smiled, "Aaw..Vio-kun..Hmm?"</p><p>Vio had his bed covers only up to his waist. As he rolled from his side to his back, in Shadows' direction, his un-done pyjama shirt revealed his chest. Vios' face twitched as he panted softly.</p><p>Shadow blushed slightly, "Huh? He's hot?"</p><p>Shadow looked up at the window and ran round to it. He knelt up on the sofa, reached his hand through the curtains and opened the window. He felt the breeze come through and he turned his head to Vio.</p><p>"That'll cool you down, Vio-kun." Shadow smiled.</p><p>Shadows' head perked up as he heard a knock on the door. He ran over to it and opened it. Red stepped in with a bag of the things he bought.</p><p>"Red! You've been up and out this early!" Shadow asked.</p><p>Red smiled, "Heheh, yeah."</p><p>Shadow closed the door behind Red as he walked to his bed.</p><p>He started unpacking his things, "I woke Blue up and he was tired so he told me to go do something constructive. So I am!"</p><p>Shadow looked at the materials and other things, "What you gonna do with all that?"</p><p>Red winked and put his finger by his lips, "Hm hm. It's a secret."</p><p>It was around 8:30 am. Red was sitting on his bed, sewing different cut-out shapes of material together. Shadow was in the kitchen area making omelettes for everyone. Vio, Green and Blue were sitting round the dining table, eating their omelettes.</p><p>"Mmmmm..ah, Shadow-Chan. These omelettes are delicious!" Vio said.</p><p>"Man, you and Vio are really good chefs." Green commented.</p><p>"Eheheheh, thanks!" Shadow smiled.</p><p>Shadow finished making another omelette and layed it on a plate, ontop of another one, with a knife and fork on the side of the plate.</p><p>He lifted it up, "Red! Your omelettes are ready!"</p><p>Red didn't reply as he was concentrating on his sewing.</p><p>"Hmmm, he must be working hard." Shadow said to himself, "Hey, Blue. Could you take this to Red?"</p><p>Blue looked up at Shadow, "What! Take it yourself!"</p><p>"I can't! I need to make omelettes for myself!"</p><p>Blue looked over at Red then back at Shadow, "Gimme that!" Blue took the plate from him.</p><p>Blue got up from his seat and walked over to Red.</p><p>"Hey, Red. What you making?"</p><p>Red tried to cover up the things on his bed with his arm, "No! You can't look! They're not done yet!"</p><p>"Uh, OK.." Blue placed the plate of omelettes on Reds' bed, "Here, Shadow made 'em. They're really good." Blue smiled at Red and then walked back to his seat.</p><p>"So, pulling out the Four Sword split me into you guys. But you had parents so that means you must've had childhoods.." Green held onto his head, "Now I'm just more confused about the Four Sword.."</p><p>"This is gonna be hard to figure out.." Vio put his book on the table, open on the blurred pages with the clear picture of their swords, "There's no way we can decipher this.."</p><p>"One thing's weird." Shadow said, "There's a picture of my sword in there too. I thought mine was just a copy. But it responds when I call out to it."</p><p>"Maybe your sword is also one of the Four Swords." Vio suggested.</p><p>"But that doesn't make any sense!" Blue said, "Why would it be called a 'Four Sword' if there's five of 'em!"</p><p>"There must be more to this legend than we think." Green sighed, "There's gotta be somewhere we can get the truth from."</p>
-<a href="Chapter 42.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 44.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 42.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 44.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

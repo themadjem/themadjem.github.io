@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 32</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><b><u>Chapter 32: Andréa and the Forsaken Fortress</u></b></p><p>Red and Shadow ran through the snowy wasteland. They eventually got to the other side, which was a cliff that sloped upwards. They walked up to it but it was very steep at the top so Shadow helped Red up.</p><p>Infront of them was a path, with snow on both sides. It led into a cave which went through the icey mountains.</p><p>Red pointed to the cave, "That way, right?"</p><p>"Yeah." Shadow nodded, "Let's go."</p><p>Shadow and Red ran to the cave. They ran in and then stopped. The cave was lit beautifully with all the reflections of the night stars everywhere. They looked around the walls and ceiling as they walked through.</p><p>They walked out the cave and came to a small forest of trees.</p><p>"Through here!" Red started running through the trees.</p><p>"Wait up!" Shadow ran after him.</p><p>Red ran quickly through the trees. The forest then stopped and there was the edge of a small cliff. It sloped down to some ground near the sea.</p><p>Red quickly stopped right on the edge and tried to balance himself. Shadow ran into him and they both slipped down the slope, Red on his back and Shadow on his front.</p><p>They looked up and saw some cliffs in the sea with a fortress in the middle, in the distance. There were cannons round the cliffs and they could see some faint, red smoke coming from the back.</p><p>They both stood up.</p><p>"Woah!" Red said.</p><p>"Is that where the Helmaroc King went?" Shadow asked.</p><p>"That's right." a voice said.</p><p>"Huh?" Red and Shadow turned their heads to the left.</p><p>There was a boy, about two years older than Link, sitting on the ground about one metre away from Shadow and Red. He was wearing a blue shirt with a long, black coat over his shoulders, brown trousers and black shoes. He had brown eyes and black hair which spiked up at an angle, one spike which came over his forehead and a long strand coming down the right side of his face. He was facing down, at the ground.</p><p>Red and Shadow walked up to him.</p><p>"Who are you?" Red asked.</p><p>"What are you doing out here?" Shadow asked.</p><p>The boy looked up to them, "My name's Andréa. A friend of mine was taken by the Helmaroc King.."</p><p>Red gasped, "What happened?"</p><p>"Well, I used to work on a farm.." Andréa explained, "I worked with my parents and we raised cows, cuccos, the whole lot. My parents passed away, but I kept on looking after the farm for them. My bestest friend at the farm was Azul, a blue cucco. He followed me everywhere and we did all the work together, he was always by my side. A couple of days ago, the Helmaroc King came. He destroyed the whole farm and ate all the animals. I was trying my best to keep Azul alive and safe, but he tried to attack the Helmaroc King. I ran after him and then we both got taken to that place, the Forsaken Fortress. I couldn't find Azul anywhere and I managed to escape on that raft."</p><p>Andréa pointed to a small wooden raft, with two paddles, at the shore behind Red and Shadow.</p><p>"So now, I've just been sitting here in guilt." Andréa said, "I haven't built up the courage to go back and find Azul. I know he's still alive, I can hear him calling to me.."</p><p>Red and Shadow looked at each other and nodded. They then looked at Andréa and stuck their thumbs up.</p><p>"We'll save your friend for you!" Red said.</p><p>Andréa perked up, "What! Really!"</p><p>"Yeah." Shadow said, "We were going over there to save a friend ourselves, but I'm sure we can bring back Azul to you, no prob!"</p><p>Red nodded, "Yeah! We're heroes!"</p><p>Tears appeared in Andréas' eyes, "..you guys!" he wiped his tears away and stood up, "You can take my raft there. Shouldn't take you too long to get there."</p><p>"Wow! Thanks!" Red said.</p><p>Red and Shadow got onto the raft and took one paddle each.</p><p>"Be really careful in there." Andréa said to them.</p><p>"Don't worry. We'll save Azul for sure." Shadow said.</p><p>Shadow pushed the raft out with his paddle and him and Red paddled the raft along, to the Forsaken Fortress.</p><p>Andréa waved, "Good luck!"</p><p>Red and Shadow eventually got to the Forsaken Fortress. There were cannons at the walls, some pointing at them. They paddled quietly past them and into the middle of the fortress, where there was a landing and some stairs leading up to ground above them.</p><p>They got off the raft, left the paddles behind and went up the stairs. They got up and looked around them. There were searchlights high on the cliffs around them, which were just pointing up to the sky.</p><p>"Weird. All the searchlights aren't in use." Shadow said.</p><p>"And the cannons weren't working either." Red said.</p><p>"Hmmm..Something fishy's going on.."</p><p>"Come on! We gotta find Blue!"</p><p>Shadow nodded and they both ran up somemore stairs and through a door.</p><p>Shadow and Red were running through all the rooms, which were all quiet with no-one in them.</p><p>"This is really weird. Shouldn't there be monsters roaming all over the place?" Shadow asked.</p><p>"Maybe Blue beat them all already." Red said.</p><p>"Hmmm, maybe.."</p><p>Shadow and Red got to a large wooden door. It took both of them to open it and they went in.</p><p>They entered a really large room and the ceiling was so high up that it couldn't be seen. The room was made of stone and was very dark as it was lit with eight dim candles on the walls. The whole room was empty and there was a door on the far side.</p><p>In the middle of the room was a cage, like a giant bird cage only big enough for one person. In it was Blue, who was sitting down, looking at the ground so his eyes couldn't be seen.</p><p>Red and Shadow saw him, "Blue!"</p>
-<a href="Chapter 31.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 33.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 31.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 33.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 47</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 47: The Kyodoku Angler Fish</b></u></p><p>The canoe was racing nicely through the desert sands in the night. There was suddenly a bump as it went over a few rocks to rocky, dry ground.</p><p>Green looked at the ground, "We must be at the end of the desert." he turned his head round, "OK, Red. You can stop the canoe now."</p><p>Reds' head perked up, "Wha!"</p><p>Blue turned his head round, "Stop the canoe, Red. Just stop the spring spinning."</p><p>"But, I can't." Red looked at the motor, "The spring's fallen off."</p><p>"But we're still moving!" Green panicked.</p><p>"The canoe's still using the force from the spring. Since it's so strong, we're still going." Vio explained.</p><p>"Watch out!" Shadow pointed forward.</p><p>The canoe was heading into a herd of bushes.</p><p>The five Links ducked and shielded themselves with their arms to protect themselves.</p><p>Green looked up as he saw a huge, pointy rock ahead of them.</p><p>His head perked up, "Wah! Everyone jump out!"</p><p>The five Links quickly jumped out either side of the canoe as it crashed into the rock and shattered. They stumbled and rolled down a steep cliff.</p><p>The parts of the canoe fell down the cliff with the Links. Shadow caught one in the corner of his eye.</p><p>"Guys! Grab a board!" Shadow grabbed a part with his hand, brought it under his feet and surfed on it down the cliff.</p><p>The others did the same and followed Shadow as they surfed down.</p><p>Greens' head perked up as he noticed a small slope slanting upwards over the sea, "Oh no!"</p><p>The Links tried to brake but they surfed up the ramp into the air. Their boards slipped from under their feet and they each fell deep into the sea, about swimming distance from the shore.</p><p>As Shadow and Green fell into the sea first, two long, tongue-like vines wrapped around each of them. They locked their arms by their sides and pressed tightly into their chests. Green and Shadow perked up as a large stream of bubbles came out of their mouths and fell unconscious. They were then pulled slowly into the dark depths.</p><p>Vio, Blue and Red swam up to the surface.</p><p>Red looked around, "Uh, where are Green and Shadow?"</p><p>Vios' head perked up. Blue saw the bubbles come up to the surface and he dived back under.</p><p>"Blue!" Red cried out.</p><p>Vio grabbed onto Reds' arm and pulled him to the shore.</p><p>"Wha! Vio! What about the others?" Red asked.</p><p>"Trust me! I know what I'm doing!" Vio replied.</p><p>Vio lead Red to the shore, where there was a small beach against the high cliffs.</p><p>Vio layed his book out on a page with a picture of a fierce looking angler fish, plated with metal all over its' body, long, sharp teeth and a shining blue orb hanging from its' back.</p><p>"This is what's down there. A kyodoku angler fish." Vio explained, "These fish have hard defense all around them and they live deep in the dark depths of the sea. They only eat humans and can live without eating one for 10 years. Their tongue is split into two ends so it can grab two people at once. When the tongue wraps around them, they get poison injected into them to kill them. It can also attack with its' blue orb hanging from its' back."</p><p>"How do you know that's the thing that's down there?" Red asked.</p><p>"I saw the blue glowing from its' orb in a split second when I fell into the sea. That thing must have Shadow-Chan and Green."</p><p>"Uwaah! We have to do something!" Red panicked.</p><p>"We can't. It would just put us all at a higher risk."</p><p>Red looked out to the sea, "Maybe Blue knows what he's doing."</p><p>Blue swam down to Green and Shadow, who were slowly being pulled down. Blue fastened their drifted off hats to his belt. He swam to where the tongue split and drew out his sword. He cut the tongue and a purple ooze squirted out of it. The tongue squirmed around and then retreated back into the depths. The tongues around Green and Shadow loosened and freed them. Blue grabbed them by the back of their collars and swam back up to the surface.</p><p>Blue gasped for air as he came up to the surface. He carried Green and Shadow on his back to swim and walk to the shore. Vio and Red took Shadow and Green from Blues' back. They layed them down near the cliff sides, away from the shore, with their hats resting behind their heads. They looked down at Green and Shadow unconscious, in worry.</p><p>They suddenly heard a sea-monster roar from the sea and they turned their heads round. The kyodoku angler fish came up onto the surface, away from the shore. It was about as big as the Helmaroc King. It let out another fiercesome roar.</p><p>"There it is!" Vio said.</p><p>"The kyodoku angler fish?" Red asked.</p><p>"It's huge!" Blue said.</p><p>The kyodoku angler fish whipped its' hanging orb round and two bombs shot out of it at the Links.</p><p>"Red, shields!" Vio said.</p><p>"Right!" Red replied.</p><p>Vio and Red stepped forward and held their shields out. The bombs bounced off the shields and exploded as they repelled back into the sea.</p><p>"How are we supposed to attack it from here?" Red asked, "We can't fight it if we swim out to it."</p><p>"We can't use our long-projectile weapons. They're too weak and won't stand a chance against that metal armour." Vio explained.</p><p>Blue smirked, "I'll be the hero!" he walked out to the shore and pointed his hookshot at the kyodoku angler fish, "I'll fight metal with metal!"</p><p>Blue shot his hookshot at the kyodoku angler fish. It darted through the air at lightning speed and dug itself into the kyodoku angler fishs' armour, below the shining orb. Blue was then pulled toward it.</p><p>"Blue!" Red cried out.</p><p>Blue shot through the air at the kyodoku angler fish. As he got close to it, he smirked and drew out his sword. As the hookshot became fully contracted, Blue jumped up and off the hookshot and slashed his sword at the shining orb. The orb was cut in half and the kyodoku angler fish suddenly froze. It then shattered into smoke which rained out force.</p><p>"Alright!" Blue cheered.</p><p>As he fell he caught his hookshot and collected all the force with his sword. He aimed and shot his hookshot at the cliff. He withdrew his sword as he darted back to the others.</p><p>Reds' face lightened up as he watched Blue come toward them, "Blue!"</p><p>"Aw, man! He got more force!" Vio complained.</p><p>Blue came up to the cliff and pulled out his hookshot as he jumped down.</p><p>"Oh, Blue!" Red looked admirably at Blue, "You're so amazing!"</p><p>Blue smirked and blushed slightly, "Heheh..well.."</p><p>"Guys!" Vio interupted, "We got a life or death crisis here!" Vio knelt down beside Shadow.</p><p>"Oh! I know how to do this! I've done this before!" Red said, "First you have to get the water out of them by pressing down on their chests."</p><p>"OK.." Blue knelt down next to Green.</p><p>Blue and Vio pressed down on Green and Shadows' chests as water squirted out of their mouths. Green and Shadow coughed out some excess water but did not wake up.</p><p>"Now you have to give them a-"</p><p>Blue quickly put his arm infront of Red, "-A rest for a second and they'll wake up."</p><p>They waited a few seconds but no movement came from them.</p><p>Vios' eyes widened, "What if...the poison's already set in...and we acted too late..." his head then suddenly perked up, "I can't believe I almost forgot! I'm such an idiot!" Vio reached into his back pocket and pulled out the jar of Blue Chu Chu jelly. He opened the lid, lifted up Shadows' head and poured half of the jelly into his mouth, "The Blue Chu Chu jelly can cure poison!" he handed the jar to Blue, "There should be enough for Green too."</p><p>Blue took the jar from Vio, lifted Greens' head and poured the rest of the jelly into his mouth. Blue then handed the jar back to Vio who re-equiped it.</p><p>Shadow slowly opened his eyes, followed by Green.</p><p>"..Huh?" Shadow sat up slightly.</p><p>Green sat up, "Wha..what happened?"</p><p>"A giant angler fish almost ate you both!" Red said.</p><p>"But I saved you and destroyed it!" Blue smugly said.</p><p>"Hey! We all saved them both!" Vio hugged Shadow tight, "I'm so glad you're safe now. I nearly lost hope."</p><p>Shadow smiled.</p><p>Red turned round and looked out to the sea, "We have to cross the sea to get back to Hyrule, right?"</p><p>"Yeah.."</p><p>"But how are we gonna do that? We don't even have a boat."</p><p>"Hmm..I think I saw something on the map.." Shadow got it out and unravelled it, "Ah, yes! Not too far from here is Dock Town!" he pointed to the left of him, "Should be an easy walk that way!"</p><p>Green put on his hat and quickly stood up, "Then, let's go!"</p><p>"Yeah!" they all cheered.</p>
-<a href="Chapter 46.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 48.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 46.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 48.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

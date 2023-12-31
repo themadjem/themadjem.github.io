@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 24</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 24: A Bloody Battle</b></u></p><p>Blue and Red got two floors below the top.</p><p>Blue turned to Red, "Shhh! We gotta be quiet!" he whispered, "We'll walk quietly up from here."</p><p>Red nodded and they walked up quickly.</p><p>They got to the spot where the entrance used to be and they knelt low on the ground to avoid being seen. Green and Shadow had gotten up but they were still hiding themselves on the staircase. Vio was facing the side, looking to the sky with his arms crossed.</p><p>He smirked, "Hm Hm, what a fun way to kill them, one by one. So entertaining to watch their pain."</p><p>"What happened to the walls?" Red whispered.</p><p>"The wind that comes out that Wind Waker is really strong." Blue replied.</p><p>Blue whispered something to Red, who then nodded.</p><p>Red stood up and picked up a small stone. He aimed it with his catapult at Vios' eye.</p><p>"Sorry, Vio." Red thought, who then fired the stone.</p><p>The stone hit his eye which stunned him slightly. Vio rubbed his eye and quickly turned to Red.</p><p>"You!" Vios' face was enraged, and he started walking to Red, "You're supposed to be dead!"</p><p>Vio drew his sword, ready to attack Red.</p><p>Red shielded himself with his left arm.</p><p>"Red!" Blue got up and stood himself infront of Red.</p><p>"Blue!" Red said.</p><p>Vio smirked and quickly changed his sword action. He stabbed his sword into Blues' chest wound. His sword went right through Blues' chest and into Reds' arm. Blue coughed out blood and some blood from stabbing Blue spurted onto Vios' face and clothes. Vio pulled out his bloody sword and then kicked Blue to his left.</p><p>Blue fell low to the ground, on his knees, clutching his chest.</p><p>Red fell to his knees and covered up his wound with his hand.</p><p>Vio smirked and licked some blood off of his sword.</p><p>Green and Shadow were behind Vio with their swords, ready to attack. Vio quickly turned round and slashed his sword at their stomachs. It repelled them back, dropping their swords, but Vio quickly withdrew his and grabbed Shadow by the neck.</p><p>He brought Shadow to the ground and clutched his neck tighter. Vio brought out the Wind Waker and brought it down on Shadows' neck. Shadow quickly held onto Vios' hand to try and push the Wind Waker away from him. He had his other hand on Vios' other hand, trying to stop him from choking him harder.</p><p>"Vio..." Shadow said, "Snap out of it...return to your real self...!"</p><p>"You just don't realise it do you?" Vio smirked, "This is my real self! I've been waiting for this day ever since I was released from that Four Sword!" Vios' face had turned murderous, with his eyes almost shrunken down to his pupils.</p><p>Tears started forming in Shadows' eyes and rolling down his face, "N...no..! Vio can't be gone!"</p><p>"Ow ow ow." Red uncovered his wound, "It's fine, Blue's had worse than me."</p><p>"...Red...Red..." Blue said.</p><p>Reds' head perked up.</p><p>"Please help me..." Blue said to him.</p><p>"Blue!" Red got up, ran to Blue and knelt down beside him, "W-what should I do?"</p><p>Blue was on his knees, with his face close to the ground. He was clutching his chest which kept on dropping blood. His eyes were shrunken and his face was sweating dramatically.</p><p>"Stop...the blood...escaping..." Blue said.</p><p>"Uh...uh...got it!" Red took off his hat and wrapped it round Blue, over his wounds.</p><p>"There." Red tied it in place.</p><p>Blue knelt up and some blood dripped out, "It's still seeping out!"</p><p>"I'll hold it in!" Red put his arms round Blue and held the hat down over his wounds, to stop blood escaping.</p><p>Green was sat up on the floor, clutching his stomach, staring at the others.</p><p>He thought to himself, "N...no...this can't be right...Vios' attacks are making us weaker by the second...This can't be the end of us..!"</p><p>"..G...Green..!" Blue said.</p><p>"Huh?" Greens' head perked up.</p><p>"G..Green...break the.." Blue then coughed out some blood.</p><p>"Break the Wind Waker!" Red said to Green.</p><p>"Huh?" Green looked at the Wind Waker, "..right!"</p><p>Green got up to his feet and picked up his sword.</p><p>Shadow was getting weaker and weaker, he slowly loosened his hands and dropped them to the ground. Vio smirked and choked Shadow harder. He brought the Wind Waker up and quickly brought it down on Shadows' neck.</p><p>Green stepped forward and slashed his sword at the Wind Waker, "Come back, Vio!"</p><p>His sword cut the Wind Waker in half, just before it hit Shadows' neck. One half of the Wind Waker fell into the ground, next to Shadows' neck. Vios' eyes then turned back to normal. His face expression dropped and his eyes filled with tears. He dropped the handle of the Wind Waker and clutched Shadow up in his arms.</p><p>"I-I'm sorry..." Vio cried.</p><p>"...Don't worry, we'll be OK." Shadow replied.</p><p>Just then, the point of the Wind Waker shook, and a tornado sprouted out of it. It got larger and faster, and started to lift the five Links into the air.</p><p>Red was still clutching onto Blue, "Uwaah! What's happening!"</p><p>"It's the Wind Wakers' revenge!" Green grabbed Shadows' sword, "Shadow! Your sword!"</p><p>He threw the sword at Shadow, who caught and withdrew it.</p><p>The tornado spun the Links round and round, and then flung them through the skies. Red was clutching onto Blue, who both got flung north-east. Vio and Shadow were clutching onto each other, who both got flung north. Green got flung to the north-west.</p><p>"The Four Swords!" he yelled, "They'll keep us together!"</p>
-<a href="Chapter 23.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 25.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 23.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 25.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

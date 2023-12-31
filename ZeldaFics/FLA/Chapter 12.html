@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 12</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 12: The Run into Danger</b></u></p><p>Green, Blue, Vio and Shadow quickly got up from their seats and ran to the bedroom.</p><p>"Quickly! We gotta go!" Green said.</p><p>Tetra stood up, "Please! Be careful."</p><p>Shadow stopped and turned his head to her.</p><p>"Don't worry, we will." Shadow smiled and ran to the bedroom.</p><p>As he went in, Green and Blue ran out with their weapons equiped.</p><p>"Grab your weapons and go!" Green said to Shadow.</p><p>Shadow equiped his sword and shield.</p><p>"Let's go!" Vio said as he ran out the bedroom.</p><p>Shadow headed for the door then looked at Reds' equipment. He went towards them and equiped them.</p><p>"He might need these."</p><p>Shadow ran out the bedroom and closed the door.</p><p>Green and Blue ran out of the castle first.</p><p>"The right route, right?" Green asked.</p><p>"Heheh, bet I can get there first!" Blue ran further ahead.</p><p>"Hey! This is serious stuff!" Green ran faster to catch up behind Blue.</p><p>Vio ran out the castle and stopped as he stepped into the sunlight.</p><p>"Almost forgot." Vio turned and waited, "He can't survive on his own."</p><p>Shadow ran out and Vio held his hand out. Shadow held onto it and they both ran about thirty metres behind Green and Blue.</p><p>Red kept running as fast as he could. He was struggling but kept on going. He saw Green and Blue running toward him and his face lightened up. He held the charm in his hand high in the air and waved it.</p><p>"Hey!" Red yelled at them, "I got it! I got-"</p><p>Red suddenly fell to the ground and dropped the charm. He knelt up a bit and coughed out some blood. He stared at the blood on the ground and breathed heavily.</p><p>"Red!" Blue yelled, "Hold on!"</p><p>Blue and Green rushed to Red and knelt down either side of him. Green picked up the charm and tied it to his belt. Green gently rubbed Reds' back. Blue put his hands on Reds' shoulder and back.</p><p>"Stay strong, Red." Blue said to him, "We'll get you back to the castle. Just concentrate on breathing."</p><p>Vio and Shadow could be seen running towards them.</p><p>"Hey, guys! Watch out!" Vio yelled out, "Behind you!"</p><p>Green and Blue turned their heads round and saw Chibi Ganon right behind them. His face was enraged and he was ready to slash his two swords at them. He attempted the attack, and Green quickly stood up, drew his sword and blocked the attack. Blue hurled his body over Reds' back to protect him. Blue helped Red up to his feet and they backed away from Chibi Ganon. Vio and Shadow ran to the right side of Blue and Red. Vio led Shadow to the right side of him and he let go of his hand when he entered the shade. Red lifted his head up and he walked to Shadow who gave his weapons to him. Green repelled Chibi Ganon away from him and they both stepped back.</p><p>"So, you all came." Chibi Ganon smirked, "With you all here I can destroy you all at once! Thankyou for making it so easy for me!"</p><p>"Don't count on it!" Blue said.</p><p>Chibi Ganon looked along at all of them, and his smile widened when he looked at Shadow in the shade.</p><p>"You say he's part of you.." Chibi Ganon said, "Then how come he can't even stand alone in the light!"</p><p>Chibi Ganon then suddenly stretched his arms out at Shadow and shot continuous light out of his hands.</p>
-<a href="Chapter 11.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 13.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 11.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 13.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

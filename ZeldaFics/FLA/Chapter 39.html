@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 39</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 39: Shadows' Dark Past</b></u></p><p>The five Links' room was huge. There were five beds with white duvet covers on them. There were two beds on the left side of the room and three beds on the right. On the far side of the room was a green sofa with a glass coffee table infront of it. On the coffee table was a bowl of fruit and there were two green armchairs infront of the table, facing the sofa. Behind the armchairs was a large, round, red and white rug. To the right of the sofa and coffee table was a kitchen area with black and white tiles on the floor and various kitchen appliances. Infront of the kitchen area was a round dining table with six chairs around it and a vase of flowers in the middle of the table. Above the sofa was a large window, overlooking the view of fields and mountains in the distance. To the right of the sofa was a white utility cupboard and a door leading into a bathroom. There were two sets of drawers against the wall behind the second bed on the left.</p><p>The five Links walked in and looked around. Vio closed the door behind them.</p><p>"Wow! They gave all this to us?" Red asked.</p><p>"It's so impressive!" Green said.</p><p>"Well, this is what to expect from the biggest hospital in the world." Vio said.</p><p>The five Links had settled themselves in and were sitting on their chosen beds. Red and Blue were on the left side with Red closer to the door. Green, Shadow and Vio were on the right with Green closer to the door and Vio closer to the kitchen area.</p><p>They had hung their weapons on the end of their beds and had put other weapons and equipment in the drawers.</p><p>They heard a ringing sound and they turned their heads to the door.</p><p>"What's that?" Red asked.</p><p>Green got off his bed and walked over to the small intercom next to the door on the wall.</p><p>He held down the button on it, "Hello?"</p><p>"The blood sample results are ready!" Volivias' voice said.</p><p>"Ah! We'll be right down!"</p><p>The five Links were standing in room 18 facing Volivia who was sitting on a rotating chair infront of a computer and various machinery. She was holding a piece of paper in her hands.</p><p>"OK, here are the results we found." Volivia said, "Green, your father is the general knight from Hyrule and your sister is Aryll who lives with your grandmother on Outset Island."</p><p>"Ah, that's a relief. I'm still the same." Green said.</p><p>"Vio, your father is Kota from Strong Will Island and your mother was Miyu but she died from an incurable illness at that time."</p><p>Vio gasped softly, "I have...a father...?"</p><p>"Red, you had a mother and father named Anju and Kafei from Clocktown of Darumina, but they died in a tragic accident."</p><p>"Ooooooh..." Red then sighed.</p><p>"Blue. Shadow. I'm sorry, but we couldn't find any DNA matches for you two."</p><p>"Hmm.." Shadow nodded.</p><p>Blue looked stunned, "...N...no...I can't be...just a damn copy..?" he thought.</p><p>"Can we have a copy of those results, please?" Green asked.</p><p>"Sure, you can take this one." Volivia handed Green the piece of paper in her hand of the blood DNA data.</p><p>"Thanks very much." Green said, "This helped us out a lot."</p><p>The five Links were sitting on the three beds on the right side of the room. Vio was holding the paper of data in his hand with Red and Blue also reading it.</p><p>"The crosses by the names mean they're dead, right?" Red asked.</p><p>"That's right." Blue said.</p><p>"It's so shocking.." Vio was trembling slightly, "I have a father.."</p><p>"Hmm..oh man! This just raises more questions about the Four Sword!" Green itched his head.</p><p>"Vio! Your book! Does it have anything about the Four Sword in it?" Red asked.</p><p>"Hmm, let's see.." Vio picked up his book from behind him and flicked through it, "Ah! Here we-Huh! All the infromation's blurred out!" he showed the pages to the others, "All there is is a picture of our...five swords?"</p><p>"I guess we gotta figure it out for ourselves.." Green said.</p><p>"Hmmm.." Blue was looking at the piece of paper.</p><p>"Uwaah! Blue! You must be so upset!" Red said.</p><p>Blue looked at Red, "Not really." he smiled, "I got you guys with me."</p><p>"Heheheh!" Red laughed.</p><p>Green perked up, "Memories! Do you guys have any memories of the past?"</p><p>"Well..the first memory I have is standing infront of the shrine when you pulled out the Four Sword." Vio explained, "But it feels like I have memories before that.."</p><p>Red and Blue nodded.</p><p>"You mean my memories?" Green asked.</p><p>"No. I've never heard of your sister Aryll before." Vio said.</p><p>"Hmmm..maybe you guys had childhoods somehow, but you just can't remember.." Green said.</p><p>"I remember." Shadow said.</p><p>The others turned their heads to him.</p><p>"My childhood..I remember it as clear as glass.."</p><p>"Shadow-Chan.." Vio said.</p><p>"I never knew my parents, which is why I wasn't surprised that their DNA couldn't be found. I grew up as a normal kid, with...Ganondorf.."</p><p>It was near a mountainous place, leading to the desert. The sky was full of dark clouds, making the place slightly dark.</p><p>Herds of keese, imps and bokoblins came charging at a young boy. He wore a black tunic and black hat and he had purple hair.</p><p>The boy smirked, "Hyaah!"</p><p>He threw fireballs of darkness, which he formed in his hands, multiple times at the monsters. None of them missed once, they all hit the monsters and destroyed them.</p><p>A young Chibi Ganon was behind him, "You did it!"</p><p>The boy cheered, "Yay! Alright!" he ran to Chibi Ganon, "Did ya see that?"</p><p>"Yeah! You were awesome!" Chibi Ganon replied.</p><p>Ganondorf stepped out to them.</p><p>The boy looked up to him, "Ganondorf! Did you see? I beat all of them!"</p><p>"Yes. I'm very proud of you." Ganondorf put his hand on the boys' head, "Well done, Shadow."</p><p>"Each day, the training got harder and tougher. The powers I was given got stronger as I grew. I had fun, I enjoyed it because I was told I was the best at it. Eventually, I was told what I had to do for my 'true happiness'; Ganondorfs' conquer of Hyrule."</p><p>Shadow was 12 years old. He was sitting on a rock, high in the mountains. He was looking out at the vast green fields, lakes and towns around him.</p><p>Ganondorf walked up to Shadow, behind him, "Just imagine, Shadow. All this can be ours. It can all be under our control!"</p><p>"What's the point?" Shadow asked.</p><p>"What!"</p><p>"What's the point of taking all this over? It's perfect as it is. Our actions would just ruin it."</p><p>"Why you..!" Ganondorf grabbed Shadow by the neck of his shirt and pulled him up to his face, "Are you saying you'd rather have a world filled with light instead of a world filled with darkness!"</p><p>"Yes!"</p><p>Ganondorf threw Shadow down to the ground, "Fine then! If you really want the world covered in light..!"</p><p>Ganondorf put his hands over Shadow and slowly raised them up. Shadow was pulled up slightly and Ganondorf clenched his hands slightly.</p><p>"..Then try living in it as a mere shadow!" Ganondorf yelled.</p><p>Shadows' eyes widened and he felt like he was being pulled apart.</p><p>"AAAAAAAAAAAAAAHHH!" Shadow yelled.</p><p>He lost the shining in his eyes and he collapsed.</p><p>"That's when I was sent to the seal of the Four Sword. I was trapped in the darkness for two years. I heard Ganondorfs' voice telling me.."</p><p>"You're just a mere shadow, you've no chance of surviving in light. The only way you can is to destroy the light."</p><p>"I just sat there alone, being told these things over and over again. I built up power and rage against the light. Gufuu managed to loosen the seal letting me out. He told me I had to defeat the four heroes so the world can be left in darkness. It was my only choice..I had to believe him so I thought I had a chance to live." Shadow explained, "But now I can live happily in this world. So, I'm sorry I did all those evil things to you guys."</p><p>Green smiled, "Don't worry about it, Shadow. We completely understand now."</p><p>They all smiled at Shadow.</p><p>Shadow smiled, "I'm glad."</p>
-<a href="Chapter 38.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 40.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 38.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 40.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

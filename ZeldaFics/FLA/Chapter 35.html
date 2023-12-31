@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 35</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 35: The Defeat of the Helmaroc King</b></u></p><p>Red, Shadow and Blue got up to their feet and turned to the Helmaroc King.</p><p>Red clutched tightly onto Azul, "I-it's the Helmaroc King!"</p><p>"This is our chance!" Shadow said, "We can get rid of him for good!"</p><p>Blue smirked and drew out his hammer, "Time for payback!"</p><p>The Helmaroc King brought its' head back and then brought its' beak down at the Links. They jumped out the way and its' beak got stuck in the ground.</p><p>"It's stuck!" Red said.</p><p>"Freeze it!" Blue shouted.</p><p>Red got out his rod and pointed it at the Helmaroc Kings' head, "Ice Rod!"</p><p>Ice shot out of the rod and froze the head in place.</p><p>Blue jumped up at it and swung his hammer down on it, "Hyaaah!"</p><p>It smashed the ice and the Helmaroc King brought up its' head free.</p><p>"Huh? He didn't shatter into pieces?" Blue asked.</p><p>"It's the mask!" Shadow said.</p><p>"Yeah! It's only been cracked!" Red pointed out.</p><p>"Then we'll have to keep cracking it 'till it opens!" Blue got his hammer ready.</p><p>The Helmaroc King brought its' head back again and slammed its' head down at Blue. He jumped out the way and the Helmaroc King got its' beak stuck in the ground again.</p><p>Red pointed his rod at the Helmaroc Kings' head, "Ice Rod!"</p><p>Ice shot out of the rod and froze the head in place. Blue jumped up, swung his hammer down at the head and smashed the ice. The Helmaroc King brought its' head back up and its' mask had cracked again.</p><p>"Haha! One more should do it!" Blue smirked.</p><p>The Helmaroc King let out a loud cry and then flapped its' wings at Red, letting out a strong wind.</p><p>"Wooaah!" Red got blown back near to the edge and landed on his back.</p><p>His rod fell out of his hand and rolled away from him.</p><p>Red sat up and clutched Azul with both his arms.</p><p>"Azul, are you OK?" Red then looked up.</p><p>The Helmaroc King was right infront of Red. It brought its' head back ready to bring its' beak down at him.</p><p>"Waaaah!" Red froze in fright.</p><p>Blue perked up, "Red!"</p><p>Blue dropped his hammer and quickly ran to Red.</p><p>The Helmaroc King started bringing its' beak down at Red at quick speed.</p><p>Shadow started running at the Helmaroc King. He formed a bomb in his hand and lit it with a flame of darkness.</p><p>"You leave them alone!" Shadow then threw the bomb at the Helmaroc Kings' mask.</p><p>Blue stopped infront of Red and knelt down. He put his hands on his shoulders and protected Red with his body.</p><p>"Blue!" Red said, "Waah!"</p><p>The bomb hit the Helmaroc Kings' mask just before it reached Blue and Red. The explosion cracked the mask which then broke off the Helmaroc Kings' head.</p><p>The Helmaroc King had angry, red eyes. It then flew high into the air.</p><p>Shadow ran to Blue and Red.</p><p>"You OK, Red?" Blue asked.</p><p>"Yeah." Red nodded.</p><p>Blue stood up and they looked up at the Helmaroc King.</p><p>"You don't think he's gonna fly away, do you?" Blue asked.</p><p>"Nah. That bird's smart." Shadow said, "He's gonna keep fighting us 'till he wins."</p><p>Red placed Azul on the ground, "Azul." he pointed to the stairs he came from first, "Run down those stairs and wait for us at the door. We'll be there as soon as we can."</p><p>Azul nodded and ran to the stairs. He noticed the rod, picked it up in his beak and ran down the stairs.</p><p>Red stood up and looked up at the Helmaroc King, "What are we gonna do, guys?"</p><p>Shadow drew out his sword, "Draw your swords. We're gonna finish him in a triple-blow."</p><p>Blue and Red drew out their swords and they all ran to the middle. They looked up and watched the Helmaroc King dive down at them.</p><p>"Now!" Shadow shouted.</p><p>They all jumped up as the Helmaroc King came down at them. They sliced their swords through the Helmaroc King as they went through it. The Helmaroc King split in three and then exploded in a smoke of darkness.</p><p>Shadow, Blue and Red looked down.</p><p>"Aah! We did it!" Red smiled.</p><p>"Look at all the force!" Blue said.</p><p>"We did it! We defeated the Helmaroc King!" Shadow cheered.</p><p>The smoke left from the Helmaroc King turned into force which rained down onto the ground. The three Links laughed as they fell down to the ground. They landed gently on their feet and they held their swords up which collected the force.</p><p>The force got evenly collected by the Four Swords. Blue picked up his dropped hammer and equiped it.</p><p>"Come on! We gotta bring Azul back to Andréa!" Red said.</p><p>"Yeah!" They withdrew their swords and ran down the stairs leading to Azul.</p><p>Azul was standing at the door with Reds' rod in his mouth.</p><p>Reds' face lightened up, "Azul! You're such a smart cucco!"</p><p>Red stroked Azul on the head and took the rod from him. He equiped the rod and then picked up Azul in his arms.</p><p>"Come on, let's get out of here." Shadow said.</p><p>"Right." Blue and Red nodded.</p><p>They ran through the door and made their way out of the fortress.</p><p>Andréa was sitting near the shore, looking out at the Forsaken Fortress.</p><p>"I hope they're alright.." Andréas' head then perked up as he saw the raft coming toward him. He stood up and waved, "Hey, guys! I'm here!"</p><p>Red pointed at him, "Look! It's Andréa!"</p><p>They paddled the raft to the shore and jumped off. Andréa knelt down and Azul ran into his arms.</p><p>"Azul! I'm so glad you're alright! I was so worried!" He held Azul in his arms and stood up, "Thankyou Shadow, and Red. I'm so grateful. I can't thank you guys enough."</p><p>"Heheh. It was no problem." Shadow smiled.</p><p>"Oh yeah, Andréa. This is our friend, Blue." Red said.</p><p>Blue held his hand out, "Nice to meet ya!"</p><p>Andréa shook his hand, "You too."</p><p>Shadow yawned and walked over to some bushes, "Aw, man. Been fighting all night.." he sat down by them and fell asleep.</p><p>Red then yawned and sat next to Shadow, "So sleepy.." he then fell asleep.</p><p>Blue stretched his arms and sat down next to Red, "Might as well get some sleep." he then fell asleep.</p><p>Andréa smiled and sat down next to Shadow, "Let's get some sleep, Azul." He fell asleep with Azul tight in his arms, who also fell asleep.</p>
-<a href="Chapter 34.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 36.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 34.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 36.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

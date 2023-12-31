@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 5</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 5: Kumalon Village</b></u></p><p>The five Links were standing outside the village entrance.</p><p>"This is the place." Blue said.</p><p>"Kumalon Village." Red read off the sign above them.</p><p>Green started walking in, "Well? Let's go!"</p><p>"Yeah!" Red ran in, ahead of Green.</p><p>Green ran after Red, and Blue ran after them. Vio and Shadow walked behind them.</p><p>Kumalon village was quite a large village, with positive atmosphere. It had lots of buildings, mostly houses that all looked alike. Some were shops, like butchers and bakers. It was mostly like a market as the five Links went in. At the end of the market there was a clearing, with a big, beautiful fountain in the middle. Behind the fountain was a castle, it looked a lot like Hyrules', but it was half the size. Either side of the castle were gardens, free for anyone to play in. There were lots of children playing around, some were with their mothers, shopping, and there were some men at work, building and fixing houses.</p><p>Red was sitting on the fountain side, stroking the water with his hand. Green and Blue were sitting by the fountain, trying to catch their breath.</p><p>"Man, Red, where do you get all your energy from?" Blue asked.</p><p>Vio and Shadow were walking through the market, heading to the fountain. Shadow was looking at all the marts, then was looking inbetween the buildings. He thought he saw something moving in the shadows, and got startled a bit. Vio gripped Shadows' hand a bit tighter. Shadow looked at their holding hands, and then at Vio. He was looking infront of him, then smiled. Shadow smiled and blushed a bit. Vio and Shadow got to the fountain with the others. Vio looked up at the castle.</p><p>"Hey, guys." he said, "Doesn't it look like Hyrule castle?"</p><p>The others looked up at the castle.</p><p>"Hey, yeah." Red said, "But it looks way smaller."</p><p>"Well, this place is way smaller than Hyrule." Blue said.</p><p>Green stood up. "Yeah, but, why is there a castle like this here anyway?"</p><p>High up, on the balcony of the castle, a girl walked out to the balconys' edge. She was the same age as Link and was just a bit smaller than him, so she was as tall as Red. She had very light brown skin, blue eyes and had long, light green hair, with short zig-zag-like bangs in front of her ears. Her crown was much like Zeldas' but more diamond shaped with a red diamond in the middle. She also had white decorations in her hair, two either side of her head, behind her ears. She wore blue eye-shadow and light pink lipstick. She wore a necklace round her neck with three big, red beads. On her chest she had a triforce charm which connected to a pink scarf draped round the back of her neck. The charm was connected to her red top; she also wore a white top underneath. She wore a gold belt which was round in the middle. Her dress was pink with a blue zig-zag near the bottom. Connected to her belt was the triforce banner, similar to Zeldas'. She wore long, thin white gloves which went just over her elbows.</p><p>She was looking out beyond the village entrance. She looked through some binoculars and saw a small hover-car with a small person in it, coming at the village. She put the binoculars down.</p><p>"He's here." She said.</p>
-<a href="Chapter 4.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 6.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 4.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 6.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

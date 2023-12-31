@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 33</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 33: Giant Chu Chus</b></u></p><p>"Blue! Blue!" Red and Shadow ran up to the cage.</p><p>"Blue! We came to save you!" Red stood right up at the cage.</p><p>Blue kept looking at the ground, "...why?"</p><p>"Uh? 'Cause we're part of each other, we're Link!" Shadow said.</p><p>"We're a team! You're our friend!" Red said.</p><p>"You don't need me with you.." Blue said.</p><p>"What!" Red asked.</p><p>"Just leave me here to die. That's my decision." Blue smirked.</p><p>"No! Blue!" Red said.</p><p>Shadow pulled Red back, "Stand back."</p><p>Shadow formed a bomb in his hand and clicked his fingers. A flame of light lit the fuse. He threw it at the cage and it blew the whole thing to pieces.</p><p>"Blue!" Red cried out, "..Huh?"</p><p>The light smoke faded away and there was a dark smoke fading away where Blue was.</p><p>"Blue?" Red was confused.</p><p>"He was a fake." Shadow explained, "That's why he didn't show his eyes."</p><p>"Oh?"</p><p>Just then, iron bars appeared infront of both the doors, locking them.</p><p>"Aw, shit!" Shadow said, "The doors!"</p><p>Five giant chu chus, five times the size of Link, suddenly fell down from above and landed around Shadow and Red. One was green, one was red, one was yellow with electricity around it, one was blue also with electricity around it and one was black. They were edging themselves towards Red and Shadow, closing in on them.</p><p>"Waaah! What do we do?" Red panicked.</p><p>"There's gotta be a weak point somewhere.." Shadow tried to look for one.</p><p>"How 'bout this?" Red got out his catapult.</p><p>He aimed two small stones at the green chu chus' eyes. He fired and one stone hit each eye. The chu chu then suddenly shrank to normal size, knee-high of Link.</p><p>"Alright!" Shadow ran to the green chu chu and destroyed it with his sword, "Red! You shrink 'em! I'll slash 'em!"</p><p>"Right!" Red fired stones at the red, yellow and blue chu chus' eyes.</p><p>When the stones hit the yellow and blue chu chus, they got stunned and the electricity around them disappeared.</p><p>Shadow ran up to them as they shrank and destroyed them with his sword.</p><p>Red kept on shooting stones at the black chu chu but the stones kept going right through it.</p><p>"Shadow! It's no use!" Red said, "The stones just keep going right through that black one!"</p><p>Shadow ran to Red and looked up at the black chu chu, "It's because it's made of darkness!"</p><p>Shadow reached his arms out at the chu chu and shot light out of his hands at it.</p><p>The light shone on the chu chu and it turned into stone. Shadow then formed a bomb in his hand, lit it with a flame of light and threw it at the stone chu chu. The bomb hit it and shattered it to pieces.</p><p>Red pointed up, "Shadow, look! It's raining force!"</p><p>Force gems came falling down, from where the last chu chu was destroyed.</p><p>"Alright!" Shadow said.</p><p>They both held their swords up which collected up the force.</p><p>"Our swords have gotten stronger!" Shadow looked at his sword.</p><p>"Yay! Alright!" Red cheered.</p><p>They withdrew their swords and the iron bars infront of the doors lifted, unlocking them.</p><p>"Blue must be through that door!" Red pointed to the far one.</p><p>"Come on, let's go!" Shadow ran to the door and Red followed.</p><p>They went through the door and it went outside. Infront of them was a staircase leading up to the top of a volcano. Red and Shadow couldn't see what was at the top, but they could see red smoke coming from it. They could hear cheering coming from monsters up there.</p><p>"D'you think Blue is up there?" Red asked.</p><p>"Only one way to find out." Shadow said.</p><p>They ran up the stairs and got to the top.</p><p>Shadow and Red were on a large stone ledge. Far infront of them was a deep pit of lava of the volcano. High above it, on the far side, was a smaller stone ledge. There were all kinds of bokolins, moblins and imps on it, cheering and jumping around.</p><p>The lava spurted up in columns at time-to-time from the pit.</p><p>Blue was unconscious, he was tied up with rope and he was hanging loosely from the bottom of the far stone ledge.</p><p>Red and Shadow could see him hanging in the air.</p><p>"Blue!" Red ran to him.</p><p>"No, Red! Wait!" Shadow ran after him.</p><p>Shadow pulled Red to a stop just as he got to the edge. A column of lava shot up right infront of them and went down again. Shadow and Red looked up to Blue.</p><p>"He's unconscious!" Shadow said.</p><p>"Oh no! Blue!" Red turned to Shadow, "What are we gonna do!"</p><p>"Hmmm..."</p><p>Blue slowly opened his eyes and saw the lava below him. He perked up which made him twitch slightly.</p><p>"Huh! What the hell-!"</p><p>The rope above him broke slightly which dropped Blue a bit. Blue stayed completely still.</p><p>He looked up, "Aw, crap! This can't be the end of me!"</p><p>Blue heard a laugh from an imp and he looked up at it.</p><p>The imp looked over the ledge at Blue and smirked. It held Blue's weapons over the edge.</p><p>Blues' eyes widened, "No! Don't!"</p>
-<a href="Chapter 32.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 34.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 32.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 34.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

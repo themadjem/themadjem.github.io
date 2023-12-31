@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 6</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 6: Chibi Ganons' Proposal</b></u></p><p>The girl quickly ran inside, up a spiral of stairs, and onto the roof. She blew through a large horn on the rooftop three times.</p><p>She yelled through it, "He's coming! Chibi Ganon's coming! Quickly! Everyone get inside your homes!"</p><p>Everyone scrambled into their houses and all of them locked their doors.</p><p>The hover-car drove into the village. The five Links were confused what to do.</p><p>"Uuuh, where do we hide?" Green asked, shifting his head.</p><p>Red pointed at some bushes, "Quick! There!"</p><p>The five of them scrambled to the bushes and hid behind them. They peeked through to watch what was going on.</p><p>The car stopped outside the castle and Chibi Ganon jumped out. He looked and dressed just like Ganondorf, but was only as tall and old as Link.</p><p>"Princess! Oh princess!" He yelled out, "I'm waiting!"</p><p>The princess walked out the castle and walked to Chibi Ganon.</p><p>"Yes? What do you want this time?" She asked.</p><p>"Well, since we make such a great couple.."</p><p>Chibi Ganon edged closer to the princess and held her hands.</p><p>"Tomorrow," he said, "We will get married!"</p><p>The five Links gasped in shock.</p><p>The princess paused, "And what if I say no?"</p><p>Chibi Ganon grinned, "I'll destroy this village and kill everyone in it with my own two hands!"</p><p>The princess paused, and then sighed, "Fine, I accept."</p><p>"You made the right choice." Chibi Ganon hopped back into his hover-car, "I'll be here at 10 am tomorrow to pick you up. Don't forget!"</p><p>Chibi Ganon drove off, out of the village. The people of the village crept out of their homes and slowly resumed their businesses.</p><p>The princess sighed and slowly walked up the stairs to her castle.</p><p>"Hey." Green said.</p><p>The princess turned her head round and saw the five Links standing behind her.</p><p>"We can help you." Green smiled.</p><p>The princess smiled back at them, "Please, come in."</p>
-<a href="Chapter 5.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 7.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 5.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 7.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

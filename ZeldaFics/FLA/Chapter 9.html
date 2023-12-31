@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 9</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 9: Getting Ready</b></u></p><p>Red, Blue, Green and Shadow were sleeping quietly. Vio was sitting on the windowsill, near Shadows' bed. He was reading his book, looking at Shadow at time-to-time to check he wasn't fading away again. Vio turned the page of his book and there was a picture of a shiny, blue, skull-shaped stone.</p><p>"Huh? That looks like.." Vio said to himself.</p><p>Vio jumped down from the windowsill and walked to the side of Reds' bed, opposite his. He held the stone in his hand, which was still tied round Reds' neck, and compared it to the one in his book.</p><p>"There's only half of it." Vio whispered to himself.</p><p>He looked in his book and read from it, "'The Pirates Charm. Only a few of these exist in this world. These few are held by legendary pirates. If in two pieces, the holder will change form from a pirate, and the two pieces of the charm can then be used for communication. The original bearer will only change back to a pirate if the pieces are brought back together in his or her hands.' Hmm. So who's the person with the other piece?"</p><p>Vio closed his book and rested the half-a-charm back on Reds' chest. He started to walk back but got stopped. He turned his head round and noticed Red clutching onto his arm.</p><p>"No...stop...come back..." He said in his sleep.</p><p>"Huh? He's dreaming." Vio said.</p><p>Red pulled Vios' arm closer and rubbed his cheek against it.</p><p>"Wait, Mr Hot Dog, I haven't finished eating you yet.." Red said in his sleep again.</p><p>Vio slowly pulled his arm out of Reds' clutches and poked his head back down on his pillow.</p><p>"Wow, what a weird dream." Vio commented, as he walked back to the windowsill.</p><p>He jumped back onto it and continued to read his book.</p><p>The next morning, Tetra was taking her shower in her bathroom, which was connected to her bedroom. Red opened the bedroom door and peeked in. He stepped in and he was wearing Tetras' dress. The room was large and the bed was very neat and big. Red put his clothes on her bed. He looked at the ajar bathroom door and took two steps toward it.</p><p>"Don't even think about it!" Tetra yelled from the bathroom.</p><p>"Uh..Aah!" Red blushed, ran back out of the room and closed the door.</p><p>Later that morning, after her shower, Tetra was brushing Reds' hair trying to make it as long as possible, in her room. The make-up on Reds' face was already done. Red was sitting on a stool, infront of a dressing table, with Tetra behind him. The other four Links were watching. Tetra was dressed in Reds' clothes, and had even styled her hair like his.</p><p>"See?" Tetra asked, "A little can go a long way!"</p><p>"But it's still a little short." Red said, "And I'm blonde!"</p><p>"You could say that you cut and dyed it." Shadow said.</p><p>"That might work!" Red said.</p><p>"It'll have to." Tetra said.</p><p>She gelled Reds' zig-zag side-bangs in place. She then put in two hair clips behind his ears to keep his hair in place. She then slipped on her crown on his head.</p><p>"There!" Tetra said, "All ready!"</p><p>"Wait!" Blue said.</p><p>He fastened on Reds' sword on his shoulder and covered the sword strap with some of Reds' hair.</p><p>"There!" Blue said, "Now you're ready!"</p><p>"We'll hold onto the charm for you." Green said, who was holding it in his hand.</p><p>"Hey." Tetra looked at the charm, "Where'd you get that?"</p><p>"We got it after we defeated a monster." Green replied.</p><p>"Hmmm..." Tetra thought to herself.</p><p>"Oh, Princess Tetra!" Chibi Ganon yelled from outside.</p><p>"He's here!" Tetra said, "Good luck, Red, and be careful."</p><p>"I will." Red replied.</p>
-<a href="Chapter 8.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 10.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 8.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 10.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

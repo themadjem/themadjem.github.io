@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 38</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 38: Vios' Fear</b></u></p><p>Blue was pointing at a huge building with windows all around it. A red cross could be seen printed on the walls around it. The building was behind two smaller buildings infront of it.</p><p>"A-a hospital!" Red asked.</p><p>"Great idea, Blue!" Green smiled.</p><p>"Heheh, well.." Blue looked smug.</p><p>"How'd you know it was here?" Vio asked.</p><p>"I saw it when I was ontop a hill in Snow Peak." Blue explained, "..That's where I got kidnapped by the Helmaroc King."</p><p>"Oooooh.." Shadow commented.</p><p>Green walked infront of Blue and looked ahead.</p><p>He turned round to the others and smiled, "Let's look around, guys!"</p><p>There were tall, developed looking buildings all around the place. The pavement was made out of various stone tiles. There were various areas of green grass with various plants and there were different shaped fountains around the place.</p><p>The five Links where standing in a clearing with a fountain in the middle of it. They were looking up at all the tall buildings around them in amazement.</p><p>"Woah, check it out!" Blue said.</p><p>"I've never been to a place like this before!" Green said.</p><p>"It's a huge city!" Red said.</p><p>"Everything's so big.." Shadow said.</p><p>"It makes you feel so small.." Vio said.</p><p>Green turned to Blue, "So, where's that hospital?"</p><p>"Uh...Well..." Blue looked around.</p><p>Red pointed down a road, "There! Is that it?"</p><p>Red pointed to the huge hospital which could be seen down a road from where they were.</p><p>"Yeah! Well done, Red!" Blue said.</p><p>The five Links walked through the large, white automatic doors. They entered the hospital into a large, clean reception.</p><p>They walked to the reception desk to their right. Green had to stand on his tip-toes in order to lean his arms on the desk.</p><p>"Um, excuse me. Hello?" Green asked.</p><p>A young, cute woman looked over her shoulder and then turned to Green, "Hello there, how can I help you?" she smiled.</p><p>The woman had blonde hair in two pig-tails. She had orange eyes and several freckles on her face. She wore a light green dress with white stripes on the shoulders with a red cross on them.</p><p>"Well.." Green sounded slightly nervous, "We're travellers and we're kinda new to this place. Can you tell us where we are and how far away from Hyrule we are?"</p><p>The woman smiled, "Of course. This place is called City Ishidukuri where many people find a good place to live and work and make a living helping people. This place is well developed and doesn't harm the environment in any way. Hyrule, however, is very far south, through the desert, over the sea and past several islands." the woman looked worried, "Is that where you need to go?"</p><p>"Yeah, but not yet. We want to find something out here first." Green said, "Can we get blood tests here?"</p><p>"Of course! This hospital specialises in everything. This is the biggest in the world."</p><p>"Wow.." Green got out his rupees sack, "So, how much do we need to pay? For the five of us."</p><p>"Oh, don't worry. You don't need to pay for blood tests. We feel you shouldn't need to pay to find out who you are in relations."</p><p>"Wow! That's so nice!" Green put away his rupees sack, "Where do we need to go?"</p><p>"Just go down that hall to room 18. The door should be clearly marked, to your right." the woman pointed, "Oh, my name's Claira. Please come to me if you need any help. What are your names?"</p><p>"My name's Green."</p><p>"Red!"</p><p>"Blue!"</p><p>"Vio!"</p><p>"Shadow!"</p><p>Claira smiled, "It's nice to know you all. Be sure to enjoy your visit here."</p><p>"OK. See you later." Green nodded.</p><p>The five of them started walking down the corridor.</p><p>They walked down and got to room 18.</p><p>"Room 18, right?" Red ran to the door and knocked on it, "Hello? Anyone in?"</p><p>The door opened and a cute woman stepped out. She had long, dark blue hair with white streaks. She had dark blue eyes and wore a nurses' hat on her head. She wore a blue dress with a zip down the middle. It had white stripes on the shoulders with red crosses on them. There were frills on the neck and the short-sleeve ends of the dress. She wore blue shoes with white stripes down the middle of them. She wore a name tag on the left side of her chest.</p><p>"Ah! You must be Green, Blue, Vio, Shadow and Red!" she pointed at them as she said their names.</p><p>"Yeah! That's right!" Red said, "We're here for the blood tests!"</p><p>"OK, my name's Volivia. Please come in one at a time so we can take your blood sample." She looked down at Red, "Would you like to go first?"</p><p>"OK!" Red went in.</p><p>"If you could please wait for your turn. You can sit down here in these seats." Volivia pointed out five seats in a row along the wall.</p><p>"Thanks." Green smiled.</p><p>The four Links sat down in the seats and Volivia went in and closed the door behind her.</p><p>"NO! AAH! GET IT AWAY FROM ME!"</p><p>Vio shifted as far back in the recliner chair as he could, trembling with fear.</p><p>Volivia was holding a small needle in her hand, "Vio, it's just a small prick and it'll be done. Everyone has to have a blood test and today it's your turn!"</p><p>Vio shook his head, "N-no! You can't make me take it! I won't take it!"</p><p>Green, Blue and Shadow came running in. Green and Blue each held down Vios' arms. Shadow stood on the other side of the chair from Volivia.</p><p>Vio panicked, "N-no! Guys? Aaah!"</p><p>"Vio-kun, just look at me. Think about me, OK?" Shadow looked down at Vio.</p><p>Vio looked up into his eyes, "..Shadow-Chan.."</p><p>Volivia rolled up Vios' sleeve and inserted the needle into his arm.</p><p>Vio felt the needle go in and screamed, "WAAAAAAAAHH!"</p><p>Blue and Green walked out.</p><p>"Is Vio OK?" Red asked.</p><p>Green smirked, "Today, we found something new about Vio.."</p><p>Shadow and Vio walked out. Shadow had his hands on Vios' shoulders and Vio was rubbing his arm where the needle went in, trying to stop himself from crying.</p><p>"Vio-kun has a fear of needles.." Shadow said.</p><p>"Not gonna cry..not gonna cry.." Vio sniffed.</p><p>Volivia stepped out, "OK, now we have all your blood samples, we can start analyzing them. You'll need to wait about one hour for the results so we search for who your relations are."</p><p>"How do you do that?" Green asked.</p><p>"We have a huge database in the computer which lists everyones' blood type and data so we can search for DNA matches. We gather them from all the other hospitals around the world."</p><p>"Wow, that's so impressive." Green commented.</p><p>"While you wait, you can stay in one of the rooms we have here. We've prepared one for you already, room 331 on floor 11. Just go back down to the reception and the elevator's on the wall to your right."</p><p>"Wow! You done that all for us?" Red asked.</p><p>"Well, you are travellers and it looks like you need a rest. You can stay here for as long as you want. The rent here is very cheap."</p><p>"Wow! Thanks a lot!" Green smiled.</p><p>Volivia smiled, "It's no problem! I'll call you down when the results are ready."</p><p>"Thanks, see ya later." Green said.</p><p>The five Links started walking back down the hall to the elevator.</p><p>They went in and the door closed behind them. Vio pressed button 11 and the elevator started going up. As it did, it showed a view of the outside.</p><p>"Wow! Check it out!" Red went up to the glass window to look at the view.</p><p>"Look! I can see Snow Peak!" Shadow pointed.</p><p>The five Links looked at the view in amazement as they went higher and higher in the elevator.</p><p>"Bing!" the elevator stopped and the doors opened to the carpeted halls of floor 11.</p><p>"Race ya, Blue!" Shadow said.</p><p>"Ready, go!" Blue started running down the hallway.</p><p>Shadow ran with him and Red ran behind them. Green and Vio ran after Red.</p><p>Blue and Shadow skidded to a stop infront of room 331.</p><p>"I won!" they both said to each other.</p><p>Red, Green and Vio stopped behind them.</p><p>A key card was in the card slot of the door. There was a label on it saying 'For the five travellers'.</p><p>Vio took the card out and the small light on it changed from red to green.</p><p>Blue opened the door.</p><p>They all gasped in amazement, "Wow!"</p>
-<a href="Chapter 37.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 39.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 37.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 39.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

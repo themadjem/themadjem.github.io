@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 52</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 52: Diverting Winds</b></u></p><p>The huge poison ink bullet came hurling towards the Links' ship. They watched in shock and horror as it came closer to them.</p><p>"Everyone hit it at once!" Blue commanded.</p><p>They perked up as they realised the effectiveness of the plan, "Right!"</p><p>All at the same time, Green threw his boomerang, Blue shot his hookshot, Red shot three stones with his catapult, Vio shot three arrows with his bow and Shadow threw a bomb at the Octos' attack. Their weapons' impact caused the ink block to bounce back at the giant Octo.</p><p>The Octo brought a panicked look apon its' face but got hit by its' own attack before it could move away. The giant, spiked bullet ripped into the Octo which caused it to explode in a huge cloud of smoke.</p><p>The whirlpool gradually slowed and then stopped. The Links' ship sailed back on its' route, through the smoke. As they entered the smoke, it rained force down onto the Links.</p><p>Their faces lightened up, "Force!"</p><p>They all drew out their swords and pointed them up to the sky. Their swords got stronger as the force was collected into them.</p><p>Blue grinned, "Alright! More force!"</p><p>"It's so pretty!" Red commented.</p><p>"At last, somemore force." Vio said.</p><p>"This should power up our swords evenly." Shadow informed.</p><p>"With this much force, we could slice and kill any monsters with one blow!" Green said.</p><p>As all the force was collected, the smoke faded away and revealed the blue sky. They withdrew their swords back into their cases. They perked up as all their stomachs rumbled loudly.</p><p>Blue turned to Shadow, "Hey, how about some breakfast?"</p><p>Shadow smiled, "Good idea-"</p><p>Shadow was suddenly interupted as they heard the noise of a cannon firing. They ducked as the cannon ball flew straight over their heads.</p><p>"Aw, man! What now!" Blue was annoyed.</p><p>Shadow and Red ran to the banisters and saw a large pirate ship not far in the distance.</p><p>Shadow formed a bomb in his hand, set it alight with a click of his finger and got ready to throw it.</p><p>"Red! Shoot!" Shadow then threw the bomb as far as he could.</p><p>Red aimed and shot a stone at the bomb. The stone hit the bomb, which sent the bomb flying off and it hit the pirate ship.</p><p>"Yosh!" Shadow and Red shot their fists into the air and then high-fived each other.</p><p>The pirate ship retreated its' cannons and sailed to the side of the Links' ship.</p><p>Green grinned and stepped forward, "They've realised we're too strong for 'em!"</p><p>A pirate stepped out to the banisters of his pirate ship. He had brown eyes and thick, messy black hair with a small moustache and beard. He wore a dark red bandana round his head, a white shirt, a long black jacket, a dark red waistband, light brown trousers and black boots.</p><p>He was rubbing his eyes, "Who dares disturb my sleep!"</p><p>"Hey! I know you!" Green said, "You're that pirate who never gives up trying to attack Hyrule. You're Jago!"</p><p>"Huh?" Jago perked up and a shocked look came across his face, "You! You're that left-handed bastard! Li-uh?" He looked confused, "...Five? ..I didn't know you were a quintuplet.."</p><p>"NO! THAT'S NOT IT!"</p><p>"So you collected yourself some allies, eh?" Jago asked.</p><p>Green smirked, "Yeah! You can't beat the five of us!"</p><p>Jago smirked, "Five you say?"</p><p>"Uh?" Green looked at the others.</p><p>They looked at each other and then perked up, "Red?"</p><p>Red was tied to the mast of Jagos' ship, with two other pirates standing near him.</p><p>Jago closed his eyes and laughed to himself, "OK, here's how it's gonna work.."</p><p>He opened his eyes and saw the bottom of a shoe coming at his face. Blue knocked Jago down to the floor by kicking him in his face. Blue drew out his sword and the other pirates stepped back in fear. Blue cut the ropes with his sword which set Red free.</p><p>"Oh, Blue!" Red latched his arms around Blue and rubbed his cheek against Blues' chest.</p><p>Blue held onto Red then ran and jumped off Jagos' ship and onto his.</p><p>Jago stood up and rubbed his face, "..Ow..."</p><p>"What's the big idea!" Blue asked.</p><p>"Well, what do you expect from a real pirate!" Jago replied.</p><p>"Just give up! You know you're too weak for us!" Green said.</p><p>"Hmph." Jago pouted, "You sure have wondered far. Where you heading?"</p><p>"Back to Hyrule. If you plan on going there yourself, then think again!" Green threatened.</p><p>"Heheh. So you kids got lost. Lucky for you, it's just straight on here past Strong Will."</p><p>Vio perked up, "What! Strong Will! How far is it!"</p><p>"Hmm?" Jago pointed, "Not far. Should take you a couple of minutes at this pace."</p><p>Vio rushed to Green and pleaded, "We have to go there, Green! It's on the way! We can stop there! Please please please oh please, it's my chance to see my father!"</p><p>Green smiled, "'Kay, sure!"</p><p>Vio sighed in relief.</p><p>Green perked up and realised Jagos' ship missing, "Hey! Where'd they go!"</p><p>"There they are!" Blue pointed to his ship sailing away in the opposite direction.</p><p>"Don't think I'm quitting on Hyrule!" Jago yelled to them, "I'll get that maiden one day!"</p><p>"Yeah, sure.." Green smirked.</p><p>Vio ran to the front of the ship with Shadow following close behind. The others went to the front of the ship with them. They leaned over the sides to look at the island coming closer to them.</p><p>Vio looked at it admirably, "There it is..Strong Will Island.."</p><p>The island looked about as big as Windfall. Most of the island was a thick, tall cliff. About half way up settled a village. On the top of the cliff were some trees, and what looked like a dojo.</p><p>Before they could reach the island, a strong wind picked up quickly and blew the ship off course from the island.</p><p>"Turn the ship!" Vio instructed.</p><p>He ran to the wheel and the others followed. One by one they quickly grabbed ahold of the ships' steering wheel and they pushed it as hard as they could to try and turn the ship. They pushed with all their strength but it wouldn't budge. The wind suddenly grew stronger and pushed all the Links off the wheel, onto the floor, as the ship turned in the opposite direction.</p><p>Vio sat up and looked up at Strong Will going away from them.</p><p>"No..!" Vio quickly got up and ran to the back of the ship. He reached out for Strong Will as it went further away over the horizon, "..That was probably...my only chance.."</p><p>Shadow ran and stopped behind Vio, "Vio-kun..." He perked up, "Watch out!"</p><p>Shadow quickly protected Vio with his body as a stonger wind blew against the ship.</p><p>"Guys! We gotta get the sail in!" Green instructed.</p><p>Green, Red and Blue pulled on one rope on one side of the ship. Vio and Shadow ran to and pulled the other rope on the other side of the ship.</p><p>Again, they pulled with all their strength, but the open sail wouldn't budge as too much wind had been collected in it. The wind suddenly got even stronger and blew the ship faster as it turned.</p><p>The Links got blown onto the floor again in the middle of the ship. They stayed lied down on the floor to avoid being blown away.</p><p>"How can the wind suddenly get so strong!" Green asked.</p><p>"It's like being in a tornado!" Red said.</p><p>"But way stronger!" Vio said.</p><p>Shadow lifted his head up slightly and looked at the island they were speedily heading toward.</p><p>"What's that island!" he asked.</p><p>The island was huge, about 10 times the size of Strong Will, and was lifted up from the sea by high cliffs. All that could be seen on the island were many trees.</p><p>"We're gonna crash into it!" Blue yelled out.</p><p>"AAAAAAAAAAAAAAAAAAAAAAAHHH!"</p><p>Their scream echoed over the seas. A shattering crash was heard as the wind then calmly died down.</p><p><b>Continue the adventure in <a href="../POF/Chapter%201.html">The Power of Five - Chapter 1</a></b></p>
-<a href="Chapter 51.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 51.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

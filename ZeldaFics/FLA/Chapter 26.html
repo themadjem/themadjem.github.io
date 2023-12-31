@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 26</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 26: Greens' Bad Luck</b></u></p><p>Green slowly opened his eyes from his sleep and saw things upside-down.</p><p>"Huh? What the-?"</p><p>The branch then snapped and Green fell.</p><p>"Waaaah!"</p><p>He landed on his head, then fell onto his face. He sat up and rubbed his face.</p><p>"Owch, what a way to wake up.."</p><p>He looked up at the tree.</p><p>"Hmm? I remember, the tornado. What an odd way to land.."</p><p>He got up to his feet and dusted off his tunic. He reached for his sword on his back and felt nothing.</p><p>"Huh!" he looked and felt where his weapons were on his back, "My sword! My shield! My boomerang! Oh, crap! This is bad!"</p><p>He looked up into the sky, "They couldn't have fallen off while I was flying through the sky..could they?" he itched his head, "Aaw, man! This is bad!"</p><p>He paused and patted his head, "...Oh no! My hat! Where'd it go? Did it fall off too? Noooo!" he sighed, "This isn't good. Grandma gave me that as a present, and then forced me to wear it every day...now my head's cold..!"</p><p>Green perked his head up, "I can't give up now! Maybe someone round here found my stuff!"</p><p>He walked into the town entrance, "Maybe there's a lost and found round here..."</p><p>He walked up the gentle hill, through the town. He saw a boomerang fly out and then back, round a corner.</p><p>"What the-?"</p><p>He hid behind the corner and peeped round and saw the four boys.</p><p>"Those kids! They got all my stuff!"</p><p>He came out from the corner and ran to them, "Hey!"</p><p>The boys looked round and saw him come toward them.</p><p>"Look! It's him!" Jin said.</p><p>"Split up!" Jan said.</p><p>Green leapt at them, "Gimme back my stuff!"</p><p>The boys ran in four different directions and Green landed on the ground.</p><p>He sat up and rubbed his face, "Grr, damn little buggers.."</p><p>He stood up and looked around. He saw Jun with his hat, crawl through a gap in the wall, into the mansion.</p><p>Green ran to it and looked through the hole, "Damn, too small for me."</p><p>He ran round to the door and went in. He stepped inside and looked around.</p><p>The room had a large, red carpet, and red walls. There were priceless paintings and statues around the room. There were two tables of priceless vases with blue curtains behind them on two sides of the room.</p><p>Green looked around the room, "Where's that kid?"</p><p>Just then, he heard a vase smash. Green rushed to it and looked in the shadows behind the table.</p><p>"I know you're in here somewhere!" Green said.</p><p>"Hey you!" Green heard an adult, male voice.</p><p>Green turned his head and looked up at the balcony upstairs.</p><p>Green saw a man, who wore a tall yellow hat and a long yellow cloak. He had a long, brown beard and looked very angry at Green.</p><p>"You broke my precious vase! You vandal!" the man threw a rope at him.</p><p>"No no! It wasn't me! I swear!" Green said.</p><p>The rope went around Greens' stomach like a lasso and he got pulled up to the man.</p><p>"Ow ow ow! Not the stomach!" Green complained.</p><p>He got released infront of the man.</p><p>"You pay for that vase or pay with hard work!"</p><p>"Aw, man..OK, I'll pay. How much?"</p><p>"200 rupees."</p><p>"That it? OK." Green reached back for his rupees sack and felt nothing.</p><p>He thought to himself, "Shit! Those damn kids stole my rupees too!"</p><p>He looked up at the man and grinned. He then quickly turned around, jumped off the balcony and legged it for the door.</p><p>"You're not getting away!" the man threw a fishing line at Green.</p><p>It wrapped around his ankle and tripped Green. The man reeled up Green, who was hanging upside-down.</p><p>"OK, what do I have to do?" Green asked.</p>
-<a href="Chapter 25.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 27.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 25.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 27.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 34</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 34: Saving Blue and Azul</b></u></p><p>The imp dropped Blues' weapons into the lava and Blue watched them fall.</p><p>"Aah! No!" Blue cried out.</p><p>A black blur suddenly whizzed past under the weapons and caught them.</p><p>"Huh? What the?" Blue looked around under him.</p><p>With his ice rod, Red had made a path of ice over the lava. It connected from the left of the ledge he was on, made the path go under Blue three times, and then lead it back to the right side of the ledge.</p><p>Shadow was surfing on the ice path and had caught Blues' weapons from falling. As he turned the first corner, he drew out Blues' sword and threw the rest of his things onto the ledge.</p><p>As he surfed on the second path under Blue, he looked up to him.</p><p>"Blue! Catch!" Shadow threw Blues' sword up at him.</p><p>Blue watched the point of his sword come toward him, "What! Shadow!"</p><p>As the sword flew up, it cut the ropes around Blue, freeing him. Blue reached for his sword as he fell.</p><p>"Got it!" he caught the handle, "Waaah!"</p><p>Shadow surfed round to the third path under Blue and caught him in his arms. Shadow surfed round the last corner and headed towards the ledge.</p><p>A column of lava suddenly spurted out and made a big gap in the ice path to the ledge, where Shadow and Blue were heading.</p><p>"Oh no! Guys, watch out!" Red shouted to them.</p><p>As Shadow surfed to the edge of the ice path, he jumped off it as far as he could. The furthest he reached was half way between the path and the ledge. Shadow held the back of Blues' tunic and threw him to the ledge. Blue landed on his face next to Red.</p><p>Shadow started falling toward the lava. A column of lava shot up from underneath him.</p><p>"Aah!" Red pointed his rod below Shadow, "Ice Rod!"</p><p>Ice shot out of the rod and froze the top of the column.</p><p>Shadow landed hard on his back on the ice as it shot up at him.</p><p>Blue got up and looked at Shadow.</p><p>"Shadow! Jump!" Red shouted.</p><p>Shadow managed to stand up on the ice. He leapt off it and landed on the ledge.</p><p>The ice on the column and above the pit quickly melted away.</p><p>"Man, that was a close one.." Shadow panted, "Thanks, Red."</p><p>Red smiled.</p><p>Blue picked up his stuff, equiped them and withdrew his sword.</p><p>The bokoblins, moblins and imps started throwing spears at the Links. They were all managing to dodge them all.</p><p>Red pointed his rod at them, "Fire Rod!"</p><p>A strong blaze of fire shot out of the rod and destroyed all the monsters.</p><p>"Ah! All taken care of!" Red smiled and equiped his rod.</p><p>Blue looked at Red, "Wow.."</p><p>Shadow turned to Red, "Azul! We still need to save that blue cucco!"</p><p>"A-who?" Blue asked.</p><p>"Azul. We promised to save a blue cucco who's a deep friend of someone we met." Red explained.</p><p>"Hmm, I see." Blue said.</p><p>"But where could he be?" Shadow asked, "We've been in all the rooms in this place and I can't see anywhere else to go."</p><p>Blue ran to the side edge of the volcano, "Guys! Check it out! I found some stairs leading to another room!"</p><p>Red and Shadow ran to Blue and looked down.</p><p>"Azul must be somewhere down there." Shadow said.</p><p>"Let's go!" Red started going down the stairs and then turned to Shadow and Blue, "Come on! We promised Andréa!"</p><p>"Right!" Shadow said.</p><p>"Let's go!" Blue smirked.</p><p>They climbed down the stairs which lead to a room at the bottom.</p><p>They entered a small, red room lit brightly with candles. On the other side of the room was an archway, leading into a long, red tunnel which sloped upwards slightly and also lit brightly with candles.</p><p>"Azul must be through there!" Red started running through.</p><p>Blue and Shadow followed behind Red as they ran through the tunnel. They felt the ground rumble as they ran through. Just then, a huge, round boulder came rolling down towards them.</p><p>Blue and Shadow skidded to a stop.</p><p>"Aw, crap!" Shadow said.</p><p>They both turned round and legged it back.</p><p>"Run, Red!" Blue yelled out.</p><p>Red kept on running to the boulder infront of him and focused. He jumped up, off the side of the boulder, jumped up off the side of the wall and then jumped up and over the top of the boulder.</p><p>"Alright!" Red smirked.</p><p>Six darknuts looked up to Red as he was falling down into the middle of them.</p><p>Red quickly drew his sword and sheild and landed in the middle of the darknuts. They swung their huge swords at Red but he jumped up off the top of them. As he jumped out the circle, he stabbed his sword into one of the darknuts' eyes, destroying it. Red landed behind the darknuts and he cut off the armour of two of them then destroyed them with his sword. The other darknuts turned to Red and attack him with their swords. Red jumped back to dodge them the stabbed a darknut in the eyes, destroying it. Another darknut quickly attacked Red with its' sword but he blocked it with his sheild and stabbed the darknut in the eyes, destroying it. The last darknut swung its' sword at Red. Red jumped up, off the darknuts' head and landed behind it. Red cut off its' armour then destroyed it with his sword.</p><p>Red panted and collected the force left by the darknuts with his sword.</p><p>"Whew! Wow! I've never thought so quickly before!"</p><p>Red turned round and ran through the tunnel.</p><p>Blue and Shadow ran into the small room, through the arch, and then heard the boulder suddenly stop.</p><p>They turned their heads round.</p><p>"Oh, crap! The boulder's stuck!" Shadow asked.</p><p>"And Red's still in there!" Blue panicked.</p><p>Red ran through the tunnel then eventually got to a door.</p><p>"Ah." Red perked up, "Azul must be through there."</p><p>Red ran to the door and went in.</p><p>The room was big and empty. Azul was sitting in the middle of the room and perked its' head up as Red entered. There were two large, black statues either side of Azul.</p><p>"Aah! Azul!" Red ran to him.</p><p>Red knelt down put his arms round Azul to pick him up. Azul squirmed around to try to not be picked up by Red.</p><p>"Don't worry, Azul! I'm here to save you!" Red picked up Azul.</p><p>Azul was lifted off of a switch which then suddenly de-activated, The door locked and the room went pitch-black. An eye glowed from each of the statues, which could be heard hopping towards Red. The were called armos knights.</p><p>Red was holding Azul in his arms.</p><p>Red stepped back, "Uuwaaah! I'm scared!"</p><p>Him and Azul shivered in fright.</p><p>The armos knights hopped onto the switch to turned to Red. Red perked up as the room lit up and he got out his rod.</p><p>He quickly pointed it at the armos knights, "Ice Rod!"</p><p>Ice shot out of the rod and froze the armos knights in place, on the switch, before they could move again.</p><p>Red quickly withdrew his rod, turned round and went through the unlocked door.</p><p>He ran back down the tunnel. As he ran to the boulder, it shattered to pieces and saw that Shadow had just thrown a bomb at it.</p><p>"Shadow! Blue!" Red smiled and ran to them.</p><p>"Red, are you OK?" Blue asked.</p><p>"Yeah.." Red rubbed the back of his head, "Sorry you guys were left behind..I kinda got loads of force.."</p><p>Shadow pointed to Red, "Which means you can leave some force for us!"</p><p>Red sweat-dropped, "Eheheheheheh..."</p><p>Shadow perked up, "Come on! We better get back!"</p><p>"Right!" They ran back up the stairs.</p><p>"Hey, d'you guys think its' weird that we haven't seen the Helmaroc King here yet?" Shadow asked.</p><p>"Hmmm..maybe he flew off." Red said.</p><p>"That's bad.." Blue said.</p><p>Just then, they felt the volcano rumble.</p><p>"We gotta get outta here, quick!" Blue said.</p><p>They ran up to the top of the volcano and headed for the other stairs.</p><p>Lava suddenly spurted up out of the volcano. The lava then stopped and the Helmaroc King flew out of the pit. It landed behind Shadow, Red and Blue, which caused them all to trip.</p><p>The Helmaroc King looked down at them and let out a loud cry.</p>
-<a href="Chapter 33.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 35.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 33.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 35.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

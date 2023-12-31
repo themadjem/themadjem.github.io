@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 2</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 2: Fight against the Giant Rock Snake</b></u></p><p>"Yay! Yay! I'm so glad we're four again! Yay!" Red excitedly said, glomping Blue.</p><p>Blue tried to push Red off him, "Red! Not now! There's a giant-WAAH!"</p><p>One of the snake tails snatched them both, squeezing them into each other.</p><p>"Not this again..." said Blue.</p><p>Vio quickly scanned the snake with his eyes. He got out his bow and arrows and shot three at once into the snakes' eyes, one from each head. The snake yelled in pain and dropped Red and Blue.</p><p>"Red! Your Fire Rod! Aim for its mouths!" Vio yelled out.</p><p>"Oh, right!" Red replied.</p><p>Red got out his rod and pointed it at the snakes' heads.</p><p>"Fire Rod!" he yelled.</p><p>A big blaze of fire shot out of the rods' sphere. One of the snakes' heads' free eye noticed Vio and it quickly grabbed him in its' mouth. Vio was stunned and saw a flash of fire coming at him. The fire damaged Vio, but also damaged the snakes' head. The snake was stunned and dropped Vio. Green quickly pulled Vio away from the snake. The snake tried to attack the four Links. It lifted its tails and tried to hit them but Red and Blue jumped out the way. The tails did manage to smash the swords' resting place into pieces.</p><p>Blue got out his hammer.</p><p>"Red! Freeze it! Freeze all of it!" Blue yelled out.</p><p>"OK!" Red replied.</p><p>Red pointed his rod at the snakes' heads.</p><p>"Ice Rod!" Red yelled.</p><p>A thick beam of ice shot out of the sphere. Ice covered the snakes' heads and froze them entirely. Red moved the rod along the snake to freeze it all.</p><p>"Yaaah! Take this!" Blue yelled out.</p><p>Blue leapt up at the frozen snake and smashed his hammer down on it. The heads of the snake shattered to pieces and fell to the ground. Blue kept at it until the whole of the snake was in tiny pieces. The ice melted a bit and then puffed away in a dark smoke. The smoke then formed a treasure chest.</p><p>Green was supporting Vios' head on his arm. Vio was still unconscious and his clothes and skin were badly burned. Red and Blue ran to Vio.</p><p>"Vio! Vio! Are you alright? I'm sorry!" Red pleaded to him.</p><p>"It's no use Red, he's unconscious." Blue said.</p><p>"Oh! I forgot I had this!" Green said.</p><p>Green reached into his back pocket and pulled out a bottle with a fairy in it. He pulled the cork out and pointed the bottle opening at Vio. The fairy noticed him, flew out the bottle and then flew around Vio, healing him. The fairy then disappeared into the sky.</p><p>Vio slowly opened his eyes then quickly sat up.</p><p>Green smiled at him, "You OK now, Vio?"</p><p>Vio smiled back, "Yeah, thanks a lot."</p><p>Blue helped Vio up to his feet.</p><p>"Wow, that fairy really helped me. It cured my burns, and even my clothes!" Vio said in astonishment</p><p>Vio quickly put his hand on his chest, over his heart, and sighed in relief.</p><p>Green turned his head to the smashed up shrine.</p><p>"Well, I guess we'll be as four forever." Green said to the others.</p><p>"Oh, yay! Alright!" Red said in delight.</p><p>"But what about.."</p><p>"Don't worry, Green." Blue said to him, putting his hand on his shoulder. "If there is another evil, we'll defeat it." He winked, stuck his thumb up and grinned. "We're the heroes!"</p><p>Green smiled at him. "Yeah, you're right."</p><p>He pointed his sword up in the air.</p><p>"We're all the hero, Link!"</p><p>The other three pointed their swords up to the sky.</p><p>"Yeah!" They all yelled.</p>
-<a href="Chapter 1.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 3.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 1.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 3.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

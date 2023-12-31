@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 15</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 15: Meeting the Demon</b></u></p><p>The castle was in ruins mainly at the front and top. Some walls were still intact at the back of the castle. The whole place was deserted. The five Links were standing in the main room which was completely destroyed. They were under the centre of the dark, swirling cloud high above them.</p><p>"Wha...what the hell happened!" Green asked, "This destruction is way worse than what you did, Shadow."</p><p>"They were waiting for this to happen.." Shadow let go of Vios' hand and walked forward five steps.</p><p>"Shadow..?" Vio asked.</p><p>"The seal...must have broken when you pulled out the Four Sword again and the shrine got smashed." Shadow said.</p><p>"So, there was another seal?" Red asked.</p><p>Shadow nodded, "Ganondorf. He now has no limit to his power. He can control all the creatures of the darkness as he pleases and he can lend any amount of power to whoever he wants."</p><p>"So, does he still have control over you?" Blue asked.</p><p>"I...I'm not sure..." Shadow replied.</p><p>Eight floormasters silently came out of the ground, one on each side of Green, Red, Blue and Vio. They all grabbed each ankle and yanked them down.</p><p>The four of them looked down, "Huh?...Waah!"</p><p>Shadow turned round and saw them all being pulled down into the darkness.</p><p>He ran to them, "Hang on, guys..!"</p><p>They reached up for him but the darkness fully sucked them in just before Shadow dived to them, onto the floor which had returned to normal ground.</p><p>Shadow heard a faint yell come from the ground, "Shadow...!"</p><p>"No, guys..." Shadow said to himself.</p><p>Shadow stood up and looked up to the dark, swirling cloud.</p><p>"Who the hell did this? Show yourself!" he yelled out.</p><p>Shadow heard a dark, evil laughter come from the ground.</p><p>"Hmm Hmm, fine. If you wish.." the voice said.</p><p>Just then, about six metres infront of Shadow, dark smoke came from the ground. A demon, twice the height of Shadow, rose up from the ground. He had long, dark purple hair, slightly in the style of Shadows', which was very messy and some came over his shoulders. He had long ears, long, sharp fangs and scary-looking eyes. His body, arms and legs all had huge muscles and his nails were long and sharp. He had huge wings, like a dragons', which had four huge claws on them. He had pale skin like he had no blood.</p><p>Shadow drew his sword and shield, "Who the hell are you? What did you do to my friends and everyone else!"</p><p>The demon grinned, "I'm surprised. You should atleast find me familiar. After all.." he pointed to Shadow, "..you created me."</p><p>"What!"</p><p>"You see, I was created from all the darkness inside you. The light made you weak, so now you can see the true power of the darkness! I am your demon!"</p><p>Shadow got ready to run at him, "...what happened to everyone here?"</p><p>"Oh? They all got sent to the dark realm, where they should all by now be part of the darkness. Your so-called 'friends' will also join the darkness if they're down there long enough."</p><p>Shadow ran up to him, "You leave them all alone!"</p>
-<a href="Chapter 14.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 16.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 14.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 16.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

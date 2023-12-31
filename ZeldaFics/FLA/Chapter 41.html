@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 41</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 41: Reds' Secret Truth</b></u></p><p>In the middle of the room, Vio was ontop of Red on the floor. Red was lying on his front, clutching onto a rubber duck. Vio had him pinned down and was pulling Reds' ears. Vio looked angry at Red and Vio was only wearing a towel round his waist.</p><p>Shadow was sitting on his bed looking at Vio, blushing.</p><p>"Give me back the rubber duck!" Vio said.</p><p>"Stop pulling my ears and I will!" Red said.</p><p>"No! Give me the duck first!"</p><p>Green closed the door behind Blue and Blue walked over to the other side of the room. He placed the two shopping bags on the kitchen counter and then got out his hammer. He lifted it up and then slammed it down on the counter. The noise caused everyone to perk up and look at Blue.</p><p>"OK, what the hell's going on?" Blue asked.</p><p>Vio snatched the rubber duck from Reds' hand and stood up. He walked back into the bathroom and closed the door.</p><p>Blue hung his sword on the bed end and Red stood up.</p><p>"I'm guessing this is your doing, Red?" Blue asked.</p><p>"Wha! Why you accusing me!" Red asked.</p><p>"Because you started it." Shadow got off his bed and walked to the others.</p><p>"Uh...well, I guess that is true." Red replied.</p><p>Green walked up to them, "Why don't you tell us what happened, Red?"</p><p>"OK, well.."</p><p>Vio walked out the bathroom, fully dressed, to the others.</p><p>"I was just minding my own business on my bed, and I heard Vio singing in the bathroom. Shadow was day-dreaming and Green was looking at the view out the window, so I decided to investigate."</p><p>Red walked up to the bathroom door and pressed his ear up against it.</p><p>Vio could be heard inside, singing, "Ducky! Ducky! I love you rubber ducky!"</p><p>Red gasped and then stormed in through the door. He ran up to the shower and pulled back the curtain. Vio stopped and he looked down at Red. Vio had a rubber duck in his hands.</p><p>Red pointed at Vio, "You traitor!"</p><p>"Red! What the hell!" Vio threw the rubber duck at Red.</p><p>The duck bounced off Reds' head and he caught it in his hands. Red then legged it out the bathroom.</p><p>Vio stepped out the shower, "Come back here, Red!"</p><p>Vio turned the shower off, quickly tied a towel round his waist and chased after Red.</p><p>Vio came out the bathroom, "Red! Give it back!"</p><p>Vio pounced on Red and pinned him down.</p><p>Green turned his head round, "Huh? What the!"</p><p>Shadow snapped out of his day-dream and looked at Vio, "Uh, V-Vio-kun?" Shadow blushed.</p><p>"And then you came in, Blue." Red explained.</p><p>"Why didn't you lock the door?" Shadow whispered to Vio.</p><p>"Um..uh.." Vio looked down and blushed, "I forgot, I guess.."</p><p>Red turned to Vio and pointed at him, "But you, Vio, are a traitor!"</p><p>Vios' head perked up, "What!"</p><p>"I thought you loved Shadow!" Red said, "But you lied to him all this time! I can get mad at you, y'know! I'll beat you in a fight to proove it!"</p><p>"Woah, Red! Chill!" Vio said, "You took it the wrong way! I still love Shadow-Chan! I just love the rubber duck like you love a family member or like I love you guys!"</p><p>"Oh..." Red smiled, "Well, why didn't you say so?"</p><p>The others then sighed.</p><p>Green, Red and Blue were on their beds. Vio was in the kitchen area, preparing a chicken noodle curry. He was wearing a pink apron with frills round the edges. Shadow was laying out the dining table.</p><p>Green looked at Vio, "Heheheh! Nice apron, Vio! Hahaha!"</p><p>Vio turned his head to Green, "It was the only one in the cupboard! Besides, I like it. I think I look good in it."</p><p>Shadow smiled and blushed, "I think you look good in it too, Vio-kun."</p><p>Vio looked at Shadow and smiled, "Hm hm, Shadow-Chan.."</p><p>Green looked at Blue, who was sitting on his bed, polishing his hookshot.</p><p>"By the way, Blue." Green said, "Where'd you get that hookshot?"</p><p>"Heheh, I won it in a fight."</p><p>"Trust you to go out and end up in a fight!"</p><p>Red was lying on his bed, clutching a pillow in his arms, thinking to himself.</p><p>He turned his head to Blue, "..Blue?"</p><p>Blue turned his head to Red, "Yeah? What is it?"</p><p>"Well...um.." Red put down the pillow and walked to Blue. He whispered something in Blues' ear, looking slightly nervous.</p><p>Blue nodded, "OK, sure." Blue put his hookshot down and stood up, "We'll be back in a few minutes, guys."</p><p>"OK." Green nodded.</p><p>Blue and Red walked out the door and Blue closed it behind them.</p><p>Blue and Red were standing in the elevator. Red was looking down at the ground in silence.</p><p>Blue turned his head to Red, "Uh..hey, Red. Why do you want this x-ray anyway?"</p><p>Red turned his head away from Blue, still not saying a word.</p><p>"Huh?" Blue thought, "Red's never this quiet, especially around me. I hope something's not wrong with him."</p><p>Blue and Red got to the bottom floor and Blue ran out to the reception desk. Red walked out the elevator and leaned against the wall. He looked down at the ground, still in silence.</p><p>Blue got up to the desk, "Excuse me! Claira?"</p><p>Claira turned round, "Oh, Blue. What do you need?"</p><p>"Can you tell me where to get x-rays?"</p><p>"Yeah, sure. Second floor, room 35. Third door on your left."</p><p>"Thankyou."</p><p>Blue ran back to the elevator and opened the door. Blue went in and then Red went in, still in silence.</p><p>Blue was standing in room 35 with a woman. She had red hair which spiked up and around and she had green eyes. She wore a nurses' dress, like Volivias', but light red and she wore round glasses. Her name was Izzi and she was sitting on a rotating chair infront of some computer screens and machinery. Blue was standing behind her. Red was inside a small room, connected to room 35, being x-rayed.</p><p>"Any minute now, the screen will show Reds' x-rays." Izzi explained, "It'll show three layers, the skeleton, the muscles and nerves, and the organs."</p><p>The screen started displaying the x-ray scans. It first loaded the head, then the upper-body and then the lower-body. Blue and Izzis' eyes widened and they gasped.</p><p>"H-he has a.." Blue said.</p><p>Izzi got up and opened the door to the other room, "OK, Red. You can come back in now." Izzi then went back to her seat.</p><p>Red walked out the other room and closed the door behind him. He leaned on the door and was still in silence.</p><p>"These x-rays show that Red has a male upper-body but a female lower-body." Izzi explained then typed on the computer, "Now if I just scan here.."</p><p>Reds' eyes filled with tears then he ran out the room and slammed the door.</p><p>Izzi and Blue turned their heads round.</p><p>"Red!" Blue reached out.</p><p>"Oh no, poor boy." Izzi turned back to the computer, "The scans show that it's female on the outside, but male on the inside."</p><p>"Do you think I could get a copy of that information?" Blue asked.</p><p>"Sure." Izzi quickly printed a sheet of the images and data of the scans. She handed it to Blue, "Here."</p><p>"Thanks, Miss Izzi-sama." Blue walked to the door, "I gotta find Red."</p><p>Blue walked out and closed the door behind him.</p><p>He looked down both sides of the corridor, "Red.."</p><p>He ran to the elevator and went up to floor 11.</p><p>He ran to his room and knocked on the door. Green opened it and Blue stepped in. Vio and Shadow turned their heads round.</p><p>Blue looked around the room, "..Isn't Red here?"</p><p>"We thought he was with you." Green said.</p><p>"Huh?" Blue then handed the paper to Green, "Take care of this. I'm gonna look for Red."</p><p>Blue ran out and closed the door.</p><p>Vio and Shadow walked to Green and read the paper he was holding.</p><p>"Red had an x-ray?" Green asked.</p><p>"Poor Red. He must've ran off somewhere." Shadow said, "That's why he's not with Blue."</p><p>"Hmm...When he's happy, he's jumping all over the place.." Vio explained, "But when he's sad, he cries his heart out."</p><p>Blue was running through the corridor on the second floor, "Red! Where are you?" Blue then slowed to a stop and leaned his left side on the wall, "Red.." Blue closed his eyes.</p><p>Blue could hear a faint crying.</p><p>Blue opened his eyes and his head perked up, "I can hear him, Red!"</p><p>Blue started running down the corridor and skidded as he turned the corner. He followed the crying into the boys' toilets.</p><p>Blue walked up to the door of the cubicle Red was in. Red was sitting with his face buried in his knees, crying.</p><p>Blue knocked on the door, which Red had locked, "Red, I'm here."</p><p>"Go away! I'm a freak!" Red yelled out.</p><p>"No, Red! You're not!"</p><p>"Just leave me alone!"</p><p>"Red, listen.." Blue paused, "So what if you're born a little different from the others. It doesn't matter. It's the heart inside that makes you special. We love you for who you are. Don't let this get you down."</p><p>There was a long pause. Blue sighed, turned round and started to walk away. Blue heard the door unlock, he stopped and turned round. Red ran out and latched his arms around Blue, tightly.</p><p>"..I'm sorry." Red looked up at Blue with tears still in his eyes, "I'm sorry I doubted myself." Red then buried his face in Blues' tunic and cried.</p><p>Blue put his arm around Red and stroked his head with his other hand, "It's alright, Red. We're all here for you."</p>
-<a href="Chapter 40.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 42.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 40.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 42.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

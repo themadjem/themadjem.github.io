@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Links' Adventures - Chapter 20</title>
-<script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
+    <script>
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><style>
+
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        const body = document.body;
+
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
+</script>
+    <style>
     body {
         transition: background-color 0.3s;
     }
@@ -32,6 +38,49 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
-</style></head>
+    
+    /* Default link styles */
+    a {
+        color: #4285f4; /* Default unclicked link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Visited link styles */
+    a:visited {
+        color: #6a1b9a; /* Default visited link color */
+    }
+
+    /* Dark mode link styles */
+    .dark-mode a {
+        color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+    }
+
+    /* Dark mode visited link styles */
+    .dark-mode a:visited {
+        color: #9575cd; /* Lighter color for visited links in dark mode */
+    }
+    button {
+        padding: 4px;
+        background-color: #d9d9d9;
+        color: #111111;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Dark mode styles */
+    .dark-mode button {
+        background-color: #636363;
+        color: #dedede;
+    }
+</style>
+</head>
 <body><div><b>Five Links' Adventures</b></u></p><p><u><b>Chapter 20: Tingles' Shortcut</b></u></p><p>"Is anybody out there! Help me, please!" the voice yelled out again.</p><p>Shadow stood up, "I'll save him."</p><p>Shadow held his hand out and formed a bomb in his hand out of darkness. He pointed at it with the other hand and clicked his fingers. A flame of darkness appeared on the fuse of the bomb.</p><p>Red stood up, "Wow, cool!"</p><p>Shadow smirked, "The Great Light Fairy told me to use my powers wisely." He brought the bomb back, ready to throw it, "Stand clear!"</p><p>He threw the bomb and it blew up the huge rock. It left a dark smoke, and Shadow quickly ran in and lifted the small person then ran out.</p><p>Shadow looked down at him, "You OK, kid?...Wah!"</p><p>Tingle, the small, so-called 'fairy' midget was in Shadows' arms.</p><p>He looked up to Shadow, "Ah! Mr. Hero! " he glomped Shadow, "You saved me again! "</p><p>"Huh!" Shadow dropped Tingle on the ground.</p><p>Tingle got up to his feet and shook the dust off himself.</p><p>He tugged on Shadows' tunic, "But you changed your clothes again! Come on! Make your mind up! You know you looked best in green!"</p><p>"Green?" Shadow turned his head round.</p><p>Blue got up to his feet and walked to the round boulder behind him. He swung his hammer back and then hit the boulder away like a golf ball. Green was revealed behind it and he perked up.</p><p>"Mr. Hero! " Tingle leapt toward Green and latched onto his leg, "I knew you'd come back to me!  Face it! You need me and my wide knowledge, don'tcha? Don'tcha?"</p><p>"Aw man! Get off me!" Green shook his leg.</p><p>"So, you got anymore Force Gems for me?"</p><p>"No! You stole them all!" Green grabbed Tingle by the back, "Just bugger off!"</p><p>Green threw Tingle and he landed on his face. Tingle sat up and rubbed his damaged cheek.</p><p>"Man, this'll be good for the press.." Blue said to Green, "'Hero of Hyrule bullies kid.'"</p><p>"He's a midget!" Green was annoyed.</p><p>"Yeah, but still.."</p><p>Red was knelt down behind Tingle, trying to comfort him.</p><p>"Alas, Tingle is unloved again. All I wish for is a companion to travel with! Someone I can share my wisdom and tales to." Tingle sighed, "No-one loves Tingle.."</p><p>"Hey! Come on! That's not true!" Red said to him, "You just caught us at a bad time. We're on a very important mission to save our friend right now and we don't have much time."</p><p>"Oh, I see." Tingle said, "So, where you heading? I know a lot of shortcuts."</p><p>"The Tower of Fire." Shadow pointed to it.</p><p>"Wa! There!" Tingle was shocked, and then he thought to himself, "The shortcut I know is full of cyclops! But they don't have to know that. What perfect revenge.." Tingle smirked.</p><p>He smiled, "Yeah, I know a really handy shortcut to there! You see that cave?" he pointed to it, "Just go through there. Shouldn't take you too long if you keep a fast pace."</p><p>"Wow! Thanks!" Red said.</p><p>"Sooo, how 'bout some Force Gems for payment?" Tingle held his hand out.</p><p>"We don't have any!" Green drew his sword and shook it, "Our swords are lacking force. We have none."</p><p>"Hmmm..OK, fine." Tingle went up in the air with his balloon, "I guess I'll let you off since you saved me back there. Well, I must be off! Bye!" Tingle waved as he floated away.</p><p>Red waved, "Bye! Thankyou!"</p><p>"Yeah, Green, you're right. Our swords do have no force." Shadow said to him.</p><p>"Hmm." Green withdrew his sword, "It must've reset when it was put back in the shrine."</p><p>Blue ran to the cave, "Come on! Let's go! We can't waste time!"</p><p>"Right!" They ran to the cave.</p><p>Red peered in and Blue walked inside.</p><p>He stopped and turned round, "Come on! You aren't a bunch of scaredy cuccos are ya?"</p><p>Green and Shadow walked in, "Who you calling 'scaredy cucco'?" Green commented.</p><p>They walked through into the darkness.</p><p>"Uh...Hey! Wait up!" Red ran in and clutched onto Blue.</p>
-<a href="Chapter 19.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 21.html"><button>Next Chapter &gt;&gt;</button></a></div><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>
+<a href="Chapter 19.html"><button>&lt;&lt; Previous Chapter</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="../index.html"><button>&and; Menu &and;</button></a><span style="display: inline-block; width: 2ch;">&#9;</span><a href="Chapter 21.html"><button>Next Chapter &gt;&gt;</button></a></div><p><button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body></html>

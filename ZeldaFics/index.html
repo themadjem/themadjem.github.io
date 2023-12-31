@@ -6,41 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story Index</title>
 <script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
     // Function to toggle between dark and light mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
+        // Save the current mode preference to localStorage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow.toString());
     }
-</script><script>
-    // Check if there's a saved preference for dark mode in local storage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
 
-    // Apply dark mode if the preference is saved
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-    }
-
-    // Function to toggle between dark and light mode
-    function toggleDarkMode() {
+    // Apply dark mode based on the saved preference when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
         const body = document.body;
-        body.classList.toggle('dark-mode');
 
-        // Save the current mode preference to local storage
-        const isDarkModeNow = body.classList.contains('dark-mode');
-        localStorage.setItem('darkMode', isDarkModeNow.toString());
-    }
+        // Apply dark mode based on the saved preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+    });
 </script><style>
     body {
         transition: background-color 0.3s;
@@ -50,6 +37,47 @@
         background-color: #1a1a1a; /* Dark background color */
         color: #ffffff; /* Light text color in dark mode */
     }
+	/* Default link styles */
+a {
+    color: #4285f4; /* Default unclicked link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Visited link styles */
+a:visited {
+    color: #6a1b9a; /* Default visited link color */
+}
+
+/* Dark mode link styles */
+.dark-mode a {
+    color: #64b5f6; /* Lighter color for unclicked links in dark mode */
+}
+
+/* Dark mode visited link styles */
+.dark-mode a:visited {
+    color: #9575cd; /* Lighter color for visited links in dark mode */
+}
+button {
+    padding: 4px;
+    background-color: #d9d9d9;
+    color: #555555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Dark mode styles */
+.dark-mode button {
+    background-color: #636363;
+    color: #dedede;
+}
 </style></head>
 <body>
     <h1>Story Index</h1>
