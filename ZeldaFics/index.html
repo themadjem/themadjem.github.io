@@ -5,7 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story Index</title>
-</head>
+<script>
+    // Check if there's a saved preference for dark mode in local storage
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    // Apply dark mode if the preference is saved
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Function to toggle between dark and light mode
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+
+        // Save the current mode preference to local storage
+        const isDarkModeNow = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkModeNow.toString());
+    }
+</script><script>
+    // Check if there's a saved preference for dark mode in local storage
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    // Apply dark mode if the preference is saved
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Function to toggle between dark and light mode
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+
+        // Save the current mode preference to local storage
+        const isDarkModeNow = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkModeNow.toString());
+    }
+</script><style>
+    body {
+        transition: background-color 0.3s;
+    }
+
+    .dark-mode {
+        background-color: #1a1a1a; /* Dark background color */
+        color: #ffffff; /* Light text color in dark mode */
+    }
+</style></head>
 <body>
     <h1>Story Index</h1>
     <ul>
@@ -13,5 +58,5 @@
         <li><a href="POF/Chapter%201.html">The Power of Five</a></li>
         <li><a href="TBU/Chapter%201.html">To Be United</a></li>
     </ul>
-</body>
+<button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button></body>
 </html>
